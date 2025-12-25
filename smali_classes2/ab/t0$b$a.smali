@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+    .locals 2
 
     .line 1
     if-nez p2, :cond_0
@@ -56,29 +56,17 @@
     .line 9
     new-instance p2, Landroid/content/Intent;
 
-    .line 10
-    .line 11
-    iget-object p3, p0, Lab/t0$b$a;->a:Lab/t0$b;
+    iget-object v1, p0, Lab/t0$b$a;->a:Lab/t0$b;
 
-    .line 12
-    .line 13
-    iget-object p3, p3, Lab/t0$b;->a:Lab/t0;
+    iget-object v1, v1, Lab/t0$b;->a:Lab/t0;
 
-    .line 14
-    .line 15
-    invoke-virtual {p3}, Landroidx/fragment/app/Fragment;->B0()Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->B0()Landroidx/fragment/app/FragmentActivity;
 
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p3
+    move-result-object v1
 
-    .line 19
     const-class v0, Lcom/hul/sambhav/salesJourney/ui/home/SimpleCameraActivityFront;
 
-    .line 20
-    .line 21
-    invoke-direct {p2, p3, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-direct {p2, v1, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 22
     .line 23
@@ -119,22 +107,22 @@
 
     .line 40
     .line 41
-    const-string p3, "android.intent.action.GET_CONTENT"
+    const-string v1, "android.intent.action.GET_CONTENT"
 
     .line 42
     .line 43
-    invoke-virtual {p2, p3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {p2, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 44
     .line 45
     move-result-object p2
 
     .line 46
-    const-string p3, "image/*"
+    const-string v1, "image/*"
 
     .line 47
     .line 48
-    invoke-virtual {p2, p3}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {p2, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 49
     .line 50
