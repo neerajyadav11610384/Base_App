@@ -92,6 +92,16 @@
     .end annotation
 .end field
 
+.field L5:Landroidx/activity/result/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/activity/result/b<",
+            "Landroid/content/Intent;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field q4:Landroidx/appcompat/widget/Toolbar;
 
 .field r4:Landroidx/constraintlayout/widget/ConstraintLayout;
@@ -174,9 +184,36 @@
 
     .line 26
     .line 27
-    return-void
+    new-instance v0, Lb/d;
+
     .line 28
     .line 29
+    invoke-direct {v0}, Lb/d;-><init>()V
+
+    .line 30
+    .line 31
+    new-instance v1, Lab/t0$e;
+
+    .line 32
+    .line 33
+    invoke-direct {v1, p0}, Lab/t0$e;-><init>(Lab/t0;)V
+
+    .line 34
+    .line 35
+    invoke-virtual {p0, v0, v1}, Landroidx/fragment/app/Fragment;->X2(Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
+
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    iput-object v0, p0, Lab/t0;->L5:Landroidx/activity/result/b;
+
+    .line 39
+    .line 40
+    return-void
+    .line 41
+    .line 42
 .end method
 
 .method public static synthetic A3(Lcom/android/volley/VolleyError;)V
