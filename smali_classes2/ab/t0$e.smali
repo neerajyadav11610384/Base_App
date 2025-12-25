@@ -150,10 +150,16 @@
 
     .line 46
     .line 47
-    sput-object p1, Lab/t0;->d5:Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     .line 48
+    move-result-object p1
+
     .line 49
+    sput-object p1, Lab/t0;->d5:Ljava/lang/String;
+
+    .line 50
+    .line 51
     new-instance v2, Ljava/lang/StringBuilder;
 
     .line 50

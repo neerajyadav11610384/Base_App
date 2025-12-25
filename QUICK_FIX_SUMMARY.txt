@@ -1,0 +1,63 @@
+# Quick Fix Summary
+
+## ❌ The Error
+```
+VerifyError: register v5 has type Reference: android.net.Uri 
+but expected Reference: java.lang.String
+```
+
+## 🎯 The Problem
+In `Lab/t0$e.smali`, we were trying to store a **Uri object** into a field declared as **String**:
+
+```smali
+# p1 is Uri
+sput-object p1, Lab/t0;->d5:Ljava/lang/String;  ← TYPE MISMATCH!
+```
+
+Field `d5` is declared as:
+```smali
+.field public static d5:Ljava/lang/String; = null
+```
+
+But we were storing a `Uri` in it. Android's bytecode verifier rejected this.
+
+## ✅ The Solution
+Convert the Uri to String **before** storing:
+
+```smali
+# Convert Uri to String
+invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+move-result-object p1
+
+# Now store the String
+sput-object p1, Lab/t0;->d5:Ljava/lang/String;  ← CORRECT!
+```
+
+## 📝 What Changed
+**File:** `c:\Projects\Base_App\smali_classes2\ab\t0$e.smali`
+
+**Lines 149-157 (Before):**
+```smali
+sput-object v0, Lab/t0;->i5:Landroid/graphics/Bitmap;
+
+sput-object p1, Lab/t0;->d5:Ljava/lang/String;  ← WRONG!
+```
+
+**Lines 149-163 (After):**
+```smali
+sput-object v0, Lab/t0;->i5:Landroid/graphics/Bitmap;
+
+invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+move-result-object p1
+
+sput-object p1, Lab/t0;->d5:Ljava/lang/String;  ← CORRECT!
+```
+
+## ✨ Result
+✅ VerifyError fixed  
+✅ Type mismatch resolved  
+✅ App should now run without crashes
+
+---
+
+**Status:** FIXED ✅

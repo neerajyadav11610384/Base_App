@@ -127,22 +127,25 @@
 
     .line 43
     .line 44
-    const-string p3, "image/*"
-
-    .line 45
-    .line 46
-    invoke-virtual {p2, p3}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 47
-    .line 48
     move-result-object p2
 
+    .line 45
+    const-string p3, "image/*"
+
+    .line 46
+    .line 47
+    invoke-virtual {p2, p3}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 48
     .line 49
-    invoke-virtual {p1, p2}, Landroidx/activity/result/b;->a(Ljava/lang/Object;)V
+    move-result-object p2
 
     .line 50
+    invoke-virtual {p1, p2}, Landroidx/activity/result/b;->a(Ljava/lang/Object;)V
+
     .line 51
     .line 52
+    .line 53
     return-void
 
     .line 53
