@@ -120,29 +120,20 @@
     :try_start_0
     iget-object v0, p0, Lab/t0$e;->a:Lab/t0;
 
-    .line 32
-    .line 33
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->b3()Landroid/content/Context;
 
-    .line 34
-    .line 35
-    .line 36
     move-result-object v0
 
-    .line 37
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    .line 38
-    .line 39
-    .line 40
     move-result-object v0
 
-    .line 41
-    invoke-static {v0, p1}, Landroid/graphics/BitmapFactory;->decodeStream(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/graphics/Bitmap;
+    invoke-virtual {v0, p1}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
 
-    .line 42
-    .line 43
-    .line 44
+    move-result-object v2
+
+    invoke-static {v2}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+
     move-result-object v0
 
     .line 45
