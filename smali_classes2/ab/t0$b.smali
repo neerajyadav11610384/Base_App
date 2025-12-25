@@ -74,84 +74,78 @@
 
     .line 18
     .line 19
-    new-instance p1, Landroid/app/AlertDialog$Builder;
+    new-instance v0, Landroidx/appcompat/app/b$a;
 
     .line 20
     .line 21
-    iget-object v0, p0, Lab/t0$b;->a:Lab/t0;
+    iget-object v1, p0, Lab/t0$b;->a:Lab/t0;
 
     .line 22
     .line 23
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->b3()Landroid/content/Context;
+    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->b3()Landroid/content/Context;
 
     .line 24
     .line 25
     .line 26
-    move-result-object v0
+    move-result-object v1
 
     .line 27
-    invoke-direct {p1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;)V
 
     .line 28
     .line 29
-    const-string v0, "Choose Image Source"
+    const-string v1, "Choose Image Source"
 
     .line 30
     .line 31
-    invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/b$a;->s(Ljava/lang/CharSequence;)Landroidx/appcompat/app/b$a;
 
     .line 32
     .line 33
     .line 34
-    move-result-object p1
+    const/4 v1, 0x2
 
     .line 35
-    const/4 v0, 0x2
+    new-array v1, v1, [Ljava/lang/CharSequence;
 
     .line 36
-    new-array v0, v0, [Ljava/lang/String;
-
     .line 37
+    const/4 v2, 0x0
+
     .line 38
-    const/4 v1, 0x0
+    const-string p1, "Camera"
 
     .line 39
-    const-string v2, "Camera"
-
     .line 40
-    .line 41
-    aput-object v2, v0, v1
+    aput-object p1, v1, v2
 
+    .line 41
     .line 42
+    const/4 v2, 0x1
+
     .line 43
-    const/4 v1, 0x1
+    const-string p1, "Gallery"
 
     .line 44
-    const-string v2, "Gallery"
-
     .line 45
+    aput-object p1, v1, v2
+
     .line 46
-    aput-object v2, v0, v1
-
     .line 47
+    new-instance p1, Lab/t0$b$a;
+
     .line 48
-    new-instance v1, Lab/t0$b$a;
-
     .line 49
+    invoke-direct {p1, p0}, Lab/t0$b$a;-><init>(Lab/t0$b;)V
+
     .line 50
-    invoke-direct {v1, p0}, Lab/t0$b$a;-><init>(Lab/t0$b;)V
-
     .line 51
-    .line 52
-    invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, p1}, Landroidx/appcompat/app/b$a;->h([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 
+    .line 52
     .line 53
     .line 54
-    .line 55
-    move-result-object p1
-
-    .line 56
-    invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Landroidx/appcompat/app/b$a;->u()Landroidx/appcompat/app/b;
 
     .line 55
     .line 56
