@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_12"
+    android:paddingTop="@dimen/dimen_12"
+    android:paddingRight="@dimen/dimen_12"
+    android:paddingBottom="@dimen/dimen_8"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4.0">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:id="@id/tx_title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.7"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/very_dark_gray"
+            android:gravity="end|center"
+            android:id="@id/tx_date"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:lineSpacingExtra="7.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+    </LinearLayout>
+    <TextView
+        android:textSize="14.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff41586f"
+        android:id="@id/tx_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:lineSpacingExtra="7.0sp"
+        fontFamily="\@fonts/sf_pro_display_regular" />
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/img_pro"
+        android:background="?selectableItemBackgroundBorderless"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="175.0dip"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:scaleType="fitCenter" />
+    <View
+        android:background="@color/dark_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="0.9dip"
+        android:layout_marginTop="@dimen/dimen_12" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/lyt_web"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <WebView
+            android:layout_gravity="center"
+            android:id="@id/notify_web_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_8" />
+        <View
+            android:background="#ffe6eaf4"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="0.9dip"
+            android:layout_marginTop="@dimen/dimen_8" />
+    </LinearLayout>
+</LinearLayout>

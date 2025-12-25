@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/color_1c1839_1"
+        android:id="@id/textViewDocTypeName"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        app:layout_constraintEnd_toStartOf="@id/imageViewKycDocSelect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_12sp"
+        android:textColor="@color/color_2392ff"
+        android:id="@id/textViewInstantKYC"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display_medium"
+        app:layout_constraintStart_toStartOf="@id/textViewDocTypeName"
+        app:layout_constraintTop_toBottomOf="@id/textViewDocTypeName" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/imageViewKycDocSelect"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:layout_marginEnd="@dimen/dimen_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewDividerDocType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_right_arrow" />
+    <View
+        android:id="@id/viewDividerDocType"
+        android:background="@color/color_b4c8dc"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginBottom="@dimen/dimen_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewInstantKYC" />
+</androidx.constraintlayout.widget.ConstraintLayout>

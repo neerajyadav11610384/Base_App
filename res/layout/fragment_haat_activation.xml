@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutMainLayout"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/black"
+            android:id="@id/textViewStoreName"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="Elima Sahriah"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10"
+            app:layout_constraintBottom_toTopOf="@id/textViewStoreHulId"
+            app:layout_constraintEnd_toStartOf="@id/layoutStartCall"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/black"
+            android:id="@id/textViewStoreHulId"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="Elima Sahriah"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintEnd_toEndOf="@id/textViewStoreName"
+            app:layout_constraintStart_toStartOf="@id/textViewStoreName"
+            app:layout_constraintTop_toBottomOf="@id/textViewStoreName" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/layoutStartCall"
+            android:background="@drawable/drawable_4faf53_corner_5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_6"
+                android:text="START CALL"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/checkedTextViewSEPointClosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:button="@null"
+        android:text="SE Point Closed For Day"
+        android:drawableRight="?android:listChoiceIndicatorMultiple"
+        app:layout_constraintStart_toStartOf="@id/layoutMainLayout"
+        app:layout_constraintTop_toBottomOf="@id/layoutMainLayout" />
+    <View
+        android:id="@id/viewTaskDivider"
+        android:background="@color/gray"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="@id/layoutMainLayout"
+        app:layout_constraintStart_toStartOf="@id/layoutMainLayout"
+        app:layout_constraintTop_toBottomOf="@id/checkedTextViewSEPointClosed" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutHaatTask"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="@id/layoutMainLayout"
+        app:layout_constraintStart_toStartOf="@id/layoutMainLayout"
+        app:layout_constraintTop_toBottomOf="@id/viewTaskDivider">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/textViewPickStocks"
+            android:background="@drawable/drawable_2392ff_5dp"
+            android:visibility="visible"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="Pick Stocks"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:elevation="@dimen/dimen_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/textViewHaatSetup"
+            android:background="@drawable/drawable_2392ff_5dp"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="Haat Setup"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:elevation="@dimen/dimen_2"
+            app:layout_constraintEnd_toEndOf="@id/textViewPickStocks"
+            app:layout_constraintStart_toStartOf="@id/textViewPickStocks"
+            app:layout_constraintTop_toBottomOf="@id/textViewPickStocks" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/textViewShopperConnect"
+            android:background="@drawable/drawable_2392ff_5dp"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="Shopper Connect"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:elevation="@dimen/dimen_2"
+            app:layout_constraintEnd_toEndOf="@id/textViewPickStocks"
+            app:layout_constraintStart_toStartOf="@id/textViewPickStocks"
+            app:layout_constraintTop_toBottomOf="@id/textViewHaatSetup" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/textViewCaptureSales"
+            android:background="@drawable/drawable_2392ff_5dp"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="Capture Sales"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:elevation="@dimen/dimen_2"
+            app:layout_constraintEnd_toEndOf="@id/textViewPickStocks"
+            app:layout_constraintStart_toStartOf="@id/textViewPickStocks"
+            app:layout_constraintTop_toBottomOf="@id/textViewShopperConnect" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/textViewSaveHaatActivation"
+        android:background="@drawable/drawable_ff5555_corner"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:text="End Call"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:elevation="@dimen/dimen_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/viewTaskDivider"
+        app:layout_constraintStart_toStartOf="@id/viewTaskDivider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

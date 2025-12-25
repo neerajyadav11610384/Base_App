@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/color_eaeef8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@id/web_lyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_alignParentTop="true">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <WebView
+                android:id="@id/web_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="3"
+                android:progress="100"
+                style="?android:progressBarStyle" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@id/data_lyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/web_lyt"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/rlyt_hdr"
+            android:background="@drawable/rounded_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:layout_marginStart="@dimen/dimen_6"
+            android:layout_marginEnd="@dimen/dimen_6">
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/tx_param"
+                android:padding="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="Param"
+                android:layout_weight="1.5"
+                android:textAllCaps="true" />
+            <View
+                android:background="#ffdcd9d9"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/tx_moc_tgt"
+                android:padding="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="MOC TGT"
+                android:layout_weight="1.0"
+                android:textAllCaps="true" />
+            <View
+                android:background="#ffdcd9d9"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/tx_moc_ach_overall"
+                android:padding="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="MOC ACH"
+                android:layout_weight="1.0"
+                android:textAllCaps="true" />
+            <View
+                android:background="#ffdcd9d9"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/tx_shikhar_ach"
+                android:padding="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="BTD"
+                android:layout_weight="1.0"
+                android:textAllCaps="true" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbarThumbVertical="@color/blue_selector"
+            android:id="@id/rv_action_points_list"
+            android:visibility="visible"
+            android:scrollbars="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:layout_above="@id/bottom_lyt"
+            android:layout_below="@id/rlyt_hdr"
+            android:fadeScrollbars="false"
+            android:layout_marginStart="@dimen/dimen_6"
+            android:layout_marginEnd="@dimen/dimen_6" />
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="#ff616161"
+            android:id="@id/no_data_tv"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data_found_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <LinearLayout
+            android:gravity="center"
+            android:id="@id/bottom_lyt"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:gravity="center"
+                android:id="@id/btn_qps"
+                android:background="@drawable/rounded_corner"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="QPS"
+                android:layout_weight="1.0"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_8" />
+            <Button
+                android:gravity="center"
+                android:id="@id/btn_btpr"
+                android:background="@drawable/rounded_corner"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:minWidth="150.0dip"
+                android:text="BTPR"
+                android:layout_weight="1.0"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_16" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include
+        layout="@layout/view_qps" />
+</RelativeLayout>

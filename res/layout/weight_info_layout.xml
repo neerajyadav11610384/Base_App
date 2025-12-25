@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="52.0dip"
+    android:layout_marginLeft="@dimen/dimen_3"
+    android:layout_marginRight="@dimen/dimen_3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/weight_btn_lyt"
+        android:background="@drawable/variant_normal"
+        android:paddingLeft="@dimen/dimen_9"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_9"
+        android:paddingBottom="@dimen/dimen_5"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_30">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/img_product_status"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_14"
+            android:layout_height="@dimen/dimen_14"
+            android:layout_marginBottom="@dimen/dimen_2" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_41586f"
+            android:ellipsize="end"
+            android:id="@id/weight_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_3"
+            android:text="0g"
+            android:singleLine="true"
+            android:lineSpacingExtra="7.0sp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:layout_marginStart="@dimen/dimen_2" />
+    </LinearLayout>
+    <com.google.android.material.chip.Chip
+        android:textAppearance="@style/chip_text_small"
+        android:textSize="11.0sp"
+        android:textColor="@color/white"
+        android:id="@id/cp_pack_tag"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingBottom="@dimen/dimen_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8.0dip"
+        android:layout_marginBottom="@dimen/dimen_2"
+        android:text="ETS"
+        android:layout_below="@id/weight_btn_lyt"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:chipBackgroundColor="@color/color_FF6565"
+        app:chipEndPadding="2.0dip"
+        app:chipMinHeight="14.0dip"
+        app:chipMinTouchTargetSize="0.0dip"
+        app:chipStartPadding="2.0dip"
+        app:chipStrokeColor="@color/white"
+        app:chipStrokeWidth="1.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/img_view_scheme"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10.0dip"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:layout_alignParentEnd="true" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/img_view_packs"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10.0dip"
+        android:src="@drawable/ic_pack_type"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

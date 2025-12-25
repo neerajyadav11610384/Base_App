@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dimen_48"
+    android:layout_marginTop="@dimen/dimen_16"
+    android:layout_marginStart="@dimen/dimen_16"
+    android:layout_marginEnd="@dimen/dimen_16"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@id/layoutImage"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:cardElevation="@dimen/dimen_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,3:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.12">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/imageViewCatImgUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_4"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/default_img" />
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_1c1839_1"
+        android:ellipsize="end"
+        android:id="@id/textViewCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Categories"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/dimen_16"
+        app:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintBottom_toBottomOf="@id/layoutImage"
+        app:layout_constraintStart_toEndOf="@id/layoutImage"
+        app:layout_constraintTop_toTopOf="@id/layoutImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.03" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.97" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutBillItemDetails"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_42526e"
+            android:id="@id/txtViewCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_42526e"
+            android:id="@id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@id/lineView"
+            android:background="@color/grey"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="@dimen/dimen_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtViewCustomerName" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/textViewOrderId"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="Order Id: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineView" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/textViewOrderIdValue"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10"
+            app:layout_constraintBottom_toBottomOf="@id/textViewOrderId"
+            app:layout_constraintEnd_toEndOf="@id/lineView"
+            app:layout_constraintStart_toEndOf="@id/textViewOrderId"
+            app:layout_constraintTop_toTopOf="@id/textViewOrderId" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_42526e"
+            android:id="@id/textViewMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="@string/mobile_number"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineView" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_42526e"
+            android:id="@id/textViewMobileNoValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/lineView" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_42526e"
+            android:id="@id/textViewTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="Total value"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMobileNo" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_42526e"
+            android:id="@id/textViewTotalAmountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text=": 1500"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/textViewMobileNoValue" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_42526e"
+            android:id="@id/textViewMOA"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="MoA "
+            android:drawableEnd="@drawable/ic_check_circle_24dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/textViewMobileNoValue" />
+        <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:id="@id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@id/viewDivider"
+        android:background="@color/grey"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="@dimen/dimen_8"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/layoutBillItemDetails" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerViewBillItemDetails"
+        android:background="@color/white"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/viewDivider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,381 @@
+.class public Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Lcom/google/api/client/util/Beta;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/api/client/auth/openidconnect/IdTokenVerifier;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field acceptableTimeSkewSeconds:J
+
+.field audience:Ljava/util/Collection;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Collection<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field clock:Lcom/google/api/client/util/Clock;
+
+.field issuers:Ljava/util/Collection;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Collection<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Lcom/google/api/client/util/Clock;->SYSTEM:Lcom/google/api/client/util/Clock;
+
+    .line 5
+    .line 6
+    iput-object v0, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->clock:Lcom/google/api/client/util/Clock;
+
+    .line 7
+    .line 8
+    const-wide/16 v0, 0x12c
+
+    .line 9
+    .line 10
+    iput-wide v0, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->acceptableTimeSkewSeconds:J
+
+    .line 11
+    .line 12
+    return-void
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+
+# virtual methods
+.method public build()Lcom/google/api/client/auth/openidconnect/IdTokenVerifier;
+    .locals 1
+
+    new-instance v0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier;
+
+    invoke-direct {v0, p0}, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier;-><init>(Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;)V
+
+    return-object v0
+.end method
+
+.method public final getAcceptableTimeSkewSeconds()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->acceptableTimeSkewSeconds:J
+
+    return-wide v0
+.end method
+
+.method public final getAudience()Ljava/util/Collection;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->audience:Ljava/util/Collection;
+
+    return-object v0
+.end method
+
+.method public final getClock()Lcom/google/api/client/util/Clock;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->clock:Lcom/google/api/client/util/Clock;
+
+    return-object v0
+.end method
+
+.method public final getIssuer()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->issuers:Ljava/util/Collection;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, 0x0
+
+    .line 6
+    return-object v0
+
+    .line 7
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, Ljava/lang/String;
+
+    .line 16
+    .line 17
+    return-object v0
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public final getIssuers()Ljava/util/Collection;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->issuers:Ljava/util/Collection;
+
+    return-object v0
+.end method
+
+.method public setAcceptableTimeSkewSeconds(J)Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;
+    .locals 2
+
+    .line 1
+    const-wide/16 v0, 0x0
+
+    .line 2
+    .line 3
+    cmp-long v0, p1, v0
+
+    .line 4
+    .line 5
+    if-ltz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    invoke-static {v0}, Lcom/google/api/client/util/Preconditions;->checkArgument(Z)V
+
+    .line 11
+    .line 12
+    .line 13
+    iput-wide p1, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->acceptableTimeSkewSeconds:J
+
+    .line 14
+    .line 15
+    return-object p0
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setAudience(Ljava/util/Collection;)Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "Ljava/lang/String;",
+            ">;)",
+            "Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->audience:Ljava/util/Collection;
+
+    return-object p0
+.end method
+
+.method public setClock(Lcom/google/api/client/util/Clock;)Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;
+    .locals 0
+
+    invoke-static {p1}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/api/client/util/Clock;
+
+    iput-object p1, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->clock:Lcom/google/api/client/util/Clock;
+
+    return-object p0
+.end method
+
+.method public setIssuer(Ljava/lang/String;)Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;
+    .locals 0
+
+    .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-virtual {p0, p1}, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->setIssuers(Ljava/util/Collection;)Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    return-object p1
+
+    .line 9
+    :cond_0
+    invoke-static {p1}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    invoke-virtual {p0, p1}, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->setIssuers(Ljava/util/Collection;)Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    return-object p1
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setIssuers(Ljava/util/Collection;)Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "Ljava/lang/String;",
+            ">;)",
+            "Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p1, :cond_1
+
+    .line 2
+    .line 3
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 11
+    goto :goto_1
+
+    .line 12
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    .line 13
+    :goto_1
+    const-string v1, "Issuers must not be empty"
+
+    .line 14
+    .line 15
+    invoke-static {v0, v1}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/Object;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object p1, p0, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;->issuers:Ljava/util/Collection;
+
+    .line 19
+    .line 20
+    return-object p0
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method

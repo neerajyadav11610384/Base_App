@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="128.0dip"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dimen_16"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="84.0dip">
+        <ImageView
+            android:id="@id/img_content_type"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/sample_doc" />
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@id/lyt_videoContainer"
+            android:background="@color/black"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:foregroundGravity="center">
+            <ImageView
+                android:id="@id/video_container"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@id/img_play"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_media_play" />
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@id/progress_bar"
+                android:visibility="gone"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView
+        android:textSize="15.0sp"
+        android:textStyle="normal"
+        android:textColor="@color/color_091e42"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/tv_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5"
+        android:maxLines="2"
+        fontFamily="\@fonts/sf_pro_display_medium" />
+</LinearLayout>

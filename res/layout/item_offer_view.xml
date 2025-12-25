@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_2"
+    android:layout_marginRight="@dimen/dimen_2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutOfferHomePage"
+        android:background="@drawable/drawable_72c00f_gap"
+        android:padding="@dimen/dimen_10"
+        android:layout_width="140.0dip"
+        android:layout_height="130.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/imageViewOffer"
+            android:layout_width="@dimen/dimen_28"
+            android:layout_height="@dimen/dimen_28"
+            app:layout_constraintBottom_toTopOf="@id/couponName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/ic_coupon_small_new" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_72c00f"
+            android:ellipsize="end"
+            android:id="@id/couponName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:maxLines="1"
+            android:fontFamily="@font/sf_pro_display_bold"
+            app:layout_constraintBottom_toTopOf="@id/textViewOffersPersent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewOffer"
+            app:layout_constraintVertical_chainStyle="packed" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_1c1839_1"
+            android:ellipsize="end"
+            android:id="@id/textViewOffersPersent"
+            android:background="@drawable/drawable_72c00f_change_5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:maxLines="1"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/couponName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

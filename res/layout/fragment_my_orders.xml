@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_items_found"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/sf_pro_display_regular" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/myorderparent_layout"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ExpandableListView
+            android:id="@id/my_order_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:groupIndicator="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1.0dip" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="32.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue"
+        android:gravity="center"
+        android:id="@id/textView"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Coming Soon"
+        android:fontFamily="@font/sf_pro_display_bold" />
+</RelativeLayout>

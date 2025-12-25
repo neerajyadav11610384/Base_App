@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center"
+    android:id="@id/lytTask"
+    android:background="@drawable/rounded_corner_task"
+    android:paddingTop="@dimen/dimen_16"
+    android:paddingBottom="@dimen/dimen_16"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_8"
+    android:minHeight="@dimen/dimen_48"
+    android:paddingStart="@dimen/dimen_12"
+    android:paddingEnd="@dimen/dimen_12"
+    android:layout_marginStart="@dimen/dimen_8"
+    android:layout_marginEnd="@dimen/dimen_8"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="normal"
+        android:textColor="@color/color_42526e"
+        android:id="@id/tv_task_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_toLeftOf="@id/lyt_task_status"
+        android:lineSpacingExtra="8.0sp"
+        fontFamily="\@fonts/sf_pro_display_regular" />
+    <LinearLayout
+        android:id="@id/lyt_task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@id/img_task_status"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_attendence_check" />
+        <ImageView
+            android:id="@id/img_check"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_uncheck" />
+        <ImageView
+            android:id="@id/img_mission"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_must_do" />
+    </LinearLayout>
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="normal"
+        android:textColor="@color/color_42526e"
+        android:id="@id/tv_task_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_toLeftOf="@id/lyt_task_status"
+        android:layout_below="@id/tv_task_desc"
+        android:lineSpacingExtra="8.0sp"
+        fontFamily="\@fonts/sf_pro_display_regular" />
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="normal"
+        android:textColor="@color/color_42526e"
+        android:id="@id/tv_submitted_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_toLeftOf="@id/lyt_task_status"
+        android:layout_below="@id/tv_task_status"
+        android:lineSpacingExtra="8.0sp"
+        fontFamily="\@fonts/sf_pro_display_regular" />
+</RelativeLayout>

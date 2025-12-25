@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    cardview:cardCornerRadius="8.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/frame_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2.0dip">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <VideoView
+                android:id="@id/video_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/playpause"
+            android:background="@drawable/ic_play_circle"
+            android:visibility="visible"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip" />
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@id/progress_bar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="right"
+            android:id="@id/close_dialog"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff000000"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:id="@id/tv_mbrand_name"
+        android:paddingLeft="4.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8.0dip"
+        android:text="MBrand"
+        android:singleLine="true"
+        android:layout_weight="1.0"
+        android:fontFamily="@font/sf_pro_display_regular" />
+    <ImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/img_mbrand_arrow"
+        android:layout_width="36.0dip"
+        android:layout_height="36.0dip"
+        android:layout_marginRight="8.0dip"
+        android:src="@drawable/sf_arrow_rounded_down" />
+</LinearLayout>

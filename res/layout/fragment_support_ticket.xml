@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredWhiteArrow">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:id="@id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/support_ticket"
+                android:maxLines="1"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/toolbar">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textColor="@color/black"
+                    android:id="@id/selecttext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Select Issue Type"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@id/spinnerlayout"
+                    android:background="@drawable/black_border"
+                    android:padding="10.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/selecttext"
+                    app:layout_constraintVertical_bias="0.498">
+                    <Spinner
+                        android:id="@id/spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@id/otherslayout"
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/spinnerlayout"
+                    app:layout_constraintVertical_bias="0.498">
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="@color/black"
+                        android:id="@id/txt_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Issue Title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <EditText
+                        android:id="@id/others_et"
+                        android:background="@drawable/black_border"
+                        android:padding="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:hint="Enter issue"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txt_title"
+                        app:layout_constraintVertical_bias="0.498" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@id/explainIssuelayout"
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/otherslayout"
+                    app:layout_constraintVertical_bias="0.498">
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="@color/black"
+                        android:id="@id/txt_explain"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Explain the issue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <EditText
+                        android:id="@id/explain_txt"
+                        android:background="@drawable/black_border"
+                        android:padding="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txt_explain"
+                        app:layout_constraintVertical_bias="0.498" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@id/mobilelayout"
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/explainIssuelayout"
+                    app:layout_constraintVertical_bias="0.498">
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="@color/black"
+                        android:id="@id/txt_mobile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Mobile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <EditText
+                        android:textColor="@color/black"
+                        android:id="@id/edt_mobile"
+                        android:background="@drawable/black_border"
+                        android:padding="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:hint="Enter Mobile No"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txt_mobile"
+                        app:layout_constraintVertical_bias="0.498" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <Button
+                    android:id="@id/upload"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="30.0dip"
+                    android:text="upload images"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mobilelayout" />
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textColor="@color/black"
+                    android:id="@id/imgtxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/upload" />
+                <Button
+                    android:id="@id/submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="submit"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgtxt" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

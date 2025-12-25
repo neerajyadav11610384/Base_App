@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/unipay_lyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_moderate_lime_green"
+            android:gravity="center"
+            android:id="@id/payment_mode"
+            android:paddingTop="20.0dip"
+            android:paddingBottom="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_by_unipay_received" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:id="@id/amount_paid"
+            android:paddingBottom="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount Received = 50.0" />
+    </LinearLayout>
+</LinearLayout>

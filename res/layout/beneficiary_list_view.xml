@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/c3c3c3_bouder_5dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_2"
+    android:elevation="@dimen/dimen_2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/black"
+        android:id="@id/textViewBeneficiaryId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beneficiary Id             :"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/black"
+        android:id="@id/textViewBeneficiaryIdValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintBottom_toBottomOf="@id/textViewBeneficiaryId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewBeneficiaryId" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/black"
+        android:id="@id/textViewBeneficiaryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beneficiary Name     :"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBeneficiaryId" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/black"
+        android:id="@id/textViewBeneficiaryNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintBottom_toBottomOf="@id/textViewBeneficiaryName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewBeneficiaryName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

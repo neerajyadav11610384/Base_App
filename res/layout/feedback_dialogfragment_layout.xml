@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:background="@drawable/green_corner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                android:gravity="center|top"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:gravity="center"
+                    android:id="@id/order_process"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="@string/txt_hdr"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:gravity="center"
+                    android:id="@id/txt_orderstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="12.0sp"
+                    android:gravity="center"
+                    android:id="@id/order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="12.0sp"
+                    android:id="@id/order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/date"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="10.0sp"
+                    android:textColor="@color/very_dark_gray"
+                    android:gravity="center"
+                    android:id="@id/feedback_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:text="@string/feedback_suggestion_msg"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <EditText
+                    android:textSize="14.0sp"
+                    android:gravity="top"
+                    android:id="@id/comment_box"
+                    android:background="@drawable/light_green_rounded_corner"
+                    android:padding="10.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:hint="@string/feedback_hint" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textColor="@color/very_dark_gray"
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/please_rate_us" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:weightSum="5.0">
+                    <FrameLayout
+                        android:id="@id/excellent"
+                        android:background="@drawable/light_green_rounded_corner"
+                        android:padding="1.0dip"
+                        android:layout_width="0.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_margin="5.0dip"
+                        android:layout_weight="1.0">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/excellent" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@id/good"
+                        android:background="@null"
+                        android:layout_width="0.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_margin="5.0dip"
+                        android:layout_weight="1.0">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:padding="1.0dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/good" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@id/average"
+                        android:background="@null"
+                        android:layout_width="0.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_margin="5.0dip"
+                        android:layout_weight="1.0">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:padding="1.0dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/average" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@id/poor"
+                        android:background="@null"
+                        android:layout_width="0.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_margin="5.0dip"
+                        android:layout_weight="1.0">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:padding="1.0dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/poor" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@id/very_poor"
+                        android:background="@null"
+                        android:layout_width="0.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_margin="5.0dip"
+                        android:layout_weight="1.0">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:padding="1.0dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/very_poor" />
+                    </FrameLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@id/submit"
+                    android:background="@drawable/green_rounded_corner"
+                    android:layout_width="100.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:layout_marginBottom="20.0dip"
+                    android:text="@string/submit"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/close"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_action_close" />
+</RelativeLayout>

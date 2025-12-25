@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/parent"
+    android:padding="10.0dip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/im_check"
+        android:background="@drawable/photo_check"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_40"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginStart="15.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/ll_thumnails"
+        app:layout_constraintStart_toStartOf="@id/ll_thumnails"
+        app:layout_constraintTop_toTopOf="@id/ll_thumnails" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_thumnails"
+        android:paddingTop="@dimen/dimen_2"
+        android:layout_width="62.0dip"
+        android:layout_height="62.0dip"
+        android:layout_marginTop="16.0dip"
+        android:paddingStart="@dimen/dimen_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@id/im_thumnails"
+            android:background="@drawable/image_border"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/default_img"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/rounded_corner_survey"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_8"
+    android:layout_marginBottom="@dimen/dimen_8"
+    android:layout_marginStart="@dimen/dimen_8"
+    android:layout_marginEnd="@dimen/dimen_8"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_42526e"
+        android:gravity="center_vertical"
+        android:id="@id/title_tv"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_12"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:id="@id/green_tick_iv"
+        android:visibility="gone"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_margin="@dimen/dimen_16"
+        android:src="@drawable/ic_check_green"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:layout_gravity="end|center"
+        android:id="@id/drop_down_iv"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_margin="@dimen/dimen_16"
+        android:src="@drawable/ic_dropdown"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredWhiteArrow">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:id="@id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/notification"
+                android:maxLines="1"
+                android:layout_toRightOf="@id/logo"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:id="@id/rel_gen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/recycler_view"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_notification_available"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

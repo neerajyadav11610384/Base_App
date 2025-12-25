@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:visibility="invisible"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:textSize="18.0sp"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found_msg"
+        android:layout_centerInParent="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/custSupport_layout"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@id/radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16">
+            <RadioButton
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/radio_btn_monthly"
+                android:background="@drawable/custom_performance_radio_button"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingTop="@dimen/dimen_8"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_9"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40"
+                android:checked="true"
+                android:minWidth="0.0dip"
+                android:minHeight="0.0dip"
+                android:text="MOC"
+                android:layout_weight="1.0"
+                android:lineSpacingExtra="8.0sp"
+                app:buttonCompat="@null"
+                fontFamily="\@fonts/sf_pro_display_medium"
+                style="@style/RadioButtonStyle" />
+            <RadioButton
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/color_2392ff"
+                android:gravity="center"
+                android:id="@id/radio_btn_daily"
+                android:background="@drawable/custom_performance_radio_button"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingTop="@dimen/dimen_8"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_9"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40"
+                android:checked="false"
+                android:minWidth="0.0dip"
+                android:minHeight="0.0dip"
+                android:text="Day"
+                android:layout_weight="1.0"
+                app:buttonCompat="@null"
+                fontFamily="\@fonts/sf_pro_display_medium"
+                style="@style/RadioButtonStyle" />
+        </RadioGroup>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/lyt_spinner_date"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_10">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_calendar" />
+            <Spinner
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="#ff1c1839"
+                android:id="@id/sp_moc_dropdown"
+                android:background="@drawable/null_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:overlapAnchor="false" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_dropdown_blue" />
+        </LinearLayout>
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:id="@id/tv_moc_date"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:drawableRight="@drawable/ic_dropdown_blue"
+            android:drawablePadding="@dimen/dimen_8"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+    </LinearLayout>
+    <TextView
+        android:textSize="15.0sp"
+        android:textColor="@color/dark_gray"
+        android:background="@color/color_eaeef8"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="Current month MOC performance is projected"
+        android:layout_below="@id/custSupport_layout"
+        android:drawableStart="@drawable/error"
+        android:textAlignment="center"
+        android:paddingStart="10.0dip"
+        android:layout_alignParentEnd="true" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/lv_data"
+        android:background="@color/color_eaeef8"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45.0dip"
+        android:layout_below="@id/custSupport_layout" />
+</RelativeLayout>

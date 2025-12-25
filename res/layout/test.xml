@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_circle_gray"
+    android:layout_width="@dimen/dimen_100"
+    android:layout_height="@dimen/dimen_100"
+    android:layout_marginTop="@dimen/dimen_50"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:background="@drawable/ic_action_phone"
+        android:visibility="visible"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/dimen_25" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center|top"
+        android:background="@drawable/checked_1"
+        android:visibility="visible"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24" />
+</LinearLayout>

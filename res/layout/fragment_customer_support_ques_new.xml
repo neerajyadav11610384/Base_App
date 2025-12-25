@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    android:background="@color/color_e6eaf4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="16.0dip">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_18sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:id="@id/cs_ques"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_14sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_14sp"
+                        android:text="@string/quick_links"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@id/customer_suport_ques_recycler"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@id/progressBar"
+        android:visibility="visible"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:foregroundGravity="center" />
+</FrameLayout>

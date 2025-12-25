@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@id/swipe_loader"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0"
+            android:layout_marginTop="@dimen/dimen_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <com.hul.sambhav.util.CustomizedNestedScrollView
+                android:id="@id/scrollview_base"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@id/layoutKpi"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_16sp"
+                            android:textColor="@color/black"
+                            android:id="@id/textViewKpi"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Performance Metrics"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:layout_marginStart="@dimen/dimen_5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:background="@drawable/gray_gradiant"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="@dimen/dimen_1"
+                            android:layout_marginTop="@dimen/dimen_3"
+                            android:layout_marginStart="@dimen/dimen_15"
+                            android:layout_marginEnd="@dimen/dimen_5"
+                            app:layout_constraintBottom_toBottomOf="@id/textViewKpi"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/textViewKpi"
+                            app:layout_constraintTop_toTopOf="@id/textViewKpi" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:orientation="horizontal"
+                        android:id="@id/recyclerViewPerformanceData"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintTop_toBottomOf="@id/layoutKpi" />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@id/layoutMenu"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        app:layout_constraintTop_toBottomOf="@id/recyclerViewPerformanceData">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_16sp"
+                            android:textColor="@color/black"
+                            android:id="@id/textViewMenu"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Menu"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:layout_marginStart="@dimen/dimen_5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:background="@drawable/gray_gradiant"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="@dimen/dimen_1"
+                            android:layout_marginTop="@dimen/dimen_3"
+                            android:layout_marginStart="@dimen/dimen_15"
+                            android:layout_marginEnd="@dimen/dimen_5"
+                            app:layout_constraintBottom_toBottomOf="@id/textViewMenu"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/textViewMenu"
+                            app:layout_constraintTop_toTopOf="@id/textViewMenu" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@id/recyclerViewTesterItem"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginStart="@dimen/dimen_2"
+                        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                        app:layout_constraintTop_toBottomOf="@id/layoutMenu"
+                        app:spanCount="3" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/order_base_layout"
+                        android:padding="0.0dip"
+                        android:visibility="visible"
+                        android:descendantFocusability="blocksDescendants"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        app:layout_constraintTop_toBottomOf="@id/recyclerViewTesterItem" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.hul.sambhav.util.CustomizedNestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ProgressBar
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="@id/progress_bar"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="@id/no_item_msg"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_items_found"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

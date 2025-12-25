@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:padding="8.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/ll_request_id"
+        android:background="@color/color_f2f2f2"
+        android:padding="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Req id : " />
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@id/tv_request_id_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC" />
+    </LinearLayout>
+    <androidx.appcompat.widget.SearchView
+        android:textSize="@dimen/dimen_15sp"
+        android:id="@id/actvSearchProduct"
+        android:background="@drawable/light_green_rounded_corner"
+        android:padding="2.0dip"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:hint="Search from Requsted Products"
+        android:inputType="textAutoComplete|textAutoCorrect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_request_id" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_15sp"
+        android:textStyle="bold"
+        android:textColor="#ff2c2c6f"
+        android:id="@id/addedProductTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="Added products"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actvSearchProduct" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/black"
+        android:id="@id/textViewNoDataAvalable"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found_msg"
+        android:fontFamily="@font/sf_pro_display_bold"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerViewOffTakeSearch"
+        app:layout_constraintEnd_toEndOf="@id/recyclerViewOffTakeSearch"
+        app:layout_constraintStart_toStartOf="@id/recyclerViewOffTakeSearch"
+        app:layout_constraintTop_toTopOf="@id/recyclerViewOffTakeSearch" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerViewOffTakeSearch"
+        android:background="@color/white"
+        android:paddingBottom="200.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:minHeight="200.0dip"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/addedProductTextView" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutSaveBillCapture"
+        android:background="@drawable/drawable_2392ff_5dp"
+        android:visibility="visible"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@id/ll_textViewTotalMrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/viewMrpSaveDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white"
+                android:id="@id/textViewTotalMrpLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total : "
+                android:layout_marginStart="@dimen/dimen_10" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white"
+                android:id="@id/textViewTotalMrpSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginStart="@dimen/dimen_10" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white"
+                android:id="@id/textViewTotalMrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:layout_marginStart="@dimen/dimen_10" />
+        </LinearLayout>
+        <View
+            android:id="@id/viewMrpSaveDivider"
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_0"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/textViewSave"
+            app:layout_constraintStart_toEndOf="@id/ll_textViewTotalMrp"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:id="@id/textViewSave"
+            android:paddingTop="@dimen/dimen_6"
+            android:paddingBottom="@dimen/dimen_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:paddingStart="@dimen/dimen_12"
+            android:paddingEnd="@dimen/dimen_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewMrpSaveDivider"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/content_retailer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/base_container"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_navigation_lyt">
+        <com.hul.sambhav.util.MovableFloatingActionButton
+            android:layout_gravity="bottom|center|right"
+            android:id="@id/global_voice_search"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.0dip"
+            android:tint="#ffffffff"
+            app:srcCompat="@drawable/ic_mic_white_24dp" />
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0sp"
+        android:gravity="center"
+        android:id="@id/no_network_label"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_net_msg"
+        android:layout_centerInParent="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/bottom_navigation_lyt"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include
+            android:orientation="horizontal"
+            android:id="@id/cart_snackbar"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            layout="@layout/cart_snack_bar" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_gravity="bottom"
+            android:id="@id/bottom_navigation"
+            android:background="@android:color/white"
+            android:visibility="visible"
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:layout_marginStart="0.0dip"
+            android:layout_marginEnd="0.0dip"
+            app:itemIconTint="@drawable/bottom_nav_color"
+            app:itemTextColor="@drawable/bottom_nav_color"
+            app:labelVisibilityMode="labeled"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+            app:menu="@menu/bottom_navigation_new" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/lyt_bottom_navigation"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_alignParentBottom="true">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/bnavgbar"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:overScrollMode="never" />
+    </LinearLayout>
+</RelativeLayout>

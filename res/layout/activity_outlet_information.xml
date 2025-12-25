@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:background="@color/color_2392ff"
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true"
+            app:contentInsetLeft="0.0dip"
+            app:contentInsetStart="0.0dip"
+            app:contentInsetStartWithNavigation="0.0dip"
+            app:navigationIcon="?homeAsUpIndicator"
+            app:popupTheme="@style/AppTheme"
+            app:theme="@style/ToolbarColoredWhiteArrow">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:id="@id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text=""
+                    android:lineSpacingExtra="9.0sp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/toolbar">
+            <RelativeLayout
+                android:id="@id/rel_tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginBottom="0.0dip"
+                    android:layout_marginStart="0.0dip"
+                    android:layout_marginEnd="0.0dip"
+                    app:tabBackground="@drawable/tab_selector_notification"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/color_2392ff"
+                    app:tabIndicatorHeight="3.0dip"
+                    app:tabMode="fixed"
+                    app:tabPaddingEnd="0.0dip"
+                    app:tabPaddingStart="0.0dip"
+                    app:tabSelectedTextColor="@color/color_2392ff"
+                    app:tabTextAppearance="@style/CustomTabText"
+                    app:tabTextColor="@color/color_758da6" />
+            </RelativeLayout>
+            <View
+                android:id="@id/v1"
+                android:background="@color/color_758da6"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_above="@id/view_pager" />
+            <androidx.viewpager.widget.ViewPager
+                android:id="@id/view_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/bottom_lyt"
+                android:layout_below="@id/rel_tabs"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/bottom_lyt"
+                android:layout_below="@id/rel_tabs"
+                layout="@layout/fragment_web_mtpc_store_details" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/bottom_lyt"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_margin="@dimen/dimen_8"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff2392ff"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@id/tx_skip_ov"
+                    android:visibility="gone"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skip"
+                    android:layout_weight="1.0"
+                    android:fontFamily="\@fonts/sf_pro_display_medium"
+                    android:layout_marginStart="@dimen/dimen_20"
+                    android:layout_marginEnd="@dimen/dimen_32"
+                    android:letterSpacing="0.1" />
+                <RelativeLayout
+                    android:id="@id/relLyt_next"
+                    android:background="@drawable/drawable_2392ff_5dp"
+                    android:visibility="visible"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:layout_marginEnd="@dimen/dimen_8">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:id="@id/tv_next"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/enter_store"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/sf_pro_display_bold" />
+                        <ImageView
+                            android:id="@id/img_arrow_navigation"
+                            android:visibility="gone"
+                            android:layout_width="@dimen/dimen_32"
+                            android:layout_height="@dimen/dimen_24"
+                            android:src="@drawable/ic_arrow_forward"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name_sj"
+                            android:layout_marginStart="@dimen/dimen_4"
+                            android:layout_toEndOf="@id/tv_next" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@id/relLyt_ov"
+                    android:background="@drawable/drawable_2392ff_5dp"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3.0">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:id="@id/tv_ov"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/continue_validation"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/sf_pro_display_bold" />
+                        <ImageView
+                            android:id="@id/img_arrow_navigations"
+                            android:layout_width="@dimen/dimen_32"
+                            android:layout_height="@dimen/dimen_24"
+                            android:src="@drawable/ic_arrow_forward"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_4"
+                            android:layout_toEndOf="@id/tv_ov" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@id/relLyt_pv"
+                    android:background="@drawable/drawable_2392ff_5dp"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3.0">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:id="@id/tv_pv"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/executive_validation"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/sf_pro_display_bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <include
+            layout="@layout/fragment_storeboard_image" />
+        <include
+            layout="@layout/fragment_stock_image_new" />
+        <include
+            layout="@layout/fragment_skip_image_capture" />
+        <include
+            layout="@layout/fragment_onboarding_qrcode" />
+        <include
+            layout="@layout/activity_icdscan" />
+        <include
+            layout="@layout/layout_outlet_validation" />
+        <include
+            layout="@layout/outlet_validation_skip_layout" />
+        <include
+            layout="@layout/activity_tsovalidation_new" />
+        <include
+            layout="@layout/digilocker_web" />
+    </RelativeLayout>
+    <include
+        layout="@layout/activity_custom_camera_new" />
+</RelativeLayout>

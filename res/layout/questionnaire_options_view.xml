@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/black"
+        android:id="@id/textViewQuestionOptions"
+        android:background="@drawable/color_4faf53_bouder_5dp"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:text="How Many Outlets Are There in the Village"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

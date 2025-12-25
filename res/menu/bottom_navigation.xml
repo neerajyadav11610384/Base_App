@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/action_menu_shop_front"
+        android:title="" />
+    <item
+        android:id="@id/action_menu_two"
+        android:title="" />
+    <item
+        android:id="@id/action_menu_orders"
+        android:title="" />
+    <item
+        android:id="@id/action_menu_take_order"
+        android:title="" />
+    <item
+        android:id="@id/action_menu_mission"
+        android:title="" />
+</menu>

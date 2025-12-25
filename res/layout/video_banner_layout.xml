@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5"
+    android:layout_marginBottom="@dimen/dimen_5"
+    android:elevation="10.0dip"
+    app:cardCornerRadius="0.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/videoContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:id="@id/video_layout"
+            android:background="@android:color/black"
+            android:layout_width="fill_parent"
+            android:layout_height="224.0dip">
+            <com.hul.sambhav.ui.video.UniversalVideoViewForHome
+                android:id="@id/videoView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                app:uvv_autoRotation="true"
+                app:uvv_fitXY="false" />
+            <com.hul.sambhav.ui.video.UniversalMediaControllerForHome
+                android:id="@id/media_controller"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:uvv_scalable="true" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/fullscreen"
+                android:visibility="gone"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:layout_margin="@dimen/dimen_10"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/uvv_player_scale_btn" />
+        </RelativeLayout>
+        <VideoView
+            android:layout_gravity="center"
+            android:id="@id/videoview"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="224.0dip" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/img_view_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/playpause"
+            android:background="@drawable/uvv_itv_player_play"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="bottom|center|right"
+            android:id="@id/fullscreenview"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

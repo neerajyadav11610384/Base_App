@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/lyt_mtpc_survey"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/mtpc_toolbar"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:id="@id/img_back_arrow"
+                android:visibility="gone"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/back_arrow"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="start|center"
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="MTPC Survey"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_toEndOf="@id/img_back_arrow" />
+            <ImageView
+                android:id="@id/mtpc_survey_exit_btn"
+                android:layout_width="@dimen/dimen_36"
+                android:layout_height="@dimen/dimen_36"
+                android:src="@drawable/ic_logout_red"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/exit"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:orientation="vertical"
+        android:id="@id/nestedScrollViewMission"
+        android:visibility="visible"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/mtpc_toolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.hul.sambhav.util.NonScrollExpandableListView
+            android:id="@id/mtpc_survey_recyclerview"
+            android:background="@color/white"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:visibility="gone"
+            android:scrollbars="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:groupIndicator="@null"
+            android:divider="@color/white"
+            android:dividerHeight="@dimen/dimen_12"
+            android:layout_below="@id/mtpc_toolbar"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8" />
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="?android:progressBarStyle" />
+    <TextView
+        android:textColor="#ff616161"
+        android:id="@id/no_data_tv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found_msg"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

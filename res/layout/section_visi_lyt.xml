@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/max_earn_vbpacks"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dimen_17"
+    android:paddingTop="@dimen/dimen_15"
+    android:paddingRight="@dimen/dimen_17"
+    android:paddingBottom="@dimen/dimen_15"
+    android:visibility="visible"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_1c1839_1"
+            android:gravity="left"
+            android:id="@id/third_section_name"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/vbpacks_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dimen_2sp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/white"
+                android:id="@id/vbpacks_value"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:lineSpacingExtra="@dimen/dimen_2sp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:lineHeight="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

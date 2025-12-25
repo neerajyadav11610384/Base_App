@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/bottomSheet_order_missed"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_60">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:text="@string/order_missed"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <ImageView
+            android:gravity="center_vertical"
+            android:id="@id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_close_black" />
+    </RelativeLayout>
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_16">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="normal"
+            android:textColor="@color/color_41586f"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Store"
+            android:layout_weight="25.0"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  :  "
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="normal"
+            android:textColor="@color/color_41586f"
+            android:layout_gravity="center"
+            android:id="@id/tv_customer_name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="75.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/target_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_16">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="normal"
+            android:textColor="@color/color_41586f"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/beat"
+            android:layout_weight="25.0"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  :  "
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="normal"
+            android:textColor="@color/color_41586f"
+            android:layout_gravity="center"
+            android:id="@id/tv_beat_name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="75.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_bold" />
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@drawable/edit_text_white_box_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_margin="@dimen/dimen_16">
+        <Spinner
+            android:layout_gravity="center"
+            android:id="@id/sp_order_reasons"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_down_arrow" />
+    </RelativeLayout>
+    <TextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/confirm"
+        android:background="@color/color_2392ff"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:text="@string/confirm"
+        android:layout_weight="50.0"
+        android:fontFamily="@font/sf_pro_display_bold" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@id/lin_container"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_16"
+    android:layout_marginTop="@dimen/dimen_12"
+    android:layout_marginRight="@dimen/dimen_16"
+    android:layout_marginBottom="@dimen/dimen_12"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_gravity="center"
+        android:id="@id/img_item"
+        android:layout_width="@dimen/dimen_26"
+        android:layout_height="@dimen/dimen_26"
+        android:scaleType="fitXY" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_41586f"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@id/txt_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:text="Account Balance"
+        android:lineSpacingExtra="2.7999878sp"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:layout_marginStart="@dimen/dimen_30"
+        app:lineHeight="@dimen/dimen_16sp" />
+</LinearLayout>

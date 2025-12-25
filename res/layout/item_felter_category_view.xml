@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_120"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/cardViewMainLayout"
+            android:background="@drawable/catogery_filter_item_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:id="@id/layoutSelected"
+                android:padding="@dimen/dimen_5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/imageViewCategory"
+                    android:layout_width="@dimen/dimen_60"
+                    android:layout_height="@dimen/dimen_60"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:id="@id/textViewCategoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:maxLines="2"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

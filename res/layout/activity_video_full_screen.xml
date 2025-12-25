@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/video_layout"
+        android:background="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.hul.sambhav.ui.video.UniversalVideoView
+            android:layout_gravity="center"
+            android:id="@id/videoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:uvv_autoRotation="true"
+            app:uvv_fitXY="false" />
+        <com.hul.sambhav.ui.video.UniversalMediaController
+            android:id="@id/media_controller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:uvv_scalable="true" />
+    </FrameLayout>
+</RelativeLayout>

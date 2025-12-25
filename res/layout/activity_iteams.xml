@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView
+        android:id="@id/im_capture_face"
+        android:background="@color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:textSize="10.0sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/btn_mark_attendence"
+        android:background="@color/colorPrimary"
+        android:layout_width="280.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginBottom="24.0dip"
+        android:text="Mark Attendence"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/im_capture_face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

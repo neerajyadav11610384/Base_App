@@ -1,0 +1,23 @@
+Directory: /storage/emulated/0/Download/Telegram/base_src
+Search: development_settings_enabled
+Parameters: by file content, recursive search
+Total: 6
+
+File: smali_classes2/com/hul/sambhav/salesJourney/ui/newstorecreation/NewOutletListActivity.smali
+line 16239:     const-string v2, "development_settings_enabled"
+
+File: smali_classes2/com/hul/sambhav/ui/login/OutletRegistrationActivity.smali
+line 112868:     const-string v2, "development_settings_enabled"
+
+File: smali_classes2/com/hul/sambhav/ui/login/RetailerHomeActivity.smali
+line 42831:     const-string v2, "development_settings_enabled"
+
+File: smali_classes2/com/hul/sambhav/ui/SalesEdgeAppCompatActivity.smali
+line 1274:     const-string v2, "development_settings_enabled"
+
+File: smali_classes2/com/hul/sambhav/salesJourney/ui/login/SalesMainActivity.smali
+line 15570:     const-string v2, "development_settings_enabled"
+
+File: smali_classes2/com/hul/sambhav/salesJourney/ui/visitordetails/VisitorDetailsActivity.smali
+line 12899:     const-string v2, "development_settings_enabled"
+

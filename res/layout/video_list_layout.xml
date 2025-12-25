@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/backgroung_white_border"
+    android:padding="@dimen/dimen_12"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_16"
+    android:layout_marginTop="@dimen/dimen_12"
+    android:layout_marginRight="@dimen/dimen_16"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/lyt_training_res"
+        android:background="@drawable/backgroung_white_border"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:id="@id/img_content_type"
+            android:visibility="gone"
+            android:layout_width="64.0dip"
+            android:layout_height="64.0dip"
+            android:src="@drawable/sample_doc" />
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@id/lyt_videoContainer"
+            android:background="@color/black"
+            android:layout_width="103.0dip"
+            android:layout_height="64.0dip"
+            android:foregroundGravity="center">
+            <ImageView
+                android:id="@id/video_container"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@id/img_play"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_media_play" />
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@id/progress_bar"
+                android:visibility="gone"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24" />
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="64.0dip">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff41586f"
+                android:id="@id/tv_video_name"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff758da6"
+                android:id="@id/tv_video_time"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_16"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

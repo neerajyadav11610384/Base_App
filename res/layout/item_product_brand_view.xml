@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/layoutMainBrand"
+    android:background="@drawable/drawable_corner_b3bac5"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="@dimen/dimen_16sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/tv_all_brands"
+        android:padding="@dimen/dimen_5"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="All\nBrands"
+        app:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.hul.sambhav.util.DynamicImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/brandImage"
+        android:padding="@dimen/dimen_5"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_img" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/imageViewBrandOffers"
+        android:visibility="visible"
+        android:layout_width="@dimen/dimen_18"
+        android:layout_height="@dimen/dimen_18"
+        app:layout_constraintEnd_toEndOf="@id/brandImage"
+        app:layout_constraintTop_toTopOf="@id/brandImage"
+        app:srcCompat="@drawable/ic_offer_red" />
+</androidx.constraintlayout.widget.ConstraintLayout>

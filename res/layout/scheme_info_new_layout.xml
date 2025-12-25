@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/offerAppliedLinear"
+        android:background="@drawable/bg_offer"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/offerApplied_img"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+            app:srcCompat="@drawable/scheme_green" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_00a41a"
+            android:layout_gravity="center"
+            android:id="@id/offerApplied"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:layout_marginStart="@dimen/dimen_6" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_2392ff"
+            android:layout_gravity="center"
+            android:id="@id/select_offer"
+            android:paddingLeft="@dimen/dimen_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:textAllCaps="true"
+            android:fontFamily="@font/sf_pro_display_medium" />
+    </LinearLayout>
+</RelativeLayout>

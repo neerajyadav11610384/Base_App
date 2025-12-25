@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/hdr_lyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@id/tx_packs"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="Packs"
+            android:layout_weight="1.0" />
+        <View
+            android:background="#ffffffff"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@id/tx_ach"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="0"
+            android:layout_weight="1.0"
+            android:textAllCaps="true" />
+        <View
+            android:background="#ffffffff"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@id/tx_bal"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="0"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <View
+        android:background="#ffdcd9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+</LinearLayout>

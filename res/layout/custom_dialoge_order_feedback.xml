@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:gravity="right"
+        android:id="@id/dismiss_dialog"
+        android:visibility="gone"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_close_black" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0sp"
+        android:textColor="@color/color_1c1839_1"
+        android:gravity="start"
+        android:id="@id/dlg_text"
+        android:padding="@dimen/dimen_5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16"
+        android:text="dlg_text" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_2392ff"
+        android:gravity="center"
+        android:id="@id/callRetailer"
+        android:background="@drawable/bg_view_order"
+        android:paddingTop="5.0dip"
+        android:paddingBottom="10.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:layout_below="@id/dlg_text"
+        android:fontFamily="@font/sf_pro_display_medium" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/linear_callRetailer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16"
+        android:layout_below="@id/dlg_text">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_1c1839_1"
+            android:id="@id/textViewDisName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dimen_7"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDisStoreName" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_2392ff"
+            android:id="@id/textViewHelpDisPhoneNo"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_10"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:drawableTint="@color/color_2392ff"
+            app:drawableLeftCompat="@drawable/ic_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDisName" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/btn_Okay"
+        android:background="@drawable/bg_pending_amount"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="@string/Okay"
+        android:layout_below="@id/linear_callRetailer"
+        android:fontFamily="@font/sf_pro_display_bold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/btn_close"
+        android:background="@drawable/bg_pending_amount"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:text="@string/close"
+        android:layout_below="@id/btn_Okay"
+        android:fontFamily="@font/sf_pro_display_bold" />
+</RelativeLayout>

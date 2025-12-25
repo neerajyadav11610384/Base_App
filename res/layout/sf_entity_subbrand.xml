@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff000000"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:layout_gravity="center"
+        android:id="@id/tv_subbrand_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="8.0dip"
+        android:singleLine="true"
+        android:layout_weight="1.0"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:paddingStart="4.0dip"
+        android:paddingEnd="4.0dip" />
+    <ImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/img_subbrand_arrow"
+        android:layout_width="36.0dip"
+        android:layout_height="36.0dip"
+        android:src="@drawable/sf_arrow_rounded_down"
+        android:layout_marginEnd="8.0dip" />
+</LinearLayout>

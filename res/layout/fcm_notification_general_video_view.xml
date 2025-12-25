@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutMain"
+        android:padding="@dimen/dimen_16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_1c1839_1"
+            android:id="@id/textViewNotificationName"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:lineSpacingExtra="@dimen/dimen_5"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewNotificationTime" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_758da6"
+            android:id="@id/textViewNotificationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:layout_marginStart="@dimen/dimen_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_41586f"
+            android:id="@id/textViewNotificationDesc"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:lineSpacingExtra="7.0sp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewNotificationName" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/imageViewNotificationImage"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toBottomOf="@id/textViewNotificationDesc" />
+        <FrameLayout
+            android:id="@id/videoContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="140.0dip"
+            android:layout_marginTop="@dimen/dimen_10"
+            app:layout_constraintTop_toBottomOf="@id/textViewNotificationDesc">
+            <RelativeLayout
+                android:id="@id/video_layout"
+                android:background="@android:color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <com.hul.sambhav.ui.video.UniversalVideoViewForHome
+                    android:id="@id/videoView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    app:uvv_autoRotation="true"
+                    app:uvv_fitXY="false" />
+                <com.hul.sambhav.ui.video.UniversalMediaControllerForHome
+                    android:id="@id/media_controller"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:uvv_scalable="true" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/fullscreen"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dimen_32"
+                    android:layout_height="@dimen/dimen_32"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/uvv_player_scale_btn" />
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@id/img_view_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@id/playpause"
+                android:background="@drawable/uvv_itv_player_play"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="bottom|center|right"
+                android:id="@id/fullscreenview"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@id/viewOrder"
+        android:background="@color/color_e6eaf4"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@id/layoutMain" />
+</androidx.constraintlayout.widget.ConstraintLayout>

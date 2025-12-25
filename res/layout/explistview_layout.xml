@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="20.0sp"
+        android:textColor="#ff3b1c6a"
+        android:gravity="center"
+        android:id="@id/section_title"
+        android:background="@drawable/background_border_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_margin="20.0dip"
+        android:text="@string/cmoc_schems"
+        android:fontFamily="@font/sf_pro_display_bold" />
+    <com.hul.sambhav.ui.schemes.NoScrollExListView
+        android:id="@id/expListView_claims1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10.0dip"
+        android:groupIndicator="@android:color/transparent"
+        android:childIndicator="@null"
+        android:childDivider="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1.0dip" />
+</LinearLayout>

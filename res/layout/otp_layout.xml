@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@id/pin_content_layout"
+    android:layout_width="300.0dip"
+    android:layout_height="fill_parent"
+    android:layout_margin="20.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:background="@drawable/green_corner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/otp_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/enter_otp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/pin_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="30.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginBottom="20.0dip">
+            <EditText
+                android:id="@id/pin_first_edittext"
+                android:layout_width="42.0dip"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_regular"
+                style="@style/pin_edittext_style" />
+            <EditText
+                android:id="@id/pin_second_edittext"
+                android:layout_width="42.0dip"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pin_first_edittext"
+                android:fontFamily="@font/sf_pro_display_regular"
+                style="@style/pin_edittext_style" />
+            <EditText
+                android:id="@id/pin_third_edittext"
+                android:layout_width="42.0dip"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pin_second_edittext"
+                android:fontFamily="@font/sf_pro_display_regular"
+                style="@style/pin_edittext_style" />
+            <EditText
+                android:id="@id/pin_forth_edittext"
+                android:layout_width="42.0dip"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pin_third_edittext"
+                android:fontFamily="@font/sf_pro_display_regular"
+                style="@style/pin_edittext_style" />
+            <EditText
+                android:id="@id/pin_fifth_edittext"
+                android:layout_width="42.0dip"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pin_forth_edittext"
+                android:fontFamily="@font/sf_pro_display_regular"
+                style="@style/pin_edittext_style" />
+            <EditText
+                android:id="@id/pin_sixth_edittext"
+                android:layout_width="42.0dip"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pin_fifth_edittext"
+                android:fontFamily="@font/sf_pro_display_regular"
+                style="@style/pin_edittext_style" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/dark_blue"
+                android:id="@id/resend_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resend_otp"
+                android:layout_below="@id/pin_forth_edittext"
+                android:layout_centerHorizontal="true" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="12.0sp"
+                android:textColor="@color/dark_blue"
+                android:id="@id/resend_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/resend_otp"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:textColor="@color/white"
+                android:id="@id/update_mobile_no"
+                android:background="@drawable/green_rounded_corner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/submit_caps"
+                android:layout_below="@id/resend_msg"
+                android:layout_centerHorizontal="true" />
+            <EditText
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@id/pin_hidden_edittext"
+                android:background="@null"
+                android:layout_width="1.0dip"
+                android:layout_height="1.0dip"
+                android:text=""
+                android:cursorVisible="true"
+                android:maxLength="6"
+                android:layout_below="@id/update_mobile_no"
+                android:inputType="phone" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textStyle="bold"
+                android:id="@id/txt_helpline"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_below="@id/update_mobile_no" />
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="right"
+            android:id="@id/close"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_action_close" />
+    </FrameLayout>
+</LinearLayout>

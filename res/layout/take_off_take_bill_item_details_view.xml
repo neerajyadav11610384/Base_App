@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_42526e"
+        android:ellipsize="end"
+        android:id="@id/textViewProductName"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.85" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_42526e"
+        android:id="@id/textViewUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unit"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toEndOf="@id/textViewProductName"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_42526e"
+        android:id="@id/textViewMrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:text="@string/txt_mrp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintStart_toStartOf="@id/textViewProductName"
+        app:layout_constraintTop_toBottomOf="@id/textViewProductName" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_42526e"
+        android:id="@id/textViewMrpValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:layout_marginStart="@dimen/dimen_5"
+        app:layout_constraintBottom_toBottomOf="@id/textViewMrp"
+        app:layout_constraintStart_toEndOf="@id/textViewMrp"
+        app:layout_constraintTop_toTopOf="@id/textViewMrp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@id/textViewUnitValue"
+        android:background="@drawable/drawable_2392ff_5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_8"
+        app:layout_constraintEnd_toEndOf="@id/textViewUnit"
+        app:layout_constraintStart_toStartOf="@id/textViewUnit"
+        app:layout_constraintTop_toBottomOf="@id/textViewUnit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_take_order"
+        android:id="@id/actionMenuOffTakeBillCapture"
+        android:title="@string/offtake_bill_capture" />
+    <item
+        android:icon="@drawable/ic_my_orders"
+        android:id="@id/actionMenuOffTakeBillDetails"
+        android:title="@string/offtake_bill_details" />
+    <item
+        android:icon="@drawable/ic_my_orders"
+        android:id="@id/actionMenuOffTakeBillSummary"
+        android:title="@string/bill_summary" />
+</menu>

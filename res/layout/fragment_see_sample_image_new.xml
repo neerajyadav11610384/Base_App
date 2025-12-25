@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dimen_8"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.65"
+        android:layout_marginStart="@dimen/dimen_15">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@id/imageViewClick"
+                android:layout_width="wrap_content"
+                android:layout_height="240.0dip"
+                android:src="@drawable/correct_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:id="@id/viewColorShade"
+                android:background="#30000000"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="@dimen/dimen_0"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewClick"
+                app:layout_constraintEnd_toEndOf="@id/imageViewClick"
+                app:layout_constraintStart_toStartOf="@id/imageViewClick"
+                app:layout_constraintTop_toTopOf="@id/imageViewClick" />
+            <ImageView
+                android:layout_width="55.0dip"
+                android:layout_height="55.0dip"
+                android:src="@drawable/check_circle"
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toBottomOf="@id/viewColorShade"
+                app:layout_constraintEnd_toEndOf="@id/viewColorShade"
+                app:layout_constraintStart_toStartOf="@id/viewColorShade"
+                app:layout_constraintTop_toTopOf="@id/viewColorShade" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.35"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_20">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@id/close_img_blur"
+                android:layout_width="@dimen/dimen_25"
+                android:layout_height="@dimen/dimen_25"
+                android:src="@drawable/ic_not_interested"
+                android:layout_centerVertical="true"
+                app:tint="@color/rednew" />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:id="@id/blurred_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Blurred Images"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_toEndOf="@id/close_img_blur" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10">
+            <ImageView
+                android:id="@id/close_img_dark"
+                android:layout_width="@dimen/dimen_25"
+                android:layout_height="@dimen/dimen_25"
+                android:src="@drawable/ic_not_interested"
+                android:layout_centerVertical="true"
+                app:tint="@color/rednew" />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:id="@id/dark_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avoid Dark Images"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_toEndOf="@id/close_img_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10">
+            <ImageView
+                android:id="@id/close_img_far"
+                android:layout_width="@dimen/dimen_25"
+                android:layout_height="@dimen/dimen_25"
+                android:src="@drawable/ic_not_interested"
+                android:layout_centerVertical="true"
+                app:tint="@color/rednew" />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:id="@id/close_up_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No CLOSE UP/FAR Images"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_toEndOf="@id/close_img_far" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10">
+            <ImageView
+                android:id="@id/close_img_tilted"
+                android:layout_width="@dimen/dimen_25"
+                android:layout_height="@dimen/dimen_25"
+                android:src="@drawable/ic_not_interested"
+                android:layout_centerVertical="true"
+                app:tint="@color/rednew" />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:id="@id/tilted_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No TILTED Images"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_toEndOf="@id/close_img_tilted" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

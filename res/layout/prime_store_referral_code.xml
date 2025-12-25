@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/lyt_referral_code"
+    android:background="@color/white"
+    android:visibility="visible"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar_store_info"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredWhiteArrow">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/rl_title_store_info"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/tv_title_store_info"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/store_info"
+                android:maxLines="1"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@id/ll_prime_store_referral_code"
+        android:padding="@dimen/dimen_10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_store_info">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_40"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/dimen_28sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/referral_code" />
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:id="@id/tv_referral_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:text="" />
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@id/img_scan_qr_for_referral"
+                android:layout_width="220.0dip"
+                android:layout_height="220.0dip"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:src="@drawable/url_link"
+                android:layout_weight="1.0"
+                android:contentDescription="@string/todo" />
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:text="@string/show_qr_code_to_retailer"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:text="@string/to_start_shikhar_onboarding"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:id="@id/tv_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:text="Mobile number : "
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="normal"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_qr_page" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/btn_exit_referral_code"
+        android:background="@drawable/bg_login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:text="@string/exit"
+        android:fontFamily="@font/sf_pro_display_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

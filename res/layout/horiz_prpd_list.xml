@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#ffebeff8"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/black"
+        android:gravity="center|left"
+        android:id="@id/pack_title"
+        android:padding="5.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:fontFamily="@font/sf_pro_display_bold" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/pack_title">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/hoz_prdlist_recyclerview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/overlay_lyt"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found_msg"
+        android:layout_centerInParent="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/custSupport_layout"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@id/radio_group"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:textSize="10.0sp"
+                android:textStyle="bold"
+                android:textColor="@drawable/text_color_selector"
+                android:gravity="center"
+                android:id="@id/radio_btn_active"
+                android:background="@color/white"
+                android:visibility="visible"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dip"
+                android:layout_marginRight="10.0dip"
+                android:text="@string/open"
+                android:layout_weight="1.0"
+                app:buttonCompat="@null"
+                style="@style/RadioButtonStyle" />
+            <RadioButton
+                android:textSize="10.0sp"
+                android:textStyle="bold"
+                android:textColor="@drawable/text_color_selector"
+                android:gravity="center"
+                android:id="@id/radio_btn_inactive"
+                android:background="@color/white"
+                android:visibility="visible"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dip"
+                android:text="@string/closed"
+                android:layout_weight="1.0"
+                app:buttonCompat="@null"
+                style="@style/RadioButtonStyle" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@id/selected_view_open"
+                android:background="@color/dark_moderate_lime_green"
+                android:visibility="visible"
+                android:layout_width="0.0dip"
+                android:layout_height="5.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1.0" />
+            <View
+                android:id="@id/selected_view_close"
+                android:background="@color/dark_moderate_lime_green"
+                android:visibility="invisible"
+                android:layout_width="0.0dip"
+                android:layout_height="5.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/custSupport_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="3.0dip"
+        android:layout_below="@id/custSupport_layout" />
+</RelativeLayout>

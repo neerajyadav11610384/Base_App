@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:paddingLeft="@dimen/dimen_10"
+    android:paddingTop="@dimen/dimen_10"
+    android:paddingRight="@dimen/dimen_10"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/viewIndicater"
+        android:background="@drawable/drawable_41586e"
+        android:layout_width="@dimen/dimen_5"
+        android:layout_height="@dimen/dimen_5"
+        app:layout_constraintBottom_toBottomOf="@id/textViewviewMoreText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewviewMoreText" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/color_1c1839_1"
+        android:id="@id/textViewviewMoreText"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:text="Demo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/viewIndicater"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

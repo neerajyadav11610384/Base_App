@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/exit_outlet_coordinates"
+    android:background="#b3000000"
+    android:visibility="gone"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="350.0dip"
+        android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:background="#ff2392ff"
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            app:theme="@style/ToolTheme">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/dimen_18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@id/txt_header_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginBottom="@dimen/dimen_16"
+                    android:text="Uncovered Outlet"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="8.0sp"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    fontFamily="\@fonts/sf_pro_display_medium" />
+                <ImageView
+                    android:id="@id/cancel_button"
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_marginRight="@dimen/dimen_16"
+                    android:src="@drawable/ic_close_white"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:scrollbars="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="normal"
+                    android:textColor="#ff1c1839"
+                    android:gravity="start"
+                    android:id="@id/tv_outlet_dist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_14"
+                    android:layout_marginLeft="@dimen/dimen_24"
+                    android:layout_marginTop="@dimen/dimen_24"
+                    android:layout_marginRight="@dimen/dimen_24"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    android:text=" "
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@id/btn_gps_coord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="GPS Coordinates"
+                    android:layout_below="@id/tv_outlet_dist"
+                    android:layout_centerInParent="true" />
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="normal"
+                    android:textColor="#ff1c1839"
+                    android:gravity="start"
+                    android:id="@id/tv_close_hdr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_24"
+                    android:layout_marginTop="40.0dip"
+                    android:layout_marginRight="@dimen/dimen_24"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    android:text="Go ahead and add them through your app"
+                    android:layout_below="@id/btn_gps_coord"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <Button
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@id/btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="Close"
+                    android:layout_below="@id/tv_close_hdr"
+                    android:layout_centerInParent="true"
+                    android:lineSpacingExtra="9.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbarOffTake"
+        android:background="#eeffffff"
+        android:visibility="visible"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/DrawerIcon" />
+    <FrameLayout
+        android:id="@id/frameLayoutBaseContainer"
+        android:background="@color/white"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarOffTake" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_gravity="bottom"
+        android:id="@id/bottom_navigation"
+        android:background="@android:color/white"
+        android:visibility="visible"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_marginStart="0.0dip"
+        android:layout_marginEnd="0.0dip"
+        app:itemIconTint="@drawable/bottom_nav_color"
+        app:itemTextColor="@drawable/bottom_nav_color"
+        app:labelVisibilityMode="labeled"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayoutBaseContainer"
+        app:menu="@menu/bottom_navigation_off_take" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,183 @@
+{
+  "messagecode": 200,
+  "message": "success",
+  "oos": [
+    {
+      "oos_name": "Offtake Values",
+      "subcategories": {
+        "Lips": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 47733,
+          "Lakme Absolute": 160189,
+          "Lakme Skin": 0
+        },
+        "Face": {
+          "LAKME": 4299,
+          "Lakme 9 to 5": 30237,
+          "Lakme Absolute": 143034,
+          "Lakme Skin": 0
+        },
+        "Eye": {
+          "LAKME": 535,
+          "Lakme 9 to 5": 20078,
+          "Lakme Absolute": 41158,
+          "Lakme Skin": 0
+        },
+        "Sun Protection": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 7217
+        },
+        "Nails": {
+          "LAKME": 931,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "CC & Lumi": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 26706
+        },
+        "Cream": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 650,
+          "Lakme Skin": 0
+        },
+        "Day & Night Cream": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 3970
+        },
+        "Face Mask": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 1598
+        }
+      }
+    },
+    {
+      "oos_name": "Offtake Bills",
+      "subcategories": {
+        "Lips": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 79,
+          "Lakme Absolute": 175,
+          "Lakme Skin": 0
+        },
+        "Face": {
+          "LAKME": 5,
+          "Lakme 9 to 5": 48,
+          "Lakme Absolute": 158,
+          "Lakme Skin": 0
+        },
+        "Eye": {
+          "LAKME": 3,
+          "Lakme 9 to 5": 49,
+          "Lakme Absolute": 47,
+          "Lakme Skin": 0
+        },
+        "Sun Protection": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 12
+        },
+        "Nails": {
+          "LAKME": 10,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "CC & Lumi": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 50
+        },
+        "Cream": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 1,
+          "Lakme Skin": 0
+        },
+        "Day & Night Cream": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 6
+        },
+        "Face Mask": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 2
+        }
+      }
+    },
+    {
+      "oos_name": "Secondary Sales",
+      "subcategories": {
+        "Lips": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "Face": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "Eye": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "Sun Protection": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "Nails": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "CC & Lumi": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "Cream": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "Day & Night Cream": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        },
+        "Face Mask": {
+          "LAKME": 0,
+          "Lakme 9 to 5": 0,
+          "Lakme Absolute": 0,
+          "Lakme Skin": 0
+        }
+      }
+    }
+  ]
+}

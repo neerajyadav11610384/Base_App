@@ -1,0 +1,7 @@
+Blur
+Human
+No_product
+Close_image
+Far_image
+Orientation
+Valid

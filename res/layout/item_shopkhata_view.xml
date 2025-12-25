@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/rootViewLayout"
+    android:paddingLeft="@dimen/dimen_10"
+    android:paddingTop="@dimen/dimen_5"
+    android:paddingRight="@dimen/dimen_10"
+    android:paddingBottom="@dimen/dimen_5"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/customerImage"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginStart="@dimen/dimen_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_customer_holder_icon" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="#ff41586f"
+        android:ellipsize="end"
+        android:id="@id/customerName"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:maxLines="1"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_5"
+        app:layout_constraintBottom_toBottomOf="@id/customerImage"
+        app:layout_constraintEnd_toStartOf="@id/customerBlance"
+        app:layout_constraintStart_toEndOf="@id/customerImage"
+        app:layout_constraintTop_toTopOf="@id/customerImage" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="#ffdc346c"
+        android:gravity="end"
+        android:id="@id/customerBlance"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_7"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:layout_marginStart="@dimen/dimen_7"
+        app:layout_constraintBottom_toBottomOf="@id/customerImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/customerImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

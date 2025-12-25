@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/fragment_navigation_drawer"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/profile_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@color/color_e6eaf4"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@id/profile_imageview"
+                android:layout_width="65.0dip"
+                android:layout_height="65.0dip"
+                app:srcCompat="@drawable/default_user" />
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_toLeftOf="@id/imageEdit">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_16sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:ellipsize="end"
+                        android:gravity="center|left"
+                        android:id="@id/email_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:maxLines="1"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:textColor="@color/color_41586f"
+                        android:ellipsize="end"
+                        android:gravity="center|left"
+                        android:id="@id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text=""
+                        android:maxLines="1"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:id="@id/imageEdit"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_view_all_profile" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/drawerRecyclerView"
+        android:visibility="gone"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30.0dip"
+        android:layout_below="@id/profile_header"
+        android:overScrollMode="never" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="15.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_moderate_lime_green"
+        android:gravity="center"
+        android:id="@id/version_name"
+        android:padding="5.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/sf_pro_display_bold" />
+</RelativeLayout>

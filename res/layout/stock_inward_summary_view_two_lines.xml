@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:outlineSpotShadowColor="@color/gray"
+    app:cardCornerRadius="@dimen/dimen_5"
+    app:cardElevation="@dimen/dimen_2"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/cl_top"
+        android:background="@drawable/ripple_background_stock"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingTop="4.0dip"
+        android:paddingRight="@dimen/dimen_2"
+        android:paddingBottom="4.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@id/tv_product"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Product ABCDEFGHIJKLMNO"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:fontFamily="@font/sf_pro_display_bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/ll_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_product">
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_unit"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Unit"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_mrp"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="MRP"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_expiry"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="20-01-2023"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_total"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="TOTAL"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_transaction_date"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Transaction"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

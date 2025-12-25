@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/buttonContinue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@id/redeemcoupon_Linearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/voucher_redeem" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_20"
+                android:id="@id/vouchercode_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_90"
+                android:text="Voucher code"
+                android:layout_marginStart="@dimen/dimen_40"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/redeemcoupon_Linearlayout" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:textSize="@dimen/dimen_20"
+                android:id="@id/editTextEnterCoupon"
+                android:background="@drawable/light_gray_rounded_corner"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:hint="Enter here"
+                android:inputType="textPersonName"
+                android:layout_marginStart="@dimen/dimen_40"
+                android:layout_marginEnd="@dimen/dimen_40"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vouchercode_textview" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_13"
+                android:id="@id/textViewAlphanumeric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="Enter the alpha-numeric voucher code"
+                android:layout_marginStart="@dimen/dimen_40"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextEnterCoupon" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/textViewOr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="or"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewAlphanumeric" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="horizontal"
+                android:id="@id/constraintLayoutScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewOr">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/imageViewbarCode"
+                    android:padding="@dimen/dimen_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_barcode_scanner"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_16"
+                    android:textColor="#ff6093b0"
+                    android:id="@id/textViewScan"
+                    android:padding="@dimen/dimen_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan QR-Code"
+                    app:layout_constraintBottom_toBottomOf="@id/imageViewbarCode"
+                    app:layout_constraintStart_toEndOf="@id/imageViewbarCode"
+                    app:layout_constraintTop_toTopOf="@id/imageViewbarCode" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <Button
+        android:id="@id/buttonContinue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:text="Continue"
+        android:layout_marginStart="@dimen/dimen_15"
+        android:layout_marginEnd="@dimen/dimen_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ProgressBar
+        android:id="@id/progressBar"
+        android:visibility="gone"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

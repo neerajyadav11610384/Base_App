@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20.0dip"
+    app:cardElevation="10.0dip"
+    app:cardMaxElevation="12.0dip"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@id/iv_img"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="250.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:src="@drawable/default_img" />
+            <ImageView
+                android:layout_gravity="end"
+                android:id="@id/btn_close"
+                android:padding="@dimen/dimen_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clear" />
+        </FrameLayout>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@id/tx_msg_title"
+            android:paddingLeft="24.0dip"
+            android:paddingRight="24.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:hint="Message Title" />
+        <TextView
+            android:textColor="@color/black"
+            android:id="@id/tx_msg_body"
+            android:paddingLeft="24.0dip"
+            android:paddingRight="24.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:hint="Message body" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <WebView
+            android:id="@id/web_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@id/progressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="3"
+            android:progress="100"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            style="?android:progressBarStyle" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

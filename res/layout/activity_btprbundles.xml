@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/rlyt_hdr"
+        android:background="@drawable/add_blue_button"
+        android:paddingBottom="3.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_70">
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:id="@id/tv_hdr"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bundle TPR Details " />
+        <TextView
+            android:textSize="11.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tv_bundle_tpr_text"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="Dove AD LCS 3% Assortment TPR East + South - MOC 02-GT+RD+RU MOC "
+            android:maxLines="2"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/add_blue_button"
+        android:paddingBottom="3.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_80">
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:id="@id/tx_scheme_type"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scheme Type " />
+        <TextView
+            android:textSize="11.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tx_dis_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:text="Assortment BTPR "
+            android:maxLines="2"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:id="@id/tx_dis"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:text="Dis Type " />
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:id="@id/tx_dis_basis_rupees"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40.0dip"
+            android:text="DisBasis" />
+        <TextView
+            android:textSize="11.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28.0dip"
+            android:text="Rupees"
+            android:maxLines="2"
+            android:layout_marginEnd="55.0dip"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:textSize="11.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48.0dip"
+            android:text="Rupees"
+            android:maxLines="2"
+            android:layout_marginEnd="55.0dip"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/add_blue_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_4">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:id="@id/tx_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valid From: "
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tx_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21/02/22"
+            android:layout_toRightOf="@id/tx_date"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:id="@id/tv_tlsd_ach_hdr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valid To: "
+            android:layout_toLeftOf="@id/tv_tlsd_ach_data"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tv_tlsd_ach_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20/03/22"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ff3ea5f6"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_4">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tx_clus_hdr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clus ID "
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tx_cls_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tx_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ratio"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="C1"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/dimen_8" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_tgt_ach_gpsbp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOVE A D SHAMPOO MID"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_gpsbp_per"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <View
+        android:background="#ffdcd9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/dimen_8" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_tgt_ach_tlsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOVE A D SMALL BOTTLE"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_tlsd_per"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <View
+        android:background="#ffdcd9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:background="@drawable/add_blue_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="100.0dip"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_4">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disc"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/dimen_8" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="1.50"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <View
+        android:background="#ffdcd9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/dimen_8" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="3.00"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <View
+        android:background="#ffdcd9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+</LinearLayout>

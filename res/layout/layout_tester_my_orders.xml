@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/nestedScrollViewOrder"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="#ffdce5ed"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recyclerView"
+                android:padding="@dimen/dimen_11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="vertical"
+                android:id="@id/pastOrdersLinear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_11"
+                app:layout_constraintTop_toBottomOf="@id/recyclerView">
+                <View
+                    android:id="@id/pastOrderDivider"
+                    android:background="@color/secondary_text_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8000001dip"
+                    android:layout_marginBottom="@dimen/dimen_15"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@id/layoutPastOrder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    app:layout_constraintTop_toBottomOf="@id/pastOrderDivider">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_18sp"
+                        android:textColor="@color/text_color"
+                        android:id="@id/textViewPastOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/past_orders"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_16sp"
+                        android:textColor="@color/color_41586f"
+                        android:id="@id/pastOrderCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:layout_marginStart="@dimen/dimen_5"
+                        app:layout_constraintStart_toEndOf="@id/textViewPastOrder"
+                        app:layout_constraintTop_toTopOf="@id/textViewPastOrder" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/pastOrderRecyclerView"
+                    android:background="#ffdce5ed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@id/layoutPastOrder" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No orders found"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

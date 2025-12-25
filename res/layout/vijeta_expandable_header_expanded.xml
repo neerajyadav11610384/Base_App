@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:id="@id/vijeta_exp_header1"
+        android:background="@color/dark_moderate_lime_green"
+        android:paddingTop="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="right"
+            android:id="@id/vijeta_indicator_arrow"
+            android:visibility="invisible"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_marginRight="14.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="14.0dip"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/icon_collapse" />
+        <LinearLayout
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@id/txt_vijeta_achv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JUNE - 2017"
+                android:fontFamily="@font/sf_pro_display_bold" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="12.0sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@id/txt_moc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_moc"
+                android:fontFamily="@font/sf_pro_display_light" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/vijeta_indicator_arrow"
+            android:layout_toStartOf="@id/vijeta_indicator_arrow">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@id/txt_vijeta_achv_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toLeftOf="@id/vijeta_indicator_arrow"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:layout_toStartOf="@id/vijeta_indicator_arrow" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="12.0sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@id/txt_achv_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Achievement"
+                android:layout_toLeftOf="@id/vijeta_indicator_arrow"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:layout_toStartOf="@id/vijeta_indicator_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

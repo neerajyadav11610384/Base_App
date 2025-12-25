@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/lyt_mtpc_web"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/mtpc_toolbar"
+        android:background="@color/color_2392ff"
+        android:visibility="gone"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:id="@id/img_back_arrow"
+                android:visibility="gone"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/back_arrow"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="start|center"
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="MTPC"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_toEndOf="@id/img_back_arrow" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <WebView
+        android:id="@id/mtpc_web_view"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mtpc_toolbar" />
+    <ProgressBar
+        android:id="@id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="?android:progressBarStyle" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/color_dce5ed"
+    android:paddingLeft="@dimen/dimen_11"
+    android:paddingBottom="@dimen/dimen_21"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_1c1839_1"
+            android:id="@id/notify_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_14"
+            android:text="@string/will_notify"
+            android:lineSpacingExtra="9.0sp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_1c1839_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_may_also_order"
+            android:layout_below="@id/notify_text"
+            android:lineSpacingExtra="9.0sp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/close"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="@dimen/dimen_18sp"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_close_black" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerView"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_17" />
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_17" />
+</LinearLayout>

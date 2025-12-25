@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/outlist_bottom_sheet1"
+    android:background="#ffffffff"
+    android:focusable="true"
+    android:visibility="gone"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:layout_gravity="center"
+        android:background="#ffe6eaf4"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_8" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:gravity="center_horizontal"
+        android:id="@id/no_item_msg"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="150.0dip"
+        android:text="@string/please_select_at_least_one_beat" />
+</RelativeLayout>

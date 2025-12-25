@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:orientation="vertical"
+    android:id="@id/outlist_sheet"
+    android:background="#ffebeff8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:background="@color/color_2392ff"
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            app:contentInsetLeft="0.0dip"
+            app:contentInsetStart="0.0dip"
+            app:contentInsetStartWithNavigation="0.0dip"
+            app:navigationIcon="?homeAsUpIndicator"
+            app:popupTheme="@style/AppTheme"
+            app:theme="@style/ToolbarColoredWhiteArrow">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:id="@id/title_lyt"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:ellipsize="end"
+                    android:gravity="center|left"
+                    android:id="@id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/list_counterfeit"
+                    android:maxLines="1"
+                    android:layout_toRightOf="@id/logo"
+                    android:layout_centerVertical="true"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/rv_counterfeit_list"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10" />
+        <TextView
+            android:textSize="18.0sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/tv_no_data_found"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/no_data_found_msg"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_gravity="bottom|center|right"
+        android:id="@id/fab"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16.0dip"
+        android:src="@drawable/ic_plus_blue_icon"
+        app:backgroundTint="#ff1da1f2"
+        app:tint="@color/white" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

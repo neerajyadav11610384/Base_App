@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="115.0dip"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/dimen_7"
+    android:layout_marginTop="@dimen/dimen_3"
+    android:layout_marginBottom="@dimen/dimen_3"
+    android:layout_marginStart="@dimen/dimen_7"
+    cardview:cardCornerRadius="@dimen/dimen_2"
+    cardview:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@id/ocf_title_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        cardview:cardCornerRadius="@dimen/dimen_3"
+        cardview:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@id/img_lyt"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/white"
+                android:gravity="left"
+                android:id="@id/ocf_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:text="fgdfgdfg"
+                android:fontFamily="@font/sf_pro_display_bold" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:id="@id/TextViewID"
+                android:background="@drawable/view_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

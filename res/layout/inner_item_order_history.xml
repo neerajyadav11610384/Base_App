@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/rel_2"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1">
+        <RelativeLayout
+            android:id="@id/rl_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff41586f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Bill Number"
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="7.0sp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@id/v3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125.0dip"
+                android:text=":" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/bill_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginRight="40.0dip"
+                android:text="N/A"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/v3" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/rl_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_3">
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff41586f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Bill Date"
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="7.0sp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@id/v4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125.0dip"
+                android:text=":" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/bill_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginRight="40.0dip"
+                android:text="N/A"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/v4" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/rl_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_4">
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff41586f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Bill Amount"
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="7.0sp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@id/v5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125.0dip"
+                android:text=":" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/bill_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginRight="40.0dip"
+                android:text="N/A"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/v5" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/rl_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_5">
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff41586f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Lines Ordered "
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="7.0sp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@id/v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125.0dip"
+                android:text=":" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/item_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginRight="40.0dip"
+                android:text="N/A"
+                android:layout_toRightOf="@id/v1"
+                android:lineSpacingExtra="7.0sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/rl_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_1">
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff41586f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Order Value"
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="7.0sp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@id/v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125.0dip"
+                android:text=":" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/order_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginRight="40.0dip"
+                android:text="N/A"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/v2" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/rl_6"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_5">
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff41586f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Collection Status"
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="7.0sp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@id/v6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125.0dip"
+                android:text=":" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/coll_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginRight="40.0dip"
+                android:text="N/A"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/v6" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:background="@color/gray"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_2" />
+</LinearLayout>

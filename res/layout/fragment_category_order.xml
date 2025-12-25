@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.SearchView
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:id="@id/searchview"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" />
+    <FrameLayout
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@id/swipe_loader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.core.widget.NestedScrollView
+                android:id="@id/scrollview_base"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@id/order_base_layout"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10.0dip" />
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ProgressBar
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="@id/progress_bar"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="@id/no_item_msg"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_items_found"
+            android:layout_centerInParent="true" />
+    </FrameLayout>
+</LinearLayout>

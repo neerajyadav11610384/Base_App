@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/fragment_order_history"
+    android:background="#ffeaeef8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@id/lazyprogress_bar"
+        android:visibility="gone"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_orderhistory"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <TextView
+        android:textSize="@dimen/dimen_24"
+        android:textStyle="bold"
+        android:id="@id/txt_no_order"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Orders Available"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

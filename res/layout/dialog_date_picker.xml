@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1.0">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:weightSum="1.0"
+            android:layout_weight="0.1">
+            <Button
+                android:textSize="15.0sp"
+                android:textColor="@color/white"
+                android:id="@id/btn_from"
+                android:background="@color/mosambee_violet"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/from"
+                android:layout_weight="0.5" />
+            <Button
+                android:textSize="15.0sp"
+                android:textColor="@color/white"
+                android:id="@id/btn_to"
+                android:background="@color/gray_inactive"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/to"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.8">
+            <DatePicker
+                android:id="@id/from_picker"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:datePickerMode="calendar" />
+            <DatePicker
+                android:id="@id/to_picker"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:datePickerMode="calendar" />
+        </LinearLayout>
+        <Button
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@id/btn_choose"
+            android:background="@drawable/mosambee_button_curved_border"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:minWidth="100.0dip"
+            android:text="@string/ok"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+</LinearLayout>

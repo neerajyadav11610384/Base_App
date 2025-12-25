@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredWhiteArrow">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:id="@id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/sales_summary"
+                android:maxLines="1"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/tx_currentdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_16"
+                android:text="dd-mm-yyyy"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:textSize="@dimen/dimen_20"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/tx_ndf"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@id/lyt_sales"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@id/store_layout"
+            android:layout_width="180.0dip"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="@dimen/dimen_16"
+                android:textStyle="bold"
+                android:textColor="#ff091e42"
+                android:gravity="center"
+                android:id="@id/txt_store_name"
+                android:background="#ffdce5ed"
+                android:paddingLeft="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_10"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_60"
+                android:layout_marginRight="@dimen/dimen_2"
+                android:text="Store Name" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rv_store_name"
+                android:layout_width="180.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:layout_marginBottom="@dimen/dimen_60"
+                android:layout_below="@id/txt_store_name" />
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:gravity="center|left"
+                android:id="@id/total"
+                android:background="#ff2392ff"
+                android:paddingLeft="@dimen/dimen_16"
+                android:layout_width="180.0dip"
+                android:layout_height="@dimen/dimen_60"
+                android:text="Total "
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toEndOf="@id/store_layout">
+            <HorizontalScrollView
+                android:id="@id/headerScroll"
+                android:focusableInTouchMode="false"
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_60">
+                    <TextView
+                        android:textSize="@dimen/dimen_16"
+                        android:textStyle="bold"
+                        android:textColor="#ff091e42"
+                        android:gravity="center"
+                        android:id="@id/mocsales"
+                        android:background="#ffdce5ed"
+                        android:paddingLeft="@dimen/dimen_15"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:layout_width="@dimen/dimen_120"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="@dimen/dimen_2"
+                        android:text="MOC Sales" /> > <TextView
+                        android:textSize="@dimen/dimen_16"
+                        android:textStyle="bold"
+                        android:textColor="#ff091e42"
+                        android:gravity="center"
+                        android:id="@id/daySales"
+                        android:background="#ffdce5ed"
+                        android:paddingLeft="@dimen/dimen_15"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="@dimen/dimen_2"
+                        android:text="Day Sales" />
+                    <TextView
+                        android:textSize="@dimen/dimen_16"
+                        android:textStyle="bold"
+                        android:textColor="#ff091e42"
+                        android:gravity="center"
+                        android:id="@id/nolines"
+                        android:background="#ffdce5ed"
+                        android:paddingLeft="@dimen/dimen_15"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="fill_parent"
+                        android:text="No.of Lines" />
+                </LinearLayout>> </HorizontalScrollView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rvClub"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:layout_marginBottom="@dimen/dimen_60"
+                android:layout_below="@id/headerScroll" />
+            <HorizontalScrollView
+                android:id="@id/headerScroll1"
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_60">
+                    <TextView
+                        android:background="#ff2392ff"
+                        android:layout_width="@dimen/dimen_120"
+                        android:layout_height="fill_parent" /> > <TextView
+                        android:textSize="@dimen/dimen_16"
+                        android:textStyle="bold"
+                        android:textColor="#ffffffff"
+                        android:gravity="center|right"
+                        android:id="@id/total_day_sales"
+                        android:background="#ff2392ff"
+                        android:paddingRight="@dimen/dimen_15"
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="fill_parent"
+                        android:text="10" />
+                    <TextView
+                        android:textSize="@dimen/dimen_16"
+                        android:textStyle="bold"
+                        android:textColor="#ffffffff"
+                        android:gravity="center|right"
+                        android:id="@id/total_no_of_lines"
+                        android:background="#ff2392ff"
+                        android:paddingRight="@dimen/dimen_20"
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="fill_parent"
+                        android:text="10" />
+                </LinearLayout>> </HorizontalScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

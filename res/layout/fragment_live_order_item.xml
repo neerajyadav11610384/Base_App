@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/live_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="60.0dip">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/live_item_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:id="@id/btn_reorder"
+        android:background="@drawable/green_rounded_corner"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:text="@string/reorder"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false" />
+</RelativeLayout>

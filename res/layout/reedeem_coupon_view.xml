@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:background="@drawable/dialog_reedeem_coupon_top_corner_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutMainData"
+        android:paddingLeft="@dimen/dimen_16"
+        android:paddingTop="@dimen/dimen_14"
+        android:paddingRight="@dimen/dimen_16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/imageViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/reedeem_coupon" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/layoutUShopPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            app:layout_constraintEnd_toEndOf="@id/imageViewHeader"
+            app:layout_constraintStart_toStartOf="@id/imageViewHeader"
+            app:layout_constraintTop_toBottomOf="@id/imageViewHeader">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_30sp"
+                android:textColor="#fffeb816"
+                android:id="@id/textViewUshopPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:layout_marginStart="@dimen/dimen_5"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewUShop"
+                app:layout_constraintStart_toEndOf="@id/imageViewUShop"
+                app:layout_constraintTop_toTopOf="@id/imageViewUShop" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/imageViewUShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                app:layout_constraintEnd_toStartOf="@id/textViewUshopPoint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_ushop_logo_feb816" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/black"
+            android:id="@id/textViewSuccesfully"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutUShopPoint" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:id="@id/textViewCouponDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewSuccesfully" />
+        <Button
+            android:id="@id/buttonOk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="Ok"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_marginEnd="@dimen/dimen_15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCouponDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_i_teams"
+        android:id="@id/action_iteams"
+        android:title="@string/iteams" />
+    <item
+        android:icon="@drawable/ic_outlet"
+        android:id="@id/action_outlet_creation"
+        android:title="@string/outlet_creation" />
+    <item
+        android:icon="@drawable/ic_collection_summary"
+        android:id="@id/action_collection_summary"
+        android:title="@string/collection_summary" />
+    <item
+        android:icon="@drawable/ic_slaes_summary"
+        android:id="@id/action_sales_summary"
+        android:visible="false"
+        android:title="@string/sales_summary" />
+    <item
+        android:icon="@drawable/ic_visitor_details"
+        android:id="@id/action_visitors_details"
+        android:title="@string/visitor_details" />
+    <item
+        android:icon="@drawable/ic_reports"
+        android:id="@id/action_reports"
+        android:title="@string/reports" />
+    <item
+        android:icon="@drawable/ic_training_resources"
+        android:id="@id/action_training_resources"
+        android:title="@string/training_resources" />
+    <item
+        android:icon="@drawable/ic_counterfiet"
+        android:id="@id/action_counterfiet"
+        android:title="@string/counterfiet" />
+    <item
+        android:icon="@drawable/ic_paathshaala"
+        android:id="@id/action_paathshaala"
+        android:title="@string/paathshaala" />
+    <item
+        android:icon="@drawable/multiattendance"
+        android:id="@id/action_attendance_task"
+        android:visible="false"
+        android:title="@string/attendance_task" />
+    <item
+        android:icon="@drawable/ic_change_pwd"
+        android:id="@id/action_change_pwd"
+        android:title="@string/change_password" />
+    <item
+        android:icon="@drawable/ic_helpline"
+        android:id="@id/action_support"
+        android:title="@string/help_line" />
+    <item
+        android:icon="@drawable/ic_support_ticket"
+        android:id="@id/action_support_ticket"
+        android:visible="false"
+        android:title="@string/support_ticket" />
+    <item
+        android:icon="@drawable/ic_sj_logout"
+        android:id="@id/action_logout"
+        android:title="@string/logout" />
+</menu>

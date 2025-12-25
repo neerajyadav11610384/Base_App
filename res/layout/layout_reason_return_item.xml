@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/text_color"
+        android:id="@id/reason"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="0.0dip"
+        android:minHeight="0.0dip"
+        android:fontFamily="@font/sf_pro_display_regular" />
+</RelativeLayout>

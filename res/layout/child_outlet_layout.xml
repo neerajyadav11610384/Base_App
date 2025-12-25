@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/lyt_outlet_child"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/lyt_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginBottom="@dimen/dimen_12">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff1c1839"
+            android:id="@id/tvOutletName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:lineSpacingExtra="5.0sp"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_toStartOf="@id/navigation"
+            android:layout_alignParentStart="true"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@id/img_status_icon"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:layout_marginEnd="@dimen/dimen_16" />
+            <ImageView
+                android:id="@id/imgOutletValidationStatusChild"
+                android:visibility="gone"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:layout_marginRight="@dimen/dimen_8" />
+            <ImageView
+                android:id="@id/imgCallOutlet"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:layout_marginEnd="@dimen/dimen_16"
+                app:srcCompat="@drawable/ic_call" />
+            <ImageView
+                android:id="@id/imgNavigate"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                app:srcCompat="@drawable/ic_navigation" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:background="@color/color_e6eaf4"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_1" />
+</LinearLayout>

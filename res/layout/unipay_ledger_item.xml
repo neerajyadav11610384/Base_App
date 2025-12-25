@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="horizontal"
+    android:paddingLeft="10.0dip"
+    android:paddingTop="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingBottom="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5.0dip"
+    android:layout_marginRight="5.0dip"
+    android:layout_marginBottom="5.0dip"
+    app:cardCornerRadius="5.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/blue_rounded_corner"
+        android:padding="1.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.0dip"
+                android:layout_weight="0.55">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.0dip">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Trx Date"
+                        android:layout_weight="0.55" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:text=":" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:textColor="@color/dark_green"
+                        android:id="@id/trx_date"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:layout_weight="0.7" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.0dip">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Ushop Earned"
+                        android:layout_weight="0.55" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:text=":" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:textColor="@color/dark_green"
+                        android:id="@id/earmark_earned"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:layout_weight="0.7" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.0dip">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Scheme Type"
+                        android:layout_weight="0.55" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:text=":" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:textColor="@color/dark_green"
+                        android:id="@id/scheme_type"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:layout_weight="0.7" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.0dip"
+                android:layout_weight="0.45">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.0dip">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Trx Time"
+                        android:layout_weight="0.65" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:text=":" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:textColor="@color/dark_green"
+                        android:id="@id/earmark_trx_time"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:layout_weight="0.6" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.0dip">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Ushop Burned"
+                        android:layout_weight="0.65" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:text=":" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:textColor="@color/dark_green"
+                        android:id="@id/earmark_burned"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:layout_weight="0.6" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.0dip">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Ushop Balance"
+                        android:layout_weight="0.65" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:text=":" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="10.0sp"
+                        android:textColor="@color/dark_green"
+                        android:id="@id/earmark_balance"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:layout_weight="0.6" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="12.0sp"
+                android:textColor="@color/dark_green"
+                android:gravity="center_vertical"
+                android:id="@id/narration"
+                android:paddingLeft="5.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

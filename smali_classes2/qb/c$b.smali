@@ -1,0 +1,167 @@
+.class Lqb/c$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lqb/c;->b2(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lqb/c;
+
+
+# direct methods
+.method constructor <init>(Lqb/c;)V
+    .locals 0
+
+    iput-object p1, p0, Lqb/c$b;->a:Lqb/c;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Lqb/c$b;->a:Lqb/c;
+
+    .line 2
+    .line 3
+    iget-object p1, p1, Lqb/c;->s4:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->removeAllViews()V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object p1, p0, Lqb/c$b;->a:Lqb/c;
+
+    .line 9
+    .line 10
+    iget-object p1, p1, Lqb/c;->w4:Lqb/b;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Lqb/b;->i()V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object p1, p0, Lqb/c$b;->a:Lqb/c;
+
+    .line 16
+    .line 17
+    iget-object p1, p1, Lqb/c;->w4:Lqb/b;
+
+    .line 18
+    .line 19
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
+
+    .line 20
+    .line 21
+    .line 22
+    iget-object p1, p0, Lqb/c$b;->a:Lqb/c;
+
+    .line 23
+    .line 24
+    invoke-static {p1}, Lqb/c;->B3(Lqb/c;)Landroid/widget/LinearLayout;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    const/16 v0, 0x8
+
+    .line 29
+    .line 30
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 31
+    .line 32
+    .line 33
+    iget-object p1, p0, Lqb/c$b;->a:Lqb/c;
+
+    .line 34
+    .line 35
+    invoke-static {p1}, Lqb/c;->A3(Lqb/c;)Landroid/widget/LinearLayout;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p1
+
+    .line 39
+    const/4 v0, 0x0
+
+    .line 40
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 41
+    .line 42
+    .line 43
+    return-void
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+.end method

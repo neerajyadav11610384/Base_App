@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/filterLinear"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="@color/color_1c1839_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scheme_type"
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="@color/color_1c1839_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" :  "
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@id/schemeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:dropDownVerticalOffset="25.0dip"
+            android:layout_marginStart="@dimen/dimen_10" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/categoryRecyclerView"
+        android:background="#ffc7d4e0"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_6"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterLinear" />
+    <com.hul.sambhav.util.CustomizedNestedScrollView
+        android:id="@id/scrollview_base"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/recyclerView"
+            android:background="@color/color_e6eaf4"
+            android:padding="@dimen/dimen_10"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/categoryRecyclerView" />
+    </com.hul.sambhav.util.CustomizedNestedScrollView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_offers_found"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/sf_pro_display_regular" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/product_filter_lyt"
+        android:background="@drawable/rounded_corner_filter"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="-32.0dip"
+        android:layout_marginBottom="@dimen/dimen_12"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/dimen_10">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:gravity="center"
+            android:id="@id/tv_product_filter"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_6"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_7"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/filter"
+            android:drawablePadding="@dimen/dimen_5"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:drawableLeftCompat="@drawable/ic_filter" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

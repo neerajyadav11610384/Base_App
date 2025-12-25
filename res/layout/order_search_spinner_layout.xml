@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView
+    android:textSize="@dimen/dimen_14sp"
+    android:textColor="@color/color_2392ff"
+    android:id="@id/spinnerText"
+    android:background="@android:color/transparent"
+    android:paddingLeft="@dimen/dimen_4"
+    android:paddingTop="@dimen/dimen_3"
+    android:paddingRight="@dimen/dimen_4"
+    android:paddingBottom="@dimen/dimen_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="gergeasrffrseff"
+    android:fontFamily="@font/sf_pro_display_medium"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

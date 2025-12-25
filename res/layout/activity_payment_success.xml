@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:theme="@style/AppTheme.AppBarOverlay">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:fontFamily="@font/sf_pro_display_bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/dark_moderate_lime_green"
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="15.0dip"
+            app:srcCompat="@drawable/ic_payment_success" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_successful" />
+    </LinearLayout>
+    <ListView
+        android:id="@id/list_trans_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

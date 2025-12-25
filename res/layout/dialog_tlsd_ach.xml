@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/rlyt_hdr"
+        android:background="@drawable/add_blue_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_60">
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tv_hdr"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi "
+            android:layout_toLeftOf="@id/tv_emp_name" />
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tv_emp_name"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tv_tlsd_txt"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAY KPI Update!"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@id/rlyt_tlsd"
+        android:background="@drawable/add_blue_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_4">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:id="@id/tx_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tx_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09-02-21"
+            android:layout_toRightOf="@id/tx_date"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:id="@id/tv_tlsd_ach_hdr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACHV Per "
+            android:layout_toLeftOf="@id/tv_tlsd_ach_data"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tv_tlsd_ach_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0%)"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="GPS BP"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/dimen_8" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_tgt_ach_gpsbp"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_gpsbp_per"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="34%"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <View
+        android:background="#ffdcd9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="TLSD"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/dimen_8" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_tgt_ach_tlsd"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_tlsd_per"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="34%"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@id/cardview4"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        app:cardBackgroundColor="#ff2392ff"
+        app:layout_constraintTop_toBottomOf="@id/cardView4">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All the very best!" />
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_gravity="center"
+        android:id="@id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:text="OK" />
+</LinearLayout>

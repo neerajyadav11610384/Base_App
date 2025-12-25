@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_refer_bg" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutMainReferralCode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/leftLayout"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_0"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_20"
+            app:layout_constraintBottom_toBottomOf="@id/rightLayout"
+            app:layout_constraintEnd_toStartOf="@id/rightLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rightLayout"
+            app:layout_constraintWidth_percent="0.5">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/white"
+                android:id="@id/textViewHeaderDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/white"
+                android:id="@id/referralHederDesValue"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5.399994sp"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/white"
+                android:id="@id/textViewReferral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:text="Referral  code"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewHeaderDesc" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_20sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@id/textViewReferCodeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewReferral" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/imageViewReferCodeCopy"
+                android:padding="@dimen/dimen_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/textViewReferCodeValue"
+                app:layout_constraintStart_toEndOf="@id/textViewReferCodeValue"
+                app:layout_constraintTop_toTopOf="@id/textViewReferCodeValue"
+                app:srcCompat="@drawable/ic_copy" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/rightLayout"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            app:layout_constraintBottom_toTopOf="@id/layoutSheare"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/leftLayout"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:srcCompat="@drawable/ic_refer_heder" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/textViewHeaderValue"
+                android:paddingLeft="@dimen/dimen_40"
+                android:paddingTop="@dimen/dimen_25"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_25"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dimen_2"
+                android:fontFamily="@font/sf_pro_display_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/layoutSheare"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_42"
+            android:layout_marginTop="@dimen/dimen_0"
+            android:layout_marginRight="@dimen/dimen_42"
+            app:layout_constraintTop_toBottomOf="@id/rightLayout">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/imageViewFacebook"
+                android:paddingTop="@dimen/dimen_2"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/imageViewWhatsApp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_facebook_share" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/imageViewWhatsApp"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewFacebook"
+                app:layout_constraintEnd_toStartOf="@id/imageViewGmail"
+                app:layout_constraintStart_toEndOf="@id/imageViewFacebook"
+                app:layout_constraintTop_toTopOf="@id/imageViewFacebook"
+                app:srcCompat="@drawable/ic_watsapp_share" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/imageViewGmail"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewFacebook"
+                app:layout_constraintEnd_toStartOf="@id/imageViewMoreOption"
+                app:layout_constraintStart_toEndOf="@id/imageViewWhatsApp"
+                app:layout_constraintTop_toTopOf="@id/imageViewFacebook"
+                app:srcCompat="@drawable/ic_mail_share" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/imageViewMoreOption"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewFacebook"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageViewGmail"
+                app:layout_constraintTop_toTopOf="@id/imageViewFacebook"
+                app:srcCompat="@drawable/ic_share" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

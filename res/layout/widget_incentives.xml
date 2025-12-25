@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/lyt_incentives"
+    android:background="#ffeaeef8"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredWhiteArrow">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="MOC Incentives"
+                android:lineSpacingExtra="9.0sp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:id="@id/fixed_layout"
+        android:background="@color/color_2392ff"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="20.0dip"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="10.0dip"
+        android:layout_marginEnd="10.0dip">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:id="@id/tv_incentive_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:lineSpacingExtra="0.0sp"
+            fontFamily="\@fonts/sf_pro_display_bold" />
+    </RelativeLayout>
+    <TextView
+        android:textSize="@dimen/dimen_20"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/tx_ndf"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/hidden_view"
+        android:background="#ffeaeef8"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fixed_layout">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/rcy_adhoc_incentive_data"
+            android:background="#fffcfdff"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_marginRight="@dimen/dimen_12"
+            android:layout_marginStart="10.0dip"
+            android:layout_marginEnd="10.0dip" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/rcy_incentive_data"
+            android:background="#fffcfdff"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_marginRight="@dimen/dimen_12"
+            android:layout_marginStart="10.0dip"
+            android:layout_marginEnd="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

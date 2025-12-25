@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:background="@color/color_2392ff"
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true"
+            app:contentInsetLeft="0.0dip"
+            app:contentInsetStart="0.0dip"
+            app:contentInsetStartWithNavigation="0.0dip"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="?homeAsUpIndicator"
+            app:popupTheme="@style/AppTheme"
+            app:theme="@style/ToolbarColoredWhiteArrow">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:id="@id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Information"
+                    android:lineSpacingExtra="9.0sp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/ll_moc_dashboard_review"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_12sp"
+                android:textColor="#ffffffff"
+                android:gravity="center_horizontal"
+                android:id="@id/tv_moc_dashboard"
+                android:background="@drawable/background_blue_border_color_blue"
+                android:padding="@dimen/dimen_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:text="MOC DASHBOARD"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_bold" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_12sp"
+                android:textColor="@color/color_695252"
+                android:gravity="center_horizontal"
+                android:id="@id/tv_moc_review"
+                android:background="@drawable/background_white_border_color_grey"
+                android:padding="@dimen/dimen_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:text=" MOC REVIEW  "
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_moc_dashboard"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="24.0dip"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_moc_dashboard_review">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/ll_header_mocd"
+                android:background="@color/color_2392ff"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_12sp"
+                    android:textColor="#ffffffff"
+                    android:gravity="left"
+                    android:id="@id/tv_mocd_parameter"
+                    android:background="@color/color_2392ff"
+                    android:padding="1.0dip"
+                    android:layout_width="110.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Parameter"
+                    android:layout_weight="3.0"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_12sp"
+                    android:textColor="#ffffffff"
+                    android:gravity="center"
+                    android:id="@id/tv_mocd_tgt"
+                    android:background="@color/color_2392ff"
+                    android:padding="1.0dip"
+                    android:layout_width="70.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Tgt"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_12sp"
+                    android:textColor="#ffffffff"
+                    android:gravity="center"
+                    android:id="@id/tv_mocd_achv"
+                    android:background="@color/color_2392ff"
+                    android:padding="1.0dip"
+                    android:layout_width="70.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Achv"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_11sp"
+                    android:textColor="#ffffffff"
+                    android:gravity="center"
+                    android:id="@id/tv_mocd_achvp"
+                    android:background="@color/color_2392ff"
+                    android:padding="1.0dip"
+                    android:layout_width="40.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="%Achv"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_11sp"
+                    android:textColor="#ffffffff"
+                    android:gravity="center"
+                    android:id="@id/tv_mocd_seontrack"
+                    android:background="@color/color_2392ff"
+                    android:padding="1.0dip"
+                    android:layout_width="40.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="SE's onTrck"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rcv_moc_dashboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:layout_marginBottom="120.0dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ll_moc_review"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="24.0dip"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_moc_dashboard_review">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/ll_header"
+                android:background="@color/color_2392ff"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="#ffffffff"
+                    android:gravity="left"
+                    android:id="@id/tv_sename"
+                    android:background="@color/color_2392ff"
+                    android:padding="4.0dip"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="SE Name"
+                    android:layout_weight="3.0"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <View
+                    android:background="#ffffffff"
+                    android:layout_width="1.0dip"
+                    android:layout_height="30.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="#ffffffff"
+                    android:gravity="center"
+                    android:id="@id/tv_tgt"
+                    android:background="@color/color_2392ff"
+                    android:padding="4.0dip"
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Tgt"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <View
+                    android:background="#ffffffff"
+                    android:layout_width="1.0dip"
+                    android:layout_height="30.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="#ffffffff"
+                    android:gravity="center"
+                    android:id="@id/tv_achv"
+                    android:background="@color/color_2392ff"
+                    android:padding="4.0dip"
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Achv"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <View
+                    android:background="#ffffffff"
+                    android:layout_width="1.0dip"
+                    android:layout_height="30.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="#ffffffff"
+                    android:gravity="center"
+                    android:id="@id/tv_achvp"
+                    android:background="@color/color_2392ff"
+                    android:padding="4.0dip"
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="%Achv"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rcv_moc_review"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:layout_marginBottom="120.0dip" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

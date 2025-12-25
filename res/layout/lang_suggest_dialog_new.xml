@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:background="@drawable/dialog_unipay_advance_pay_top_corner_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/textViewHeader"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="Choose your preferred language"
+                android:fontFamily="@font/sf_pro_display_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recyclerViewLanguageHome"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewHeader" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_2392ff"
+                android:id="@id/textViewMoreLanguage"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="Click here for more languages"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recyclerViewLanguageHome" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/textViewContinue"
+                android:background="@color/color_2392ff"
+                android:padding="@dimen/dimen_10"
+                android:visibility="visible"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="55.0dip"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="Continue with English"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewMoreLanguage" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

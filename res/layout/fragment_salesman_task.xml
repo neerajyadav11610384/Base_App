@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#ffebeff8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/lyt_task_header"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff41586e"
+            android:padding="@dimen/dimen_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_ach_info"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@id/tv_task_info"
+            android:padding="@dimen/dimen_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:lineSpacingExtra="9.0sp"
+            android:layout_alignParentEnd="true"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@id/progressBar_status"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:max="100"
+        android:progress="0"
+        android:indeterminate="false"
+        android:layout_below="@id/lyt_task_header"
+        android:progressTint="#ff27ae60"
+        android:progressBackgroundTint="#ffb4c8dc"
+        style="?android:progressBarStyleHorizontal" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/nested_scroll_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar_status">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rcy_perform_task"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rcy_tasks"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView
+        android:textSize="@dimen/dimen_20sp"
+        android:id="@id/no_data_found"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coming Soon"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coming_soon"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

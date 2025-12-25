@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <ImageView
+        android:layout_gravity="right"
+        android:id="@id/img_close"
+        android:padding="4.0dip"
+        android:layout_width="@dimen/dimen_36"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_margin="@dimen/dimen_16"
+        android:src="@drawable/ic_close_black"
+        android:contentDescription="Close" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffa3a2a2"
+        android:padding="@dimen/dimen_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#fff4f4f4"
+            android:paddingTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onboarded"
+            android:drawablePadding="@dimen/dimen_4"
+            android:drawableStart="@drawable/ic_location_ps_green" />
+        <TextView
+            android:textColor="#fff4f4f4"
+            android:paddingTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending for visit"
+            android:drawablePadding="@dimen/dimen_4"
+            android:drawableStart="@drawable/ic_location_ps_blue" />
+        <TextView
+            android:textColor="#fff4f4f4"
+            android:paddingTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending for approval"
+            android:drawablePadding="@dimen/dimen_4"
+            android:drawableStart="@drawable/ic_location_ps_amber" />
+        <TextView
+            android:textColor="#fff4f4f4"
+            android:paddingTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proposal cancelled"
+            android:drawablePadding="@dimen/dimen_4"
+            android:drawableStart="@drawable/ic_location_ps_red" />
+    </LinearLayout>
+</FrameLayout>

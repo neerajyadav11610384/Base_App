@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff1c1839"
+            android:gravity="center_vertical"
+            android:layout_gravity="left"
+            android:id="@id/keys"
+            android:background="@color/color_e6eaf4"
+            android:paddingLeft="@dimen/dimen_10"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_weight="6.0"
+            android:lineSpacingExtra="7.0sp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/color_41586f"
+            android:gravity="center_vertical"
+            android:layout_gravity="left"
+            android:id="@id/values"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_10"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_weight="4.0"
+            android:lineSpacingExtra="7.0sp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </LinearLayout>
+    <View
+        android:id="@id/viewDivider"
+        android:background="@color/color_b4c8dc"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_1" />
+</LinearLayout>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:orientation="vertical"
+    android:padding="16.0dip"
+    android:scrollbars="none"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="20.0sp"
+            android:textColor="@color/dark_moderate_lime_green"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invoice_details" />
+        <androidx.cardview.widget.CardView
+            android:paddingLeft="10.0dip"
+            android:paddingTop="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            app:cardCornerRadius="5.0dip">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/invoice_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip">
+                <LinearLayout
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_nos_of_item"
+                        android:layout_weight="2.8"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:id="@id/dot_three"
+                        android:visibility="invisible"
+                        android:layout_width="0.0dip"
+                        android:layout_height="10.0dip"
+                        android:layout_weight="1.0"
+                        app:srcCompat="@drawable/dots" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:id="@id/total_no_of_items"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_quantity"
+                        android:layout_weight="2.8"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:id="@id/dot_two"
+                        android:visibility="invisible"
+                        android:layout_width="0.0dip"
+                        android:layout_height="10.0dip"
+                        android:layout_weight="1.0"
+                        app:srcCompat="@drawable/dots" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:id="@id/quantity"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_amt_msg"
+                        android:layout_weight="2.8"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:id="@id/dot_one"
+                        android:visibility="invisible"
+                        android:layout_width="0.0dip"
+                        android:layout_height="10.0dip"
+                        android:layout_weight="1.0"
+                        app:srcCompat="@drawable/dots" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:id="@id/rupee_symbol_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:id="@id/total_amount"
+                        android:paddingLeft="5.0dip"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/retailer_margin"
+                        android:layout_weight="2.8"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:layout_width="0.0dip"
+                        android:layout_height="10.0dip"
+                        android:layout_weight="1.0"
+                        app:srcCompat="@drawable/dots" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:id="@id/rupee_symbol_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:id="@id/retailer_margin"
+                        android:paddingLeft="5.0dip"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/additional_disc"
+                        android:layout_weight="2.8"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:layout_width="0.0dip"
+                        android:layout_height="10.0dip"
+                        android:layout_weight="1.0"
+                        app:srcCompat="@drawable/dots" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:id="@id/rupee_symbol_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:id="@id/additional_discount"
+                        android:paddingLeft="5.0dip"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_savings"
+                        android:layout_weight="2.8"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:id="@id/dot_one1"
+                        android:visibility="invisible"
+                        android:layout_width="0.0dip"
+                        android:layout_height="10.0dip"
+                        android:layout_weight="1.0"
+                        app:srcCompat="@drawable/dots" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:id="@id/rupee_symbol_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:id="@id/disount_amt"
+                        android:paddingLeft="5.0dip"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estimated_bill"
+                        android:layout_weight="2.8"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:id="@id/dot_one2"
+                        android:visibility="invisible"
+                        android:layout_width="0.0dip"
+                        android:layout_height="10.0dip"
+                        android:layout_weight="1.0"
+                        app:srcCompat="@drawable/dots" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:layout_gravity="center"
+                        android:id="@id/rupee_symbol_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/very_dark_gray"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:id="@id/estimated_amt"
+                        android:paddingLeft="5.0dip"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@id/unipay_txt"
+                    android:padding="5.0dip"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/dark_red"
+                        android:layout_gravity="center"
+                        android:id="@id/unipay_points_txt_partone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estimated_bill"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:id="@id/unipay_symbol"
+                        android:visibility="gone"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_toRightOf="@id/unipay_points_txt_partone"
+                        app:srcCompat="@drawable/unipay_symbol" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/dark_red"
+                        android:layout_gravity="center"
+                        android:id="@id/unipay_points_txt_parttwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_toRightOf="@id/unipay_symbol"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/distributor_details"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="20.0sp"
+                android:textColor="@color/dark_moderate_lime_green"
+                android:padding="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/dist_info" />
+            <androidx.cardview.widget.CardView
+                android:paddingLeft="10.0dip"
+                android:paddingTop="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingBottom="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginBottom="5.0dip"
+                app:cardCornerRadius="5.0dip">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/dark_gray"
+                        android:id="@id/rs_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginRight="10.0dip" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/dark_gray"
+                        android:id="@id/rs_mobile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginBottom="10.0dip" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <Button
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@id/btn_confirm"
+            android:background="@drawable/dark_grey_button"
+            android:paddingLeft="50.0dip"
+            android:paddingRight="50.0dip"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:text="@string/label_confirm_delivery"
+            android:textAllCaps="false" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="20.0sp"
+            android:textColor="@color/dark_moderate_lime_green"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_details" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/live_item_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minHeight="50.0dip" />
+        <Button
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@id/btn_reorder"
+            android:background="@drawable/green_rounded_corner"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:text="@string/reorder"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

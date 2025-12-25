@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/mainLayoutCoachMark"
+    android:background="@color/coach_marks_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:background="@color/coach_marks_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:id="@id/sub_category_item_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_70"
+            android:minHeight="@dimen/dimen_30"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/im_ete_earning"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:srcCompat="@drawable/ete_earning_bg" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_fcfdff"
+                android:id="@id/textViewEteCoatchMark"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:lineSpacingExtra="8.0sp"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:layout_marginStart="@dimen/dimen_90"
+                android:layout_marginEnd="@dimen/dimen_50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/imageViewArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/sub_category_item_lyt"
+            app:srcCompat="@drawable/finger_icon" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_100"
+            android:text="Take order of ETE packs and get this incentive!"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_marginEnd="@dimen/dimen_15"
+            app:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageViewArrow" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

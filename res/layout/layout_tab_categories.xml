@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@id/cardView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_6"
+        app:cardCornerRadius="@dimen/dimen_3"
+        app:cardElevation="0.0dip"
+        app:cardUseCompatPadding="false">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@id/linear_categories"
+                    android:paddingLeft="@dimen/dimen_13"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_13"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/img_drop_down">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@id/categoryImage"
+                        android:layout_width="@dimen/dimen_50"
+                        android:layout_height="@dimen/dimen_50"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/default_img" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_16sp"
+                        android:textColor="@color/color_1C1839"
+                        android:ellipsize="end"
+                        android:layout_gravity="center"
+                        android:id="@id/categoryName"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20"
+                        android:maxLines="2"
+                        android:layout_weight="1.0"
+                        android:layout_marginStart="@dimen/dimen_20" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/img_drop_down"
+                    android:layout_width="@dimen/dimen_28"
+                    android:layout_height="@dimen/dimen_28"
+                    android:layout_margin="@dimen/dimen_8"
+                    android:adjustViewBounds="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_down_24dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/linear_brands"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brands"
+                        android:layout_marginEnd="@dimen/dimen_10" />
+                    <View
+                        android:background="#ff7a869a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.0dip"
+                        android:layout_marginTop="@dimen/dimen_10" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/subBrandsRecyclerView"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/subCategories"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sub_categories"
+                        android:layout_marginEnd="@dimen/dimen_10" />
+                    <View
+                        android:background="#ff7a869a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.0dip"
+                        android:layout_marginTop="@dimen/dimen_10" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/subCatRecyclerView"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

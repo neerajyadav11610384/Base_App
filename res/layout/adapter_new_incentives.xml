@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/hdrr"
+        android:background="@drawable/rounded_corner"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@id/tx_moc_hdr"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.8"
+            android:textAlignment="viewStart" />
+        <View
+            android:background="#fff6f6f6"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="end|center"
+            android:id="@id/tx_moc_tgt_value"
+            android:paddingRight="@dimen/dimen_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="TGT"
+            android:layout_weight="0.8" />
+        <View
+            android:background="#fff6f6f6"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="end|center"
+            android:id="@id/tx_moc_achv"
+            android:paddingRight="@dimen/dimen_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="ACHV"
+            android:layout_weight="0.8" />
+        <View
+            android:background="#fff6f6f6"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="end|center"
+            android:id="@id/tx_moc_Achv_perc"
+            android:paddingRight="@dimen/dimen_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="ACHV"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+</RelativeLayout>

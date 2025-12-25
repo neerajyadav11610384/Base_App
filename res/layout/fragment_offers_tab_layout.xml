@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout
+        android:orientation="horizontal"
+        android:id="@id/tabLayoutOffers"
+        android:background="@color/white"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:fontFamily="@font/sf_pro_display_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/color_2392ff"
+        app:tabIndicatorHeight="@dimen/dimen_3"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/color_2392ff"
+        app:tabTextColor="@color/color_758da6" />
+    <com.hul.sambhav.ui.fcm.NonSwipeableViewPager
+        android:id="@id/nonSwipeViewPager"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutOffers" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/color_41586f"
+        android:id="@id/textViewDesNotFound"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_items_found"
+        android:fontFamily="@font/sf_pro_display_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar
+        android:id="@id/progressBar"
+        android:visibility="gone"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

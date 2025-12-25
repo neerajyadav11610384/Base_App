@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_width="300.0dip"
+    android:layout_height="150.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0dip"
+        android:textColor="@color/white"
+        android:id="@id/dialog_title"
+        android:background="@drawable/side_nav_bar"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/payment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <com.hul.sambhav.customview.HorizontalDottedProgress
+        android:id="@id/dotted_progress_bar"
+        android:padding="20.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0sp"
+        android:id="@id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:text="sabfkasbfk"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/img_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/dimen_8"
+            app:srcCompat="@drawable/availed" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_bill">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textColor="#ff41586f"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PLG : "
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:id="@id/tv_plg_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textColor="#ff41586f"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cart Value : "
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:id="@id/tv_cart_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textColor="#ff41586f"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit Limit : "
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:id="@id/tv_credit_limit_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textColor="#ff41586f"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount Utilize : "
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:id="@id/tv_amount_utilize_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textColor="#ff41586f"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bills Limit : "
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:id="@id/tv_bill_limit_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textColor="#ff41586f"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bills Utilize : "
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:id="@id/tv_bills_utilize_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textColor="#ff41586f"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balance Bills Count : "
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:id="@id/tv_balance_bills_count_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textColor="#ff41586f"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balance Amount : "
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:id="@id/tv_balance_amount_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:lineSpacingExtra="7.0sp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:weightSum="3.0">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textColor="#ff41586f"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today's Ordered Value"
+                android:lineSpacingExtra="2.0sp"
+                android:fontFamily="@font/sf_pro_display_medium" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_1c1839_1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/tv_today_order_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:lineSpacingExtra="7.0sp"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textColor="#ff41586f"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today's Ordered Count"
+                android:lineSpacingExtra="2.0sp"
+                android:fontFamily="@font/sf_pro_display_medium" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_1c1839_1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/tv_today_order_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:lineSpacingExtra="7.0sp"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textColor="#ff41586f"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shikhar Order Value"
+                android:lineSpacingExtra="2.0sp"
+                android:fontFamily="@font/sf_pro_display_medium" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_1c1839_1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/tv_shikhar_order_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:lineSpacingExtra="7.0sp"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/color_b4c8dc"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10" />
+</LinearLayout>

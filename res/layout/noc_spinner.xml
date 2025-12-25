@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView
+    android:ellipsize="marquee"
+    android:id="@id/spinnerText"
+    android:paddingTop="@dimen/dimen_5"
+    android:paddingBottom="@dimen/dimen_5"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:textAlignment="inherit"
+    style="?android:spinnerItemStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

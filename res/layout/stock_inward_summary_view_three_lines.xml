@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:outlineSpotShadowColor="@color/gray"
+    app:cardCornerRadius="@dimen/dimen_5"
+    app:cardElevation="@dimen/dimen_2"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/cl_top"
+        android:background="@drawable/ripple_background_stock"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingTop="4.0dip"
+        android:paddingRight="@dimen/dimen_2"
+        android:paddingBottom="4.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="12.0sp"
+            android:textStyle="bold"
+            android:id="@id/tv_product"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Product ABCDEFGHIJKLMNO"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/ll_header_person"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_product">
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_name"
+                android:paddingLeft="10.0dip"
+                android:layout_width="155.0dip"
+                android:layout_height="wrap_content"
+                android:text="Person name" />
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_transactionDate"
+                android:paddingLeft="10.0dip"
+                android:layout_width="90.0dip"
+                android:layout_height="wrap_content"
+                android:text="03-03-2025" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/ll_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_header_person">
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip" />
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_unit"
+                android:paddingLeft="10.0dip"
+                android:layout_width="75.0dip"
+                android:layout_height="wrap_content"
+                android:text="Unit" />
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_mrp"
+                android:paddingLeft="10.0dip"
+                android:layout_width="75.0dip"
+                android:layout_height="wrap_content"
+                android:text="MRP" />
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_expiry"
+                android:paddingLeft="10.0dip"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="20-01-2023" />
+            <TextView
+                android:textSize="12.0sp"
+                android:gravity="center"
+                android:id="@id/tv_total"
+                android:paddingLeft="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

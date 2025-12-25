@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="@color/color_dce5ed"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/geo_error_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:id="@id/cancel"
+            android:padding="@dimen/dimen_8"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:src="@drawable/ic_close_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView
+        android:textSize="@dimen/dimen_18"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/tv_distance_meters"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance : "
+        android:paddingStart="@dimen/dimen_16"
+        android:paddingEnd="@dimen/dimen_16" />
+    <TextView
+        android:textSize="@dimen/dimen_18"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/tv_latitude"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Latitude : "
+        android:paddingStart="@dimen/dimen_16"
+        android:paddingEnd="@dimen/dimen_16" />
+    <TextView
+        android:textSize="@dimen/dimen_18"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/tv_longitude"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Longitude : "
+        android:paddingStart="@dimen/dimen_16"
+        android:paddingEnd="@dimen/dimen_16" />
+    <TextView
+        android:textSize="@dimen/dimen_18"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/tv_distance_info"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Note : "
+        android:paddingStart="@dimen/dimen_16"
+        android:paddingEnd="@dimen/dimen_16" />
+    <TextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:id="@id/nav_loc"
+        android:background="@drawable/background_border_color_b4c8dc"
+        android:padding="@dimen/dimen_14"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16"
+        android:text="@string/oultet_location"
+        android:drawableLeft="@drawable/ic_location_marker"
+        android:drawablePadding="@dimen/dimen_8" />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:theme="@style/AppTheme.AppBarOverlay">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:fontFamily="@font/sf_pro_display_bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:paddingLeft="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invoice_status_text" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="@drawable/spinner_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip">
+            <Spinner
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/spn_invoice_type"
+                android:background="@android:color/transparent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_centerVertical="true"
+                android:spinnerMode="dropdown" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/dropdown" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5.0dip">
+        <ProgressBar
+            android:id="@id/progress_bar"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerInParent="true" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:id="@id/no_item_msg"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_items_found"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/lin_claims"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@id/swipe_loader"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <ListView
+                    android:id="@id/invoice_list"
+                    android:scrollbars="none"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:groupIndicator="@color/transparent"
+                    android:childDivider="@color/transparent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="5.0dip" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

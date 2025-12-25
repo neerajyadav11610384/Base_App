@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#ff3e2ec0"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/status_image"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_margin="@dimen/dimen_14"
+                android:src="@drawable/default_img" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="9.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="start"
+                android:layout_gravity="start|center"
+                android:id="@id/sr_snackbar_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:text=""
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_marginEnd="@dimen/dimen_8" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@id/sign_up_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_6"
+                android:text=""
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_marginEnd="@dimen/dimen_8" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="18.0sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@id/outlet_code"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_6"
+                android:text=""
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_marginEnd="@dimen/dimen_8" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="18.0sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@id/distributor"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_6"
+                android:text=""
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_marginEnd="@dimen/dimen_8" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_btn_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/view_btn_ok"
+            android:background="@drawable/bg_pending_amount"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="@string/Okay"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_20" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Status "
+            android:layout_weight="1.0"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@id/status_msg"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="3.0"
+            android:fontFamily="@font/sf_pro_display_bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Remarks "
+            android:layout_weight="1.0"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="@color/white"
+            android:ellipsize="marquee"
+            android:layout_gravity="center"
+            android:fadingEdge="horizontal"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:layout_weight="3.0"
+            android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+</LinearLayout>

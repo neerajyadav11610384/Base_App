@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/addFilterLayout">
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/headerLyt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@id/close_filter_lyt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:layout_centerVertical="true">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:tint="@color/color_1c1839_1"
+                        app:srcCompat="@drawable/ic_back_dark_icon" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_18sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/filters"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textColor="@color/color_1886db"
+                    android:gravity="end|center"
+                    android:id="@id/textViewClearFilter"
+                    android:padding="@dimen/dimen_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:text="@string/clear_all_filters"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/color_1c1839_1"
+                android:gravity="center"
+                android:id="@id/tv_count_of_filtered_items"
+                android:background="@color/color_b4c8dc"
+                android:padding="@dimen/dimen_3"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/products_available"
+                android:fontFamily="@font/sf_pro_display_medium" />
+            <androidx.core.widget.NestedScrollView
+                android:fitsSystemWindows="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/rvFilteredItems"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_10" />
+                    <View
+                        android:background="@color/color_e6eaf4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dimen_2" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@id/recyclerViewLeftFilter"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.7"
+                            android:overScrollMode="never" />
+                        <View
+                            android:background="@color/color_e6eaf4"
+                            android:layout_width="@dimen/dimen_2"
+                            android:layout_height="fill_parent" />
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@id/recyclerViewRightFilter"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:overScrollMode="never" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@id/addFilterLayout"
+            android:background="@color/color_2392ff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <androidx.appcompat.widget.AppCompatButton
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/white"
+                android:id="@id/btn_add_filter"
+                android:background="?selectableItemBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_filter"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

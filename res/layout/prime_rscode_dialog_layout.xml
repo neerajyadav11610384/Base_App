@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/header"
+        android:background="@color/color_2392ff"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingTop="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_20"
+        android:paddingBottom="@dimen/dimen_15"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip">
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@id/textView"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Select RS"
+            android:layout_weight="1.0"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/imageClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_white" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/dialogRecyclerView"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingRight="@dimen/dimen_20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_below="@id/header" />
+</RelativeLayout>

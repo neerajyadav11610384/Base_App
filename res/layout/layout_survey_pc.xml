@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/color_fcfdff"
+    android:paddingBottom="@dimen/dimen_30"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:layout_gravity="center"
+                android:id="@id/textViewNoDataFound"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="No mission available for the store"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@id/layoutHaat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <androidx.constraintlayout.widget.Guideline
+                        android:orientation="vertical"
+                        android:id="@id/guidelineLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintGuide_percent="0.02" />
+                    <androidx.constraintlayout.widget.Guideline
+                        android:orientation="vertical"
+                        android:id="@id/guidelineRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintGuide_percent="0.98" />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@id/layoutRoutePlan"
+                        android:background="@drawable/c3c3c3_bouder_5dp"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+                        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_18sp"
+                            android:textColor="@color/black"
+                            android:id="@id/textViewRoutePlan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ROUTE PLAN"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_16sp"
+                            android:textColor="@color/black"
+                            android:id="@id/textViewRoutePlanStartTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Start Time : "
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:drawableStart="@drawable/ic_clock_icon"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            app:layout_constraintEnd_toStartOf="@id/textViewRoutePlanStartTimeValue"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@id/textViewRoutePlanStartTimeValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00:00"
+                            app:layout_constraintBottom_toBottomOf="@id/textViewRoutePlanStartTime"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/textViewRoutePlanStartTime" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_16sp"
+                            android:textColor="@color/black"
+                            android:id="@id/textViewRoutePlanEndTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="End Time   : "
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:drawableStart="@drawable/ic_clock_icon"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            app:layout_constraintStart_toStartOf="@id/textViewRoutePlanStartTime"
+                            app:layout_constraintTop_toBottomOf="@id/textViewRoutePlanStartTime" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@id/textViewRoutePlanEndTimeValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_3"
+                            android:text="00:00"
+                            app:layout_constraintBottom_toBottomOf="@id/textViewRoutePlanEndTime"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/textViewRoutePlanEndTime" />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@id/imageViewRoutePlan"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_check_green" />
+                        <androidx.constraintlayout.widget.Group
+                            android:id="@id/groupRoutePlan"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:constraint_referenced_ids="textViewRoutePlanStartTime,textViewRoutePlanStartTimeValue,textViewRoutePlanEndTime,textViewRoutePlanEndTimeValue" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@id/layoutHaatActivation"
+                        android:background="@drawable/c3c3c3_bouder_5dp"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+                        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+                        app:layout_constraintTop_toBottomOf="@id/layoutRoutePlan">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_18sp"
+                            android:textColor="@color/black"
+                            android:id="@id/textViewHaatActivation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HAAT ACTIVATION"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_16sp"
+                            android:textColor="@color/black"
+                            android:id="@id/textViewStartTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Start Time : "
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:drawableStart="@drawable/ic_clock_icon"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            app:layout_constraintEnd_toStartOf="@id/textViewStartTimeValue"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@id/textViewStartTimeValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19:00"
+                            app:layout_constraintBottom_toBottomOf="@id/textViewStartTime"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/textViewStartTime" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_16sp"
+                            android:textColor="@color/black"
+                            android:id="@id/textViewEndTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="End Time : "
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:drawableStart="@drawable/ic_clock_icon"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            app:layout_constraintStart_toStartOf="@id/textViewStartTime"
+                            app:layout_constraintTop_toBottomOf="@id/textViewStartTime" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@id/textViewEndTimeValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19:00"
+                            app:layout_constraintBottom_toBottomOf="@id/textViewEndTime"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/textViewEndTime" />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@id/imageViewHaatActivation"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_check_green" />
+                        <androidx.constraintlayout.widget.Group
+                            android:id="@id/groupHaatActivation"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:constraint_referenced_ids="textViewStartTime,textViewStartTimeValue,textViewEndTime,textViewEndTimeValue" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@id/cardview_completed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                app:cardCornerRadius="20.0dip"
+                app:cardElevation="20.0dip"
+                app:contentPadding="8.0dip">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:id="@id/ll_completed_header"
+                        android:padding="4.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="20.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/dark_blue"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Completed"
+                            android:layout_weight="1.0" />
+                        <ImageView
+                            android:id="@id/img_arrow_completed"
+                            android:layout_width="36.0dip"
+                            android:layout_height="36.0dip"
+                            android:src="@drawable/arrow_rounded_up" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/ll_completed_outer"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4.0dip">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@id/rcv_task_completed"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@id/rcv_survey_header_completed"
+                            android:background="@color/white"
+                            android:paddingTop="@dimen/dimen_8"
+                            android:paddingBottom="@dimen/dimen_8"
+                            android:visibility="gone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_8"
+                            android:layout_marginStart="@dimen/dimen_8"
+                            android:layout_marginEnd="@dimen/dimen_8" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@id/cardview_pending"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                app:cardCornerRadius="20.0dip"
+                app:cardElevation="20.0dip"
+                app:contentPadding="8.0dip">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:id="@id/ll_pending_header"
+                        android:padding="4.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="20.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/dark_blue"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pending"
+                            android:layout_weight="1.0" />
+                        <ImageView
+                            android:id="@id/img_arrow_pending"
+                            android:layout_width="36.0dip"
+                            android:layout_height="36.0dip"
+                            android:src="@drawable/arrow_rounded_down" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/ll_pending_outer"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:visibility="visible"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4.0dip">
+                        <RelativeLayout
+                            android:id="@id/lyt_task_timer"
+                            android:background="@color/white"
+                            android:padding="@dimen/dimen_16"
+                            android:visibility="gone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_marginTop="@dimen/dimen_10"
+                            android:layout_marginRight="@dimen/dimen_10">
+                            <TextView
+                                android:textSize="16.0sp"
+                                android:textStyle="normal"
+                                android:textColor="#ff1c1839"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Envision Recommendation \npacks will be available in"
+                                android:maxLines="2"
+                                android:lineSpacingExtra="8.0sp"
+                                android:fontFamily="\@fonts/sf_pro_display_medium" />
+                            <TextView
+                                android:textSize="16.0sp"
+                                android:textStyle="bold"
+                                android:textColor="#ff2392ff"
+                                android:gravity="end"
+                                android:id="@id/tv_timer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:lineSpacingExtra="9.0sp"
+                                android:fontFamily="\@fonts/sf_pro_display_regular"
+                                android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@id/rcv_task_pending"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@id/no_data_found"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:text="No mission available for the store" />
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@id/rcv_survey_header_pending"
+                                android:background="@color/white"
+                                android:paddingTop="@dimen/dimen_8"
+                                android:paddingBottom="@dimen/dimen_8"
+                                android:visibility="gone"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dimen_8"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_8" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:textColor="#ff616161"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/no_data_tv"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data_found_msg" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@id/lyt_exit_outlet"
+        android:background="#fff9fbff"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@id/img_logout"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_exit" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff41586f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:text="Exit Store"
+            android:layout_toRightOf="@id/img_logout"
+            android:layout_centerVertical="true"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="\@fonts/sf_pro_display_medium" />
+    </RelativeLayout>
+    <include
+        android:visibility="gone"
+        layout="@layout/task_exit_bottomsheet" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@id/feedbackFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:src="@drawable/ic_feedback"
+        android:contentDescription="Feedback"
+        android:layout_marginHorizontal="16.0dip"
+        app:backgroundTint="@color/color_2392ff"
+        app:elevation="2.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

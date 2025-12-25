@@ -1,0 +1,34 @@
+.class public final synthetic Lfd/m;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lfd/p;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lfd/p;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lfd/m;->a:Lfd/p;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object v0, p0, Lfd/m;->a:Lfd/p;
+
+    invoke-static {v0, p1}, Lfd/p;->E3(Lfd/p;Landroid/view/View;)V
+
+    return-void
+.end method

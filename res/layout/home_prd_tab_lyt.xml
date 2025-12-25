@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="2.0dip"
+    android:paddingTop="@dimen/dimen_10"
+    android:paddingBottom="@dimen/dimen_10"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/mainLayout"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="#ff2392ff"
+            android:gravity="center"
+            android:id="@id/textViewPrd1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="#ff758da6"
+            android:gravity="center"
+            android:id="@id/textViewPrd2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+    </LinearLayout>
+    <View
+        android:id="@id/viewMainLayout"
+        android:background="@drawable/tab_indicater_unselect"
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@id/viewPrd1Layout"
+            android:background="@drawable/tab_indicater_select"
+            android:layout_width="fill_parent"
+            android:layout_height="3.0dip"
+            android:layout_weight="1.0" />
+        <View
+            android:id="@id/viewPrd2Layout"
+            android:background="@drawable/tab_indicater_unselect"
+            android:layout_width="fill_parent"
+            android:layout_height="3.0dip"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/reclyer_prodview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5" />
+    <include
+        android:id="@id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_15"
+        layout="@layout/prdtab_list_footer" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/sj_shikhar"
+        android:id="@id/action_menu_shop_front"
+        android:title="@string/shop_front" />
+    <item
+        android:icon="@drawable/ic_take_order"
+        android:id="@id/action_menu_take_order"
+        android:title="@string/take_order" />
+    <item
+        android:icon="@drawable/sj_my_orders"
+        android:id="@id/action_menu_orders"
+        android:title="@string/my_orders" />
+    <item
+        android:icon="@drawable/ic_mission"
+        android:id="@id/action_menu_mission"
+        android:title="@string/mission" />
+    <item
+        android:icon="@drawable/ic_drawable_menu"
+        android:id="@id/action_menu_six"
+        android:title="@string/menu" />
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_items_found"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/sf_pro_display_regular" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/lin_claims"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@id/swipe_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+            <ExpandableListView
+                android:id="@id/expListView_booster"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:groupIndicator="@color/transparent"
+                android:childDivider="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="1.0dip" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

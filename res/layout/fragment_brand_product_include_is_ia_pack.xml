@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/include_scrollView"
+    android:background="@color/color_e6eaf4"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@color/color_e6eaf4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/activityTypeBanner"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_gravity="center"
+                    android:id="@id/schemeBanner"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_gravity="center"
+                    android:id="@id/schemeIcon"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_btpr" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@id/schemeTitle"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:text="Buy many varients to get higher scheme"
+                    android:lineSpacingExtra="@dimen/dimen_3"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_marginStart="@dimen/dimen_20" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/color_1c1839_1"
+                android:gravity="center"
+                android:id="@id/validityDate"
+                android:background="@color/white"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_10"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valid_till"
+                android:fontFamily="@font/sf_pro_display_medium" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/progressBarLinear"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_12"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@id/variantLinear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20.0dip"
+                    android:weightSum="100.0" />
+                <ProgressBar
+                    android:id="@id/progressBarHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20.0dip"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_marginBottom="@dimen/dimen_5"
+                    android:maxHeight="5.0dip"
+                    android:max="100"
+                    android:progress="0"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/schemes_progress_bg"
+                    android:minHeight="5.0dip"
+                    style="?android:progressBarStyleHorizontal" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@id/discountLinear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20.0dip"
+                    android:weightSum="100.0" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/schemeRecyclerView"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_10"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recyclerViewWishList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/sub_category_block_recycler_new"
+                android:background="@color/color_dce5ed"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutPreviousOrder" />
+            <RelativeLayout
+                android:background="@color/color_e6eaf4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.core.widget.NestedScrollView
+                    android:id="@id/nestedScrollViewProduct"
+                    android:fitsSystemWindows="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/product_list_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_16sp"
+                            android:textColor="@color/color_1c1839_1"
+                            android:layout_gravity="center"
+                            android:id="@id/chooseVariant"
+                            android:paddingLeft="@dimen/dimen_10"
+                            android:paddingTop="@dimen/dimen_10"
+                            android:paddingRight="@dimen/dimen_10"
+                            android:paddingBottom="@dimen/dimen_5"
+                            android:visibility="gone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choose_variants_from_below"
+                            android:fontFamily="@font/sf_pro_display_medium" />
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <ProgressBar
+                                android:id="@id/progress_bar_for_brand_product_list"
+                                android:visibility="gone"
+                                android:layout_width="50.0dip"
+                                android:layout_height="50.0dip"
+                                android:layout_marginTop="20.0dip"
+                                android:layout_marginBottom="20.0dip"
+                                android:indeterminate="true"
+                                android:layout_above="@id/brand_product_list"
+                                android:layout_centerInParent="true" />
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@id/brand_product_list"
+                                android:visibility="visible"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" />
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:id="@id/overlay_lyt"
+                                android:background="@color/transparent"
+                                android:visibility="gone"
+                                android:clickable="true"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent" />
+                        </RelativeLayout>
+                        <ProgressBar
+                            android:layout_gravity="center"
+                            android:id="@id/lazyprogress_bar"
+                            android:visibility="gone"
+                            android:layout_width="50.0dip"
+                            android:layout_height="50.0dip"
+                            android:layout_centerInParent="true" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_15sp"
+                            android:textColor="@color/dark_gray"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:id="@id/txt_folks"
+                            android:padding="@dimen/dimen_7"
+                            android:visibility="gone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/thatsallfolks"
+                            android:fontFamily="@font/sf_pro_display_medium" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@id/lyt_ia_reason_spinner"
+                            android:background="@color/color_758da6"
+                            android:visibility="gone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="@dimen/dimen_16sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:id="@id/tv_reason_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_16"
+                                android:layout_marginBottom="@dimen/dimen_4"
+                                android:text="@string/select_common_reason_for_all_packs"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginEnd="@dimen/dimen_16" />
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:id="@id/linlyt_spinner"
+                                android:background="@color/white"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dimen_16"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginEnd="@dimen/dimen_16">
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                    android:textColor="@android:color/black"
+                                    android:id="@id/product_skip_reason"
+                                    android:background="@drawable/spinner_background"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40.0dip"
+                                    android:spinnerMode="dropdown"
+                                    style="@style/Widget.AppCompat.Light.DropDownItem.Spinner" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-50.0dip"
+                                    android:layout_marginTop="10.0dip"
+                                    android:src="@drawable/ic_down_arrow" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@id/progress_bar"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerInParent="true" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:id="@id/no_item_msg"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_items_found"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

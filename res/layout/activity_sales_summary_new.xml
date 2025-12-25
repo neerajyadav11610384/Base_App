@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#fff4f5f7"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredWhiteArrow">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:id="@id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/sales_summary"
+                android:maxLines="1"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/tx_currentdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_16"
+                android:text="dd-mm-yyyy"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/tx_ndf"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutHeader"
+        android:background="#ffdce5ed"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="#ff091e42"
+            android:gravity="center"
+            android:id="@id/txt_store_name"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_0"
+            android:text="Store Name/Outlet Id"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/viewDividerNameSales"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.439" />
+        <View
+            android:id="@id/viewDividerNameSales"
+            android:background="@color/gray"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/mocsales"
+            app:layout_constraintStart_toEndOf="@id/txt_store_name"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="#ff091e42"
+            android:gravity="center"
+            android:id="@id/mocsales"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_0"
+            android:text="MOC Sales"
+            app:layout_constraintBottom_toBottomOf="@id/txt_store_name"
+            app:layout_constraintEnd_toStartOf="@id/viewDividerMocSales"
+            app:layout_constraintStart_toEndOf="@id/viewDividerNameSales"
+            app:layout_constraintTop_toTopOf="@id/txt_store_name"
+            app:layout_constraintWidth_percent="0.25" />
+        <View
+            android:id="@id/viewDividerMocSales"
+            android:background="@color/gray"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/daySales"
+            app:layout_constraintStart_toEndOf="@id/mocsales"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="#ff091e42"
+            android:gravity="center"
+            android:id="@id/daySales"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/dimen_0"
+            android:text="Day Sales"
+            app:layout_constraintBottom_toBottomOf="@id/txt_store_name"
+            app:layout_constraintEnd_toStartOf="@id/viewDividerSalesNoLine"
+            app:layout_constraintStart_toEndOf="@id/viewDividerMocSales"
+            app:layout_constraintTop_toTopOf="@id/txt_store_name"
+            app:layout_constraintWidth_percent="0.13" />
+        <View
+            android:id="@id/viewDividerSalesNoLine"
+            android:background="@color/gray"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/nolines"
+            app:layout_constraintStart_toEndOf="@id/daySales"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="#ff091e42"
+            android:gravity="center"
+            android:id="@id/nolines"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_0"
+            android:text="No.of Lines"
+            app:layout_constraintBottom_toBottomOf="@id/txt_store_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewDividerSalesNoLine"
+            app:layout_constraintTop_toTopOf="@id/txt_store_name"
+            app:layout_constraintWidth_percent="0.13" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerViewSalesSummary"
+        android:background="#fff4f5f7"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/layoutBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutBottom"
+        android:background="#ff2392ff"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center|left"
+            android:id="@id/total"
+            android:paddingLeft="@dimen/dimen_16"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="Total "
+            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/textViewTotalMOC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.4" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/textViewTotalMOC"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="fill_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/total_day_sales"
+            app:layout_constraintStart_toEndOf="@id/total"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center|right"
+            android:id="@id/total_day_sales"
+            android:background="#ff2392ff"
+            android:paddingRight="@dimen/dimen_15"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/total_no_of_lines"
+            app:layout_constraintStart_toEndOf="@id/textViewTotalMOC"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center|right"
+            android:id="@id/total_no_of_lines"
+            android:background="#ff2392ff"
+            android:paddingRight="@dimen/dimen_20sp"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/total_day_sales"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

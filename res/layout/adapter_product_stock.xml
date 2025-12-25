@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/hdrr"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40">
+        <TextView
+            android:textSize="@dimen/dimen_11sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="start|center"
+            android:id="@id/tv_description"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="DESCRIPTION"
+            android:layout_weight="2.0"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_4" />
+        <View
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_11sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@id/tv_mrp"
+            android:background="@drawable/c2c1c1_bouder_5dp"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/dimen_6"
+            android:text="0.0"
+            android:layout_weight="1.0" />
+        <LinearLayout
+            android:id="@id/lyt_qty_avail"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <View
+                android:background="@color/white"
+                android:layout_width="@dimen/dimen_1"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:textSize="@dimen/dimen_11sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@id/tv_qty_avail"
+                android:background="@drawable/c2c1c1_bouder_5dp"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/dimen_6"
+                android:text="0.0"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+        <View
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="fill_parent" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:textSize="@dimen/dimen_11sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@id/et_qty"
+            android:background="@drawable/color_003292_bouder_5dp"
+            android:padding="@dimen/dimen_5"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/dimen_6"
+            android:hint="0"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:layout_weight="1.0"
+            android:inputType="number"
+            android:imeOptions="actionDone" />
+    </LinearLayout>
+    <View
+        android:background="#ff323131"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_below="@id/hdrr" />
+</RelativeLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/proposal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredWhiteArrow">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:id="@id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/proposal_info"
+                android:maxLines="1"
+                android:layout_toRightOf="@id/logo"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff1c1839"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/proposal_id"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:id="@id/tv_proposal_id"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff1c1839"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/store_name_only"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:id="@id/tv_outlet_name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff1c1839"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_number"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:id="@id/tv_mobile_number"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff1c1839"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/status_only"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:id="@id/tv_status"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_16">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff1c1839"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/reason"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:id="@id/tv_reason"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:layout_weight="1.0"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#b3000000"
+    android:visibility="visible"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/titleLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_48">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textColor="#ff1c1839"
+                android:gravity="center_vertical"
+                android:id="@id/title"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:text="@string/app_name_sj"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_bold" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:gravity="center_vertical"
+                android:id="@id/close_plg_credit_dialog"
+                android:padding="@dimen/dimen_8"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:layout_marginBottom="@dimen/dimen_2"
+                app:srcCompat="@drawable/ic_close_black" />
+        </LinearLayout>
+        <View
+            android:id="@id/vw_line"
+            android:background="@color/color_e6eaf4"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_below="@id/titleLinear" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/invoice_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:minHeight="300.0dip"
+            android:layout_above="@id/credit_alert"
+            android:layout_below="@id/vw_line" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="#ff1c1839"
+            android:id="@id/credit_alert"
+            android:background="#33ff5f5f"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_alignParentBottom="true"
+            android:lineSpacingExtra="@dimen/dimen_3sp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </RelativeLayout>
+</RelativeLayout>

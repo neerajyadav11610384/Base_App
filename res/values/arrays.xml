@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CouponBackgroundColor">
+        <item>@color/color_a1e24f</item>
+        <item>@color/color_ffb156</item>
+        <item>@color/color_4de8a5</item>
+        <item>@color/color_dcbaff</item>
+        <item>@color/color_fff06b</item>
+        <item>@color/color_8bf1ff</item>
+    </array>
+    <string-array name="company">
+        <item>Select Company</item>
+        <item>HFS</item>
+        <item>HUL</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="country_codes">
+        <item>+91</item>
+        <item>+90</item>
+    </string-array>
+    <array name="couponIconColor">
+        <item>@color/color_72c00f</item>
+        <item>@color/color_da7f15</item>
+        <item>@color/color_10bb7d</item>
+        <item>@color/color_bf89f8</item>
+        <item>@color/color_f2c41f</item>
+        <item>@color/color_35d9ef</item>
+    </array>
+    <string-array name="dashboard_list">
+        <item>Profile</item>
+        <item>Sales Dashboard</item>
+        <item>Offers</item>
+        <item>My Orders</item>
+        <item>Claims</item>
+        <item>FAQ</item>
+        <item>Feedback</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="dashboard_list_vijeta">
+        <item>Profile</item>
+        <item>Sales Dashboard</item>
+        <item>Offers</item>
+        <item>My Orders</item>
+        <item>Claims</item>
+        <item>FAQ</item>
+        <item>Feedback</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+        <item>Vijeta</item>
+    </string-array>
+    <string-array name="designation">
+        <item>Select Designation</item>
+        <item>HUL Manager</item>
+        <item>HFS CL</item>
+        <item>HFS FM</item>
+    </string-array>
+    <array name="dot_on_page_active">
+        <item>#ffffffff</item>
+        <item>#ffffffff</item>
+        <item>#ffffffff</item>
+        <item>#ffffffff</item>
+    </array>
+    <array name="dot_on_page_not_active">
+        <item>#80ffffff</item>
+        <item>#80ffffff</item>
+        <item>#80ffffff</item>
+        <item>#80ffffff</item>
+    </array>
+    <string-array name="icd_skip">
+        <item>Barcode Missing</item>
+        <item>Barcode Damaged</item>
+        <item>Any other issues</item>
+    </string-array>
+    <string-array name="img_skip">
+        <item>Reasons</item>
+        <item>Outlet Closes</item>
+        <item>Owner not available</item>
+        <item>Stock not available</item>
+    </string-array>
+    <string-array name="lang_array">
+        <item>"  English"</item>
+        <item>"  Hindi"</item>
+        <item>"  Tamil"</item>
+        <item>"  Marathi"</item>
+    </string-array>
+    <string-array name="lang_array_codes">
+        <item>0</item>
+        <item>1</item>
+        <item>5</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="ledger_slots">
+        <item>7 Days</item>
+        <item>15 Days</item>
+        <item>1 Month</item>
+        <item>1 Year</item>
+    </string-array>
+    <string-array name="limit_array">
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="outlet_type">
+        <item>Retail</item>
+        <item>Wholesale</item>
+    </string-array>
+    <string-array name="search_list">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>100</item>
+        <item>1000</item>
+        <item>10000</item>
+    </string-array>
+    <string-array name="tso_verifier">
+        <item>FF</item>
+        <item>HFS</item>
+        <item>3P</item>
+    </string-array>
+    <string-array name="uom_array">
+        <item>Units</item>
+        <item>Cases</item>
+    </string-array>
+</resources>

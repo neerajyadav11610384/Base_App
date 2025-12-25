@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_clear_cart"
+        android:id="@id/menuClearAll"
+        android:title="@string/clear_cart"
+        app:showAsAction="withText|collapseActionView" />
+</menu>

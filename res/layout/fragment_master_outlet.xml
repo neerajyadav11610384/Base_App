@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#ffebeff8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <HorizontalScrollView
+        android:id="@id/task_scroll_view"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_8"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@id/hour_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="@dimen/dimen_16" />
+    </HorizontalScrollView>
+    <EditText
+        android:textSize="@dimen/dimen_16sp"
+        android:textStyle="normal"
+        android:textColor="@color/color_1c1839_1"
+        android:textColorHint="@color/color_758da6"
+        android:layout_gravity="center"
+        android:id="@id/edt_outlet_search"
+        android:background="@drawable/backgroung_white_border"
+        android:longClickable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:hint="Search"
+        android:singleLine="true"
+        android:drawablePadding="@dimen/dimen_5"
+        android:lineSpacingExtra="8.0sp"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:paddingStart="@dimen/dimen_14"
+        android:paddingEnd="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        app:drawableLeftCompat="@drawable/ic_search_wrapped" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_outlet_list"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10" />
+    <TextView
+        android:textSize="18.0sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/tv_no_data_found"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/no_data_found_msg"
+        android:fontFamily="@font/sf_pro_display_regular" />
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/fragment_stockimage"
+    android:background="#b3000000"
+    android:visibility="gone"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@id/stock_image_frames"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="450.0dip"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:id="@id/rel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:theme="?actionBarTheme"
+                android:id="@id/toolbar"
+                android:background="@drawable/add_blue_button"
+                android:paddingLeft="@dimen/dimen_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Image Analytics"
+                app:titleTextColor="@color/white" />
+            <ImageView
+                android:id="@id/close_fgmt"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_margin="@dimen/dimen_16"
+                android:src="@drawable/ic_close_white"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View
+            android:id="@id/v1"
+            android:background="#ffeaeef8"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_below="@id/rel" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:id="@id/sample_txt"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:text="Sample Images"
+            android:layout_below="@id/v1"
+            android:lineSpacingExtra="0.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/lyt_image_avail"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_above="@id/bottomSheet"
+            android:layout_below="@id/sample_txt">
+            <include
+                layout="@layout/fragment_see_sample_image" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@id/bottomSheet"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_margin="@dimen/dimen_12"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff2392ff"
+                android:id="@id/tx_skip"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_32"
+                android:text="Skip"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="0.0sp"
+                fontFamily="\@fonts/sf_pro_display_medium" />
+            <RelativeLayout
+                android:id="@id/btn_captureimage"
+                android:background="@drawable/add_blue_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/tx_skip">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:id="@id/camera"
+                        android:layout_width="@dimen/dimen_20"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_marginRight="@dimen/dimen_12"
+                        android:src="@drawable/ic_camera_icon"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textStyle="normal"
+                        android:textColor="#ffffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capture Images"
+                        android:layout_toRightOf="@id/camera"
+                        android:layout_centerVertical="true"
+                        android:lineSpacingExtra="0.0sp"
+                        fontFamily="\@fonts/sf_pro_display_medium" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

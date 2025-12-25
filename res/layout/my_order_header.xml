@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    android:padding="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8.0dip"
+    android:layout_marginTop="12.0dip"
+    android:layout_marginRight="8.0dip"
+    app:cardBackgroundColor="#fff3f0f0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/lyt_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2.0">
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.85">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="14.0sp"
+                        android:textColor="@color/very_dark_gray"
+                        android:id="@id/order_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ORDER ID: 123455555353925kgds"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@id/unipay_txt"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textColor="@color/dark_red"
+                            android:layout_gravity="center"
+                            android:id="@id/unipay_points_txt_partone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/estimated_bill"
+                            android:fontFamily="@font/sf_pro_display_bold" />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_gravity="center"
+                            android:id="@id/unipay_symbol"
+                            android:visibility="gone"
+                            android:layout_width="12.0dip"
+                            android:layout_height="12.0dip"
+                            app:srcCompat="@drawable/unipay_symbol" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textColor="@color/dark_red"
+                            android:layout_gravity="center"
+                            android:id="@id/unipay_points_txt_parttwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:fontFamily="@font/sf_pro_display_bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.0"
+                        android:layout_below="@id/unipay_txt">
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="12.0sp"
+                                android:textColor="@android:color/darker_gray"
+                                android:id="@id/order_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Placed on 15 Aug 2016 11:00 AM"
+                                android:fontFamily="@font/sf_pro_display_bolditalic" />
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@id/order_amt"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Total Amount" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@id/expand_icon"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@id/img_order_status"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_below="@id/lyt_one"
+            app:srcCompat="@drawable/ic_underprocess" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

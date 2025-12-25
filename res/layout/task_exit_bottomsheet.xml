@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/task_exit_bottomsheet"
+    android:visibility="visible"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="320.0dip"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/im_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="85.0dip"
+            android:src="@drawable/task_pedning_illustration"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="Mission Awaited"
+            android:lineSpacingExtra="8.0sp" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:id="@id/tv_recomm"
+            android:padding="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140.0dip"
+            android:layout_marginBottom="100.0dip"
+            android:text=""
+            android:textAlignment="center" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_above="@id/stock_image_frames"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="#ff2392ff"
+                android:gravity="center"
+                android:id="@id/tx_skip"
+                android:background="@drawable/border_blue"
+                android:padding="5.0dip"
+                android:paddingLeft="@dimen/dimen_24"
+                android:paddingRight="@dimen/dimen_24"
+                android:layout_width="170.0dip"
+                android:layout_height="45.0dip"
+                android:layout_marginLeft="0.0dip"
+                android:layout_marginBottom="2.0dip"
+                android:text="Exit Anyway"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:lineSpacingExtra="9.0sp"
+                android:textAlignment="center" />
+            <RelativeLayout
+                android:id="@id/btn_captureimage"
+                android:background="@drawable/add_blue_button"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_toRightOf="@id/tx_skip"
+                android:layout_alignParentBottom="true">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:textSize="18.0sp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffffff"
+                        android:gravity="center"
+                        android:id="@id/tx_cancel"
+                        android:layout_width="180.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Back to Mission"
+                        android:layout_centerInParent="true"
+                        android:lineSpacingExtra="9.0sp"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

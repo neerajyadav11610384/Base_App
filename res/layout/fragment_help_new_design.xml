@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/color_e6eaf4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/headerLayout"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_16"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="#ff41586f"
+                android:id="@id/textViewHelpDes"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="7.0sp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/color_2392ff"
+                android:id="@id/textViewHelpPhoneNo"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_10"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:drawableTint="@color/color_2392ff"
+                app:drawableLeftCompat="@drawable/ic_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewHelpDes" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/color_758da6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:text="(Toll Free)"
+                app:layout_constraintBottom_toBottomOf="@id/textViewHelpPhoneNo"
+                app:layout_constraintStart_toEndOf="@id/textViewHelpPhoneNo"
+                app:layout_constraintTop_toTopOf="@id/textViewHelpPhoneNo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/distributorInfo"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_16"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_41586f"
+                android:id="@id/textViewContactDisHeader"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="7.0sp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/textViewDisStoreName"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:lineSpacingExtra="@dimen/dimen_9"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewContactDisHeader" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_758da6"
+                android:id="@id/textViewDisName"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:lineSpacingExtra="@dimen/dimen_7"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewDisStoreName" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/color_2392ff"
+                android:id="@id/textViewHelpDisPhoneNo"
+                android:paddingTop="@dimen/dimen_8"
+                android:paddingBottom="@dimen/dimen_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_10"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:drawableTint="@color/color_2392ff"
+                app:drawableLeftCompat="@drawable/ic_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewDisName" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/locationIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewHelpDisPhoneNo"
+                app:srcCompat="@drawable/ic_location_icon_new" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_41586f"
+                android:id="@id/textViewDisLocation"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:lineSpacingExtra="@dimen/dimen_7sp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/locationIcon"
+                app:layout_constraintTop_toTopOf="@id/locationIcon" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_2392ff"
+                android:id="@id/textViewMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="View in map"
+                android:fontFamily="@font/sf_pro_display_bold"
+                app:layout_constraintStart_toStartOf="@id/textViewDisLocation"
+                app:layout_constraintTop_toBottomOf="@id/textViewDisLocation" />
+            <View
+                android:background="@color/color_2392ff"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="@dimen/dimen_1"
+                app:layout_constraintEnd_toEndOf="@id/textViewMap"
+                app:layout_constraintStart_toStartOf="@id/textViewMap"
+                app:layout_constraintTop_toBottomOf="@id/textViewMap" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/additionalInfoLayout"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_16"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/distributorInfo">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="#ff41586f"
+                android:id="@id/additionalInfo"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Additional details"
+                android:lineSpacingExtra="7.0sp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/textOutletCode"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:lineSpacingExtra="@dimen/dimen_9"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/additionalInfo" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/textAppVersion"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:lineSpacingExtra="@dimen/dimen_7"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textOutletCode" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_2392ff"
+                android:id="@id/textUpdate"
+                android:background="@drawable/edit_text_blue_box_bg"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="Update app"
+                android:lineSpacingExtra="@dimen/dimen_7"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textAppVersion" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ProgressBar
+            android:id="@id/progressBar"
+            android:visibility="visible"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

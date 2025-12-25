@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_items_found"
+        android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/very_dark_green"
+        android:id="@id/schemes_label"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/schemes_caps" />
+    <com.hul.sambhav.customview.DelayAutoCompleteTextView
+        android:textSize="14.0sp"
+        android:textColorHint="#ffbcc6c7"
+        android:id="@id/autoCompleteTextView"
+        android:background="@drawable/light_green_rounded_corner"
+        android:paddingLeft="5.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:layout_margin="5.0dip"
+        android:hint="@string/search_schemes"
+        android:singleLine="true"
+        android:layout_below="@id/schemes_label"
+        android:layout_alignParentLeft="true"
+        android:imeOptions="actionDone"
+        android:layout_alignParentStart="true"
+        app:drawableLeftCompat="@android:drawable/ic_menu_search" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/lin_claims"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5.0dip"
+        android:layout_below="@id/autoCompleteTextView">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@id/swipe_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+            <ExpandableListView
+                android:id="@id/expListView_claims"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:groupIndicator="@android:color/transparent"
+                android:childIndicator="@null"
+                android:childDivider="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="1.0dip" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/color_ebeff8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:fitsSystemWindows="true"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintBottom_toTopOf="@id/layoutDeleteItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/color_ff5f5f"
+                android:gravity="left"
+                android:id="@id/textViewItemCount"
+                android:background="@color/color_ff5f5f_c20"
+                android:padding="@dimen/dimen_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="rewrwrwerwrwer"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:paddingStart="@dimen/dimen_40"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/iamgeViewItemCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:tint="@color/color_ff5f5f"
+                android:rotation="180.0"
+                app:layout_constraintBottom_toBottomOf="@id/textViewItemCount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewItemCount"
+                app:srcCompat="@drawable/ic_info" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_d6731c"
+                android:gravity="center"
+                android:id="@id/textViewInconvenience"
+                android:background="@color/color_ffe793"
+                android:padding="@dimen/dimen_5"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="We regret the inconvenience "
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewItemCount" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recOutofstock"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/textViewInconvenience" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/color_ff5f5f"
+                android:gravity="left"
+                android:id="@id/textViewLimitedItemCount"
+                android:background="@color/color_ff5f5f_c20"
+                android:padding="@dimen/dimen_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="qwefwefewfew"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:paddingStart="@dimen/dimen_40"
+                app:layout_constraintTop_toBottomOf="@id/recOutofstock" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/imageViewLimitedItemCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:tint="@color/color_ff5f5f"
+                android:rotation="180.0"
+                app:layout_constraintBottom_toBottomOf="@id/textViewLimitedItemCount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewLimitedItemCount"
+                app:srcCompat="@drawable/ic_info" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recyLimitedStock"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0"
+                app:layout_constraintTop_toBottomOf="@id/textViewLimitedItemCount" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutDeleteItem"
+        android:background="@color/color_2392ff"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_2392ff"
+            android:gravity="center"
+            android:id="@id/textViewBackToCart"
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/dimen_1"
+            android:text="@string/back_to_cart"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toStartOf="@id/textViewRemove"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/textViewRemove"
+            android:background="@color/color_2392ff"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="fill_parent"
+            android:text="@string/remove_products"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewBackToCart"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/rlyt_hdr"
+        android:background="@drawable/add_blue_button"
+        android:layout_width="fill_parent"
+        android:layout_height="75.0dip"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/tv_hdr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi "
+                android:layout_toLeftOf="@id/tv_emp_name" />
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@id/tv_emp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <TextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tv_tlsd_txt"
+            android:paddingTop="@dimen/dimen_2"
+            android:paddingBottom="@dimen/dimen_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder for Mission Tasks"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_task_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_msg"
+        android:layout_below="@id/rlyt_hdr" />
+    <TextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/tv_msg"
+        android:padding="@dimen/dimen_16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="All the very best!"
+        android:layout_above="@id/lyt_bottom"
+        android:fontFamily="@font/sf_pro_display_regular" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/lyt_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/very_dark_green"
+            android:gravity="center"
+            android:id="@id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Ok, Close"
+            android:layout_weight="1.0"
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_navigate"
+            android:background="@drawable/green_rounded_corner"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Click to Navigate Task"
+            android:layout_weight="2.0"
+            android:fontFamily="@font/sf_pro_display_medium" />
+    </LinearLayout>
+</RelativeLayout>

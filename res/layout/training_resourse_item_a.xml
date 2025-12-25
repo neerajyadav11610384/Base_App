@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:background="#ffe6eaf4"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/lin_1"
+        android:layout_width="fill_parent"
+        android:layout_height="150.0dip"
+        android:layout_margin="@dimen/dimen_5">
+        <androidx.cardview.widget.CardView
+            android:id="@id/card_views"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/dimen_0"
+            android:layout_weight="2.0"
+            app:cardCornerRadius="@dimen/dimen_4">
+            <ImageView
+                android:id="@id/bg_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop" />
+            <RelativeLayout
+                android:id="@id/tx_app_releted"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/dimen_0"
+                android:layout_weight="2.0">
+                <TextView
+                    android:textSize="@dimen/dimen_20"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_091e42"
+                    android:id="@id/key_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:text="Application" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/color_091e42"
+                    android:id="@id/module_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_12"
+                    android:text="Related"
+                    android:layout_below="@id/key_name" />
+                <ImageView
+                    android:id="@id/imageView_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_12"
+                    android:layout_marginBottom="@dimen/dimen_12"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true" />
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@id/key_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_12"
+                    android:layout_marginBottom="@dimen/dimen_12"
+                    android:text="112 Files"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/item_recyclerview"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</RelativeLayout>

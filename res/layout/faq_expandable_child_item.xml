@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/faq_exp_child_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/very_dark_gray"
+        android:gravity="center|left"
+        android:id="@id/txt_faq_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="20.0dip"
+        android:alpha="0.87"
+        android:fontFamily="@font/sf_pro_display_bold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:textColor="@color/dark_blue"
+        android:textColorLink="@color/dark_green"
+        android:gravity="center_vertical"
+        android:autoLink="all"
+        android:id="@id/txt_faq_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:text=""
+        android:fontFamily="@font/sf_pro_display_regular" />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/camera_bottom_sheet"
+    android:background="@drawable/rounded_corner_linlyt"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/img_status_icon"
+        android:layout_width="96.0dip"
+        android:layout_height="96.0dip"
+        android:layout_marginTop="32.0dip" />
+    <TextView
+        android:textSize="18.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff27ae60"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@id/tv_attendance_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:fontFamily="\@fonts/sf_pro_display_medium" />
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_margin="@dimen/dimen_32">
+        <Button
+            android:textSize="16.0sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_done"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="@dimen/dimen_32"
+            android:paddingRight="@dimen/dimen_32"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Done"
+            android:layout_weight="1.0"
+            android:textAllCaps="false" />
+        <Button
+            android:textSize="16.0sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_exit"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="@dimen/dimen_32"
+            android:paddingRight="@dimen/dimen_32"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:text="Exit"
+            android:layout_weight="1.0"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

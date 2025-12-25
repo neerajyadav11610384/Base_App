@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/profile_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:gravity="left"
+        android:id="@id/rlyt_emp_info"
+        android:background="#ff2196f3"
+        android:padding="@dimen/dimen_16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="start"
+            android:id="@id/fieldProfile"
+            android:padding="1.0dip"
+            android:layout_width="65.0dip"
+            android:layout_height="65.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/default_img" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/color_fcfdff"
+            android:ellipsize="end"
+            android:id="@id/fieldUserName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:text="@string/app_name_sj"
+            android:maxLines="1"
+            android:layout_toRightOf="@id/fieldProfile"
+            android:lineSpacingExtra="0.0sp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <RelativeLayout
+            android:id="@id/lyt_emp_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_marginTop="8.0dip"
+            android:layout_toRightOf="@id/fieldProfile"
+            android:layout_below="@id/fieldUserName">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/color_ebecf0"
+                android:id="@id/fieldUserCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMN000015"
+                android:lineSpacingExtra="8.0sp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/color_ebecf0"
+                android:ellipsize="end"
+                android:id="@id/fieldUserRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_3"
+                android:text="Marketing Executive"
+                android:maxLines="1"
+                android:layout_below="@id/fieldUserCode"
+                android:lineSpacingExtra="8.0sp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/color_ebecf0"
+                android:ellipsize="end"
+                android:id="@id/rscode_salcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_3"
+                android:text=""
+                android:maxLines="1"
+                android:layout_below="@id/fieldUserRole"
+                android:lineSpacingExtra="8.0sp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:id="@id/lyt_attendance"
+        android:background="@color/color_light_red"
+        android:paddingLeft="@dimen/dimen_16"
+        android:paddingRight="@dimen/dimen_16"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_32"
+        android:layout_marginBottom="@dimen/dimen_24"
+        android:layout_below="@id/rlyt_emp_info">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="#ff091e42"
+            android:paddingRight="@dimen/dimen_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance : "
+            android:maxLines="1"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="#ff091e42"
+            android:id="@id/attendence_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/market_attendence"
+            android:drawablePadding="@dimen/dimen_4"
+            android:lineSpacingExtra="8.0sp"
+            android:drawableStart="@drawable/ic_attendence_error"
+            android:fontFamily="@font/sf_pro_display_medium" />
+    </LinearLayout>
+</RelativeLayout>

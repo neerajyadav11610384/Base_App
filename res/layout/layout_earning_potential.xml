@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    android:id="@id/lyt_ete_earning"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dimen_30"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/im_ete_earning"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_fcfdff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/tv_ete_earnings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:lineSpacingExtra="8.0sp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:paddingStart="@dimen/dimen_50" />
+</FrameLayout>

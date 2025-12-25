@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/view_qps"
+    android:background="@color/color_eaeef8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/hdr_lyt"
+        android:background="@drawable/rounded_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:layout_marginEnd="@dimen/dimen_4">
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tx_packs"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="Packs"
+            android:layout_weight="2.0"
+            android:textAllCaps="true" />
+        <View
+            android:background="#ffdcd9d9"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tx_ach"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="Ach"
+            android:layout_weight="1.0"
+            android:textAllCaps="true" />
+        <View
+            android:background="#ffdcd9d9"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tx_bal"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="bal"
+            android:layout_weight="1.0"
+            android:textAllCaps="true" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_qps_list"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_below="@id/hdr_lyt"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:layout_marginEnd="@dimen/dimen_4" />
+    <TextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="#ff616161"
+        android:gravity="center"
+        android:id="@id/no_data_tv"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

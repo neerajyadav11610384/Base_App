@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/lin_container"
+    android:background="@color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/frame_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_gravity="center"
+            android:id="@id/img_item"
+            android:layout_width="@dimen/dimen_36"
+            android:layout_height="@dimen/dimen_36" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_13sp"
+            android:textColor="@color/color_41586f"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@id/txt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:maxLines="1"
+            android:fontFamily="@font/sf_pro_display_medium" />
+    </LinearLayout>
+</LinearLayout>

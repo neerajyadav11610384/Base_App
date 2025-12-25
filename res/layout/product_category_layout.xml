@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/very_dark_green"
+            android:id="@id/txt_category_name"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="DETERGENT" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/rcy_category_one"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="left"
+        android:id="@id/left_arrow"
+        android:layout_width="30.0dip"
+        android:layout_height="fill_parent"
+        app:srcCompat="@drawable/left_arrow" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="right"
+        android:id="@id/right_arrow"
+        android:layout_width="30.0dip"
+        android:layout_height="fill_parent"
+        app:srcCompat="@drawable/right_arrow" />
+</FrameLayout>

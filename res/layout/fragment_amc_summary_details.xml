@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/relativeLayout"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ScrollView
+            android:fitsSystemWindows="true"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:layout_above="@id/bottomLinear">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/request_id"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:id="@id/requestId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_3"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:textSize="@dimen/dimen_15sp"
+                            android:textColor="@color/color_1c1839_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/request_date"
+                            android:fontFamily="@font/sf_pro_display_semibold" />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:textSize="@dimen/dimen_15sp"
+                            android:textColor="@color/color_1c1839_1"
+                            android:id="@id/requestDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_3"
+                            android:fontFamily="@font/sf_pro_display_regular" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:orientation="vertical"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:textSize="@dimen/dimen_15sp"
+                            android:textColor="@color/color_1c1839_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ticket_status"
+                            android:fontFamily="@font/sf_pro_display_semibold" />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:textSize="@dimen/dimen_15sp"
+                            android:textColor="@color/color_1c1839_1"
+                            android:id="@id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_3"
+                            android:fontFamily="@font/sf_pro_display_regular" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:layout_marginBottom="12.0dip" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Issue Description"
+                        android:layout_weight="42.0"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="end"
+                        android:id="@id/issueDesc"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="58.0"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12.0dip">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Resolved Description"
+                        android:layout_weight="42.0"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="end"
+                        android:id="@id/resolvedDesc"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="58.0"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12.0dip">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Resolved Image"
+                        android:layout_weight="42.0"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="end"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="58.0"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                </LinearLayout>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@id/resolvedImageCv"
+                    android:padding="1.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180.0dip"
+                    android:layout_marginTop="6.0dip"
+                    app:cardCornerRadius="10.0dip"
+                    app:cardElevation="0.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@id/resolvedImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/default_img" />
+                </com.google.android.material.card.MaterialCardView>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12.0dip">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="Resolved Date"
+                        android:layout_weight="42.0"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:gravity="end"
+                        android:id="@id/resolvedDate"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="58.0"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/bottomLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="16.0dip">
+            <com.google.android.material.button.MaterialButton
+                android:textSize="15.0sp"
+                android:id="@id/reopenBtn"
+                android:background="@drawable/bg_button_2392ff"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Re-Open"
+                android:layout_weight="1.0"
+                android:textAllCaps="false"
+                android:fontFamily="@font/sf_pro_display_semibold" />
+            <com.google.android.material.button.MaterialButton
+                android:textSize="15.0sp"
+                android:id="@id/closeBtn"
+                android:background="@drawable/bg_button_2392ff"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:layout_weight="1.0"
+                android:textAllCaps="false"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:layout_marginStart="16.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@id/rl"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ScrollView
+            android:fitsSystemWindows="true"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@id/elementsTL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Element"
+                    app:endIconMode="dropdown_menu"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                    <AutoCompleteTextView
+                        android:enabled="false"
+                        android:textColor="@color/color_1c1839_1"
+                        android:id="@id/elements"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@id/partsTL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:hint="Select Part"
+                    app:endIconMode="dropdown_menu"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                    <AutoCompleteTextView
+                        android:enabled="false"
+                        android:textColor="@color/color_1c1839_1"
+                        android:id="@id/part"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textview.MaterialTextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:id="@id/takePhotoTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Please Take Photo"
+                    android:fontFamily="@font/sf_pro_display_semibold" />
+                <RelativeLayout
+                    android:id="@id/imageCaptureRL"
+                    android:background="@drawable/dashed_border"
+                    android:padding="2.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200.0dip"
+                    android:layout_marginTop="5.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@id/previewIV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="centerCrop" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@id/captureIV"
+                        android:layout_width="48.0dip"
+                        android:layout_height="48.0dip"
+                        android:src="@drawable/camera_with_border"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@id/submitBtn"
+                    android:background="@drawable/bg_login_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_48"
+                    android:layout_marginTop="50.0dip"
+                    android:text="Re-Open"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <include
+        layout="@layout/activity_custom_camera_visitor_details" />
+</RelativeLayout>

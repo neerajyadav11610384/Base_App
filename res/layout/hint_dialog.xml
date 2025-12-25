@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="16.0dip"
+    android:layout_marginTop="25.0dip"
+    android:layout_marginRight="16.0dip"
+    android:layout_marginBottom="35.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="end"
+        android:id="@id/closeDialog"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/ic_clear_black_48dp"
+        app:tint="@color/text_color" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/txt_data"
+        android:layout_width="wrap_content"
+        android:layout_height="200.0dip"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:foreground="@drawable/transperent_rounded_corner"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bill_sample" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="15.0sp"
+        android:textColor="@color/black"
+        android:id="@id/btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginBottom="15.0dip"
+        android:text="Please use the HUL code mentioned in your HUL distributor bill to login"
+        android:lineSpacingExtra="5.0dip" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/btn_ok"
+        android:background="@drawable/bg_pending_amount"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="@string/ok"
+        android:fontFamily="@font/sf_pro_display_bold" />
+</LinearLayout>

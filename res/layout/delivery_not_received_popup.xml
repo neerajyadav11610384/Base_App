@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_1c1839_1"
+        android:gravity="start"
+        android:id="@id/dlg_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16"
+        android:text="Report Distributor response"
+        android:layout_centerHorizontal="true" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerView_DeliveryOption"
+        android:background="#ffffffff"
+        android:padding="@dimen/dimen_8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dlg_text" />
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@id/rating_lyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_below="@id/recyclerView_DeliveryOption">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="@color/color_1c1839_1"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            android:text="Please rate your experience" />
+        <RatingBar
+            android:id="@id/ratingBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:numStars="5" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/user_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10"
+            app:boxStrokeColor="#ffb4c8dc"
+            app:boxStrokeWidth="@dimen/dimen_1"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/ErrorText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/text_color"
+                android:id="@id/type_user_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_90"
+                android:hint="@string/describe_your_answer_here"
+                android:maxLines="4"
+                android:maxLength="400"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/sf_pro_display_regular" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:id="@id/view1"
+        android:background="@color/color_2392ff"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_below="@id/rating_lyt" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_below="@id/view1">
+        <View
+            android:background="@color/color_2392ff"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_2392ff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/cancel"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/cancel"
+            android:layout_weight="50.0"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/submit"
+            android:background="@color/color_2392ff"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/submit"
+            android:layout_weight="50.0"
+            android:fontFamily="@font/sf_pro_display_bold" />
+    </LinearLayout>
+    <View
+        android:background="@color/color_2392ff"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/linearLayout" />
+</RelativeLayout>

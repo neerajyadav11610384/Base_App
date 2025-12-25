@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:layout_margin="10.0dip"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ic_order_filed_yellow" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="15.0sp"
+            android:textColorLink="@color/color_ff7800"
+            android:gravity="center"
+            android:autoLink="all"
+            android:layout_gravity="center"
+            android:id="@id/des_text"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="15.0sp"
+            android:textColorLink="@color/color_ff7800"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/hyperlink_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip">
+        <Button
+            android:textSize="15.0sp"
+            android:id="@id/dismiss"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:text="Dismiss"
+            android:layout_weight="1.0"
+            android:textAllCaps="false"
+            android:fontFamily="@font/sf_pro_display_bold" />
+    </LinearLayout>
+</LinearLayout>

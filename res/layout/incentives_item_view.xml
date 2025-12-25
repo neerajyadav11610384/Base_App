@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dimen_6"
+    android:paddingTop="@dimen/dimen_12"
+    android:paddingRight="@dimen/dimen_6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="16.0sp"
+        android:textColor="@color/color_091e42"
+        android:id="@id/tv_p1_data_moc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:lineSpacingExtra="0.0sp"
+        fontFamily="\@fonts/sf_pro_display_bold" />
+    <TextView
+        android:textSize="16.0sp"
+        android:textColor="@color/color_4caf50"
+        android:id="@id/tv_incentive_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:lineSpacingExtra="0.0sp"
+        fontFamily="\@fonts/sf_pro_display_semibold" />
+    <TextView
+        android:textSize="14.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff7a869a"
+        android:id="@id/tv_valid_date"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_3"
+        android:text="20 Sep to 19 Oct"
+        android:layout_below="@id/tv_p1_data_moc"
+        android:lineSpacingExtra="0.0sp"
+        fontFamily="\@fonts/sf_pro_display_medium" />
+    <TextView
+        android:textSize="14.0sp"
+        android:textStyle="italic"
+        android:textColor="@color/color_7a869a"
+        android:gravity="end"
+        android:id="@id/tv_last_updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_3"
+        android:layout_below="@id/tv_incentive_amount"
+        android:layout_alignParentRight="true"
+        android:lineSpacingExtra="0.0sp"
+        fontFamily="\@fonts/sf_pro_display_semibold" />
+    <View
+        android:background="@color/color_e6eaf4"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_below="@id/tv_valid_date" />
+</RelativeLayout>

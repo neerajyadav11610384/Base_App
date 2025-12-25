@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/layout_border"
+    android:padding="@dimen/dimen_18"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="14.0sp"
+        android:textColor="@color/text_color"
+        android:id="@id/question_desc_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:lineSpacingExtra="0.0sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/question_desc_recycler"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:layout_marginEnd="@dimen/dimen_5" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/image_recycler"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8">
+        <Button
+            android:textSize="@dimen/dimen_14sp"
+            android:id="@id/capture_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture Image"
+            android:drawableLeft="@drawable/ic_camera_white"
+            android:textAllCaps="false" />
+        <Button
+            android:textSize="@dimen/dimen_14sp"
+            android:id="@id/pick_img_btn"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:text="Pick Image"
+            android:layout_weight="0.5"
+            android:textAllCaps="false" />
+    </LinearLayout>
+    <TextView
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/dark_green"
+        android:gravity="center"
+        android:id="@id/captured_tv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="Image captured."
+        android:textAllCaps="false" />
+</LinearLayout>

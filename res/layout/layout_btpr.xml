@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8"
+        app:cardCornerRadius="@dimen/dimen_3"
+        app:cardElevation="0.0dip"
+        app:cardUseCompatPadding="false">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/color_758da6"
+                android:padding="@dimen/dimen_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Extra scheme on buying any varients"
+                android:fontFamily="@font/sf_pro_display_medium" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@id/recyclerView"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_14sp"
+                        android:textColor="@color/color_2392ff"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View more"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="#ffeb5757"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/offerRecyclerView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5"
+    android:layout_marginBottom="@dimen/dimen_5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_1c1839_1"
+        android:ellipsize="end"
+        android:id="@id/product_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:text="Product Name Product Name Product Name Product Name Product Name Product Name  Product Name"
+        android:maxLines="2"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/sf_pro_display_medium" />
+</LinearLayout>

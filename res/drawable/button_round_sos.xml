@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval">
+            <stroke
+                android:width="@dimen/dimen_2"
+                android:color="#ff2a3d99" />
+            <solid
+                android:color="#ffd4f0fe" />
+        </shape>
+    </item>
+</selector>

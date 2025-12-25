@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView
+        android:id="@id/im_capture_face"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:onClick="onClickOnSurfaceView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:textSize="14.0sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/btn_mark_attendence"
+        android:background="@color/colorPrimary"
+        android:layout_width="280.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginBottom="24.0dip"
+        android:text="Mark Attendance"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/im_capture_face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@id/iteams_bottomsheet"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="@id/im_capture_face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_marginLeft="170.0dip"
+            android:layout_marginTop="10.0dip"
+            android:src="@drawable/ic_checkmark_new" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-90.0dip"
+            android:layout_marginTop="80.0dip"
+            android:text="Attendance Marked" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

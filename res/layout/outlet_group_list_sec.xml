@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/background_border_color_b4c8dc"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_6"
+    app:cardCornerRadius="4.0dip"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/rl_1"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:textSize="@dimen/dimen_14"
+                android:textStyle="bold"
+                android:textColor="@color/color_41586f"
+                android:gravity="center"
+                android:id="@id/bill_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bill No : " />
+            <TextView
+                android:textSize="@dimen/dimen_14"
+                android:textStyle="bold"
+                android:textColor="@color/color_1c1839_1"
+                android:textColorHint="@color/color_1c1839_1"
+                android:id="@id/tx_bill_no"
+                android:paddingLeft="@dimen/dimen_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="\ 343534546"
+                android:layout_toRightOf="@id/bill_tx" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:textSize="@dimen/dimen_14"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_1c1839_1"
+                    android:textColorHint="@color/color_1c1839_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_2"
+                    android:hint="@string/rs_symbol" />
+                <TextView
+                    android:textSize="@dimen/dimen_14"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_1c1839_1"
+                    android:textColorHint="@color/color_1c1839_1"
+                    android:id="@id/tx_bill_no_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:id="@id/view2"
+        android:background="@color/color_e6eaf4"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="@dimen/dimen_0"
+        android:layout_below="@id/rl_1" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingTop="@dimen/dimen_0"
+        android:paddingRight="@dimen/dimen_12"
+        android:paddingBottom="@dimen/dimen_6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2">
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawablePadding="@dimen/dimen_8"
+                android:layout_toLeftOf="@id/tc_val"
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="@dimen/dimen_8sp"
+                fontFamily="\@fonts/sf_pro_display_medium" />
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="#ff4caf50"
+                android:gravity="center"
+                android:id="@id/tx1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rs_symbol"
+                android:layout_toLeftOf="@id/tc_val"
+                android:lineSpacingExtra="@dimen/dimen_7sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2345443" />
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="#ff4caf50"
+                android:gravity="end"
+                android:id="@id/tc_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_0"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="@dimen/dimen_8sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/rel_bill_rec"
+            android:padding="2.0dip"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/bill_recyclerview"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/tcv_rel"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8">
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:textColor="#ff41586f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Collection Value"
+                android:layout_toLeftOf="@id/tc_val_d"
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="@dimen/dimen_8sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:textColor="#ff1c1839"
+                android:gravity="end"
+                android:id="@id/tc_val_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="@dimen/dimen_8sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

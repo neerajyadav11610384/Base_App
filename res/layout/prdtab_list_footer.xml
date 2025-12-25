@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@id/view_all"
+        android:background="@drawable/background_border_color_2392ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/color_2392ff"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:text="@string/view_all"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@id/add_all"
+        android:background="@color/color_2392ff"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11.0dip"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:text="@string/add_all_to_cart"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+    </LinearLayout>
+</LinearLayout>

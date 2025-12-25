@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/color_eaeef8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:id="@id/img_back_arrow"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/back_arrow"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="MOC Dashboard"
+                android:maxLines="1"
+                android:layout_toRightOf="@id/img_back_arrow"
+                android:layout_centerVertical="true" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@id/lyt_spinner_date"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_16"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_calendar_white" />
+                <Spinner
+                    android:textColor="@android:color/white"
+                    android:id="@id/sp_date"
+                    android:background="@drawable/null_selector"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:overlapAnchor="false" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_dropdown_white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/hdrr"
+        android:background="@drawable/addblueborders"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@id/toolbar">
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="PARAM"
+            android:layout_weight="1.8" />
+        <View
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="TGT"
+            android:layout_weight="0.8" />
+        <View
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="ACHV"
+            android:layout_weight="0.8" />
+        <View
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="ACHV %"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_new_incentives"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lyt_bottom"
+        android:layout_below="@id/hdrr" />
+    <ProgressBar
+        android:id="@id/progressBar2"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="?android:progressBarStyle" />
+    <TextView
+        android:textColor="#ff616161"
+        android:id="@id/no_data_tv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found_msg"
+        android:layout_centerInParent="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/lyt_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_40"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@id/img_incentive_icon"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_icon_info"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            app:tint="#ff2392ff" />
+        <TextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="start|center"
+            android:id="@id/tv_mocIconInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/app_name_sj"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8" />
+    </LinearLayout>
+</RelativeLayout>

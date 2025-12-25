@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/lyt_kpi_achievement"
+    android:background="@color/dark_moderate_lime_green"
+    android:visibility="visible"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dimen_36"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_fcfdff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/tv_ete_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ETE"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_fcfdff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_fcfdff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/tv_ete_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0(0)"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_fcfdff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/tv_ets_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ETS"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_fcfdff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_fcfdff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/tv_ets_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0(0)"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/lyt_launch"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_fcfdff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/tv_launch_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LNH"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_fcfdff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_fcfdff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/tv_launch_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0(0)"
+            android:lineSpacingExtra="8.0sp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:textColor="@color/color_fcfdff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/tv_ta"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="TA : 0"
+        android:layout_weight="1.0"
+        android:lineSpacingExtra="8.0sp"
+        android:fontFamily="@font/sf_pro_display_bold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:textColor="@color/color_fcfdff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/tv_tlsd"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="TLSD : 0"
+        android:layout_weight="1.0"
+        android:lineSpacingExtra="8.0sp"
+        android:fontFamily="@font/sf_pro_display_bold" />
+</LinearLayout>

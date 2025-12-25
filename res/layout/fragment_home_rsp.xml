@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@id/nested_scroll_view"
+    android:background="@color/color_eaeef8"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            cardview:cardBackgroundColor="@color/white"
+            cardview:cardCornerRadius="@dimen/dimen_2"
+            cardview:cardUseCompatPadding="true">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recyclerViewAnnouncement"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:overScrollMode="always" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            cardview:cardBackgroundColor="@color/white"
+            cardview:cardCornerRadius="@dimen/dimen_2"
+            cardview:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:id="@id/widget_moc_leaderboard"
+                android:background="@drawable/leaderboard_banner"
+                android:padding="8.0dip"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="15.0sp"
+                    android:textStyle="normal"
+                    android:textColor="#ffffffff"
+                    android:id="@id/tv_moc_leader_board_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text=""
+                    android:lineSpacingExtra="2.7999878sp"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    fontFamily="\@fonts/sf_pro_display_semibold" />
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textStyle="normal"
+                    android:textColor="#ffffd336"
+                    android:id="@id/tv_moc_leaderboard_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:text="View Leaderboard"
+                    android:drawableRight="@drawable/ic_icon_chevron_right"
+                    android:layout_below="@id/tv_moc_leader_board_rank"
+                    android:lineSpacingExtra="2.399994sp"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    fontFamily="\@fonts/sf_pro_display_semibold" />
+                <TextView
+                    android:textSize="28.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_003d81"
+                    android:id="@id/emp_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_24"
+                    android:layout_alignParentRight="true"
+                    android:lineSpacingExtra="0.0sp"
+                    fontFamily="\@fonts/sf_pro_display_regular" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <include
+            layout="@layout/gamefication" />
+        <include
+            layout="@layout/widget_performance" />
+        <include
+            layout="@layout/widget_incentives" />
+        <RelativeLayout
+            android:id="@id/lyt_additional_incentive"
+            android:background="@drawable/moc_background"
+            android:paddingLeft="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_12"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_12"
+            android:layout_marginBottom="@dimen/dimen_12">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:id="@id/tv_training_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Additional Incentives"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="0.0sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:id="@id/tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View details"
+                android:drawablePadding="@dimen/dimen_6"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+        </RelativeLayout>
+        <include
+            layout="@layout/items_card_view" />
+        <include
+            layout="@layout/training_resources" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

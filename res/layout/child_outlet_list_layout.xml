@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/lyt_outlet_child"
+    android:paddingTop="@dimen/dimen_8"
+    android:paddingBottom="@dimen/dimen_8"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff1c1839"
+        android:id="@id/tvOutletName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/img_status_icon"
+        android:lineSpacingExtra="5.0sp"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:layout_alignParentStart="true"
+        fontFamily="\@fonts/sf_pro_display_medium" />
+    <ImageView
+        android:id="@id/img_status_icon"
+        android:visibility="visible"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        android:layout_toLeftOf="@id/tv_om_rr"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8" />
+    <TextView
+        android:textSize="14.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff091e42"
+        android:id="@id/tv_om_rr"
+        android:background="@drawable/rounded_corner_3dfad8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_2"
+        android:paddingRight="@dimen/dimen_8"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_25"
+        android:lineSpacingExtra="0.0sp"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

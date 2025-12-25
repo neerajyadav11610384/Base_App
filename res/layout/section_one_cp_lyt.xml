@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@id/spinner"
+            android:background="@color/color_2392ff"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:textColor="@android:color/white"
+                android:id="@id/moc_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:backgroundTint="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/dummy"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip" />
+        <RelativeLayout
+            android:id="@id/max_earn_lyt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dummy">
+            <View
+                android:background="@color/color_2392ff"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_40" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/layoutSectionOneHeader"
+                android:background="@drawable/grocer_next_banner"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="90.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginBottom="10.0dip"
+                app:cardCornerRadius="5.0dip">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="@dimen/dimen_8">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center|left"
+                        android:id="@id/imageIcon"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_50"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/channel_target_logo" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/max_earn_tgachv"
+                        android:padding="5.0dip"
+                        android:visibility="visible"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_18sp"
+                            android:textColor="@color/white"
+                            android:id="@id/channel_name"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="demo"
+                            android:fontFamily="@font/sf_pro_display_bold" />
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="14.0sp"
+                                android:textColor="@color/white"
+                                android:id="@id/tgachv_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="demo"
+                                android:lineSpacingExtra="@dimen/dimen_2sp"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:lineHeight="@dimen/dimen_16sp" />
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="14.0sp"
+                                android:textColor="@color/white"
+                                android:id="@id/tgachv_value"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_5"
+                                android:text="Demo"
+                                android:lineSpacingExtra="@dimen/dimen_2sp"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:lineHeight="@dimen/dimen_16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

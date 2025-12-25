@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:gravity="center"
+    android:id="@id/scratchcard_parent"
+    android:background="@drawable/rewards_scratch"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="3.0dip"
+    android:layout_marginTop="3.0dip"
+    android:layout_marginRight="3.0dip"
+    android:layout_marginBottom="3.0dip"
+    android:elevation="5.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/imageBackBtn"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingTop="@dimen/dimen_10"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        app:srcCompat="@drawable/ic_back_white_icon" />
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@id/scratchCard"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        android:layout_width="220.0dip"
+        android:layout_height="220.0dip">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="220.0dip"
+            android:layout_height="220.0dip"
+            android:layout_centerInParent="true">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:gravity="center"
+                android:id="@id/reward_img"
+                android:layout_width="150.0dip"
+                android:layout_height="150.0dip"
+                app:srcCompat="@drawable/ushop_big" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/color_41586f"
+                android:id="@id/reward_msg"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_won"
+                android:fontFamily="@font/sf_pro_display_medium" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_26sp"
+                android:textColor="#ff1c1839"
+                android:gravity="center"
+                android:id="@id/unipay_points"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:fontFamily="@font/sf_pro_display_bold"
+                app:drawableLeftCompat="@drawable/ic_u_logo_1c1839" />
+        </LinearLayout>
+        <com.hul.sambhav.customview.ScratchCard
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@id/card_overlay"
+            android:visibility="visible"
+            android:layout_width="220.0dip"
+            android:layout_height="220.0dip"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/transparant" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/opendate"
+            android:background="@drawable/blue_rounded_corner"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="40.0dip"
+            android:layout_marginRight="10.0dip" />
+    </FrameLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal"
+        android:id="@id/lyt_btm_scratch_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120.0dip">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="@color/white"
+            android:id="@id/scratch_worth_upto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/unipay_regular" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/scratch_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="120.0dip"
+        android:layout_marginRight="10.0dip"
+        android:text="@string/scratch_here"
+        android:fontFamily="@font/sf_pro_display_medium" />
+    <Button
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_gravity="bottom|center"
+        android:id="@id/done"
+        android:background="@drawable/blue_rounded_corner"
+        android:paddingLeft="@dimen/dimen_40"
+        android:paddingTop="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_40"
+        android:paddingBottom="@dimen/dimen_10"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30.0dip"
+        android:text="@string/done"
+        android:fontFamily="@font/sf_pro_display_bold" />
+</FrameLayout>

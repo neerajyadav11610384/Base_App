@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#fffcfdff"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/lyt_incentive_header"
+        android:background="@color/color_2392ff"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_37"
+        android:layout_marginTop="@dimen/dimen_16">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/tv_incentive_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Exceptions Incentives"
+            android:lineSpacingExtra="0.0sp"
+            fontFamily="\@fonts/sf_pro_display_bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16">
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff42526e"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOC : "
+                android:lineSpacingExtra="0.0sp"
+                fontFamily="\@fonts/sf_pro_display_semibold" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff42526e"
+                android:id="@id/tv_moc_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:lineSpacingExtra="0.0sp"
+                fontFamily="\@fonts/sf_pro_display_medium" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="bold"
+                android:textColor="#ff4caf50"
+                android:gravity="right"
+                android:id="@id/tv_amount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="₹0"
+                android:lineSpacingExtra="0.0sp"
+                fontFamily="\@fonts/sf_pro_display_medium" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_16">
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff42526e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason: "
+                android:lineSpacingExtra="0.0sp"
+                fontFamily="\@fonts/sf_pro_display_semibold" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textColor="#ff42526e"
+                android:id="@id/tv_reason_info"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1.0"
+                android:lineSpacingExtra="0.0sp"
+                fontFamily="\@fonts/sf_pro_display_medium" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="italic"
+                android:textColor="@color/color_7a869a"
+                android:gravity="right"
+                android:id="@id/tv_last_updated"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="₹0"
+                android:layout_weight="1.0"
+                android:layout_below="@id/tv_incentive_amount"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="0.0sp"
+                fontFamily="\@fonts/sf_pro_display_semibold" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_16">
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff42526e"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount : "
+                android:lineSpacingExtra="0.0sp"
+                fontFamily="\@fonts/sf_pro_display_semibold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

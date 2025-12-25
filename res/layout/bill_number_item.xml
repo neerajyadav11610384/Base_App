@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_41586f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bill_number"
+            android:layout_weight="1.0"
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/text_color"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/text_color"
+            android:layout_gravity="center"
+            android:id="@id/bill_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/billdetails_recyclerView"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingTop="@dimen/dimen_8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:id="@id/billdetails_no_item_msg"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_items_found"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </LinearLayout>
+</LinearLayout>

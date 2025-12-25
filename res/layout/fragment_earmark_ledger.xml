@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar_earmark"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:theme="@style/AppTheme.AppBarOverlay">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/earmarked_ledger"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5.0dip">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/calender"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/date" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/dark_green"
+            android:gravity="center"
+            android:id="@id/selected_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="Selected date fjlasfasf" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/unipay_ledeger_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5.0dip"
+            android:text="@string/hello_blank_fragment"
+            android:layout_below="@id/selected_date" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/no_item_msg"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data_found_msg"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

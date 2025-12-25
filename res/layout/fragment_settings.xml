@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="@color/black"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_screen_orientation" />
+        <View
+            android:background="@color/very_dark_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_margin="5.0dip" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip">
+            <RadioButton
+                android:layout_gravity="center"
+                android:id="@id/portarit"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:text="@string/portrait"
+                android:layout_weight="1.0" />
+            <RadioButton
+                android:layout_gravity="center"
+                android:id="@id/landscape"
+                android:paddingLeft="10.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:text="@string/landscape"
+                android:layout_weight="1.0" />
+        </RadioGroup>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/whatsapp_layout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/black"
+                android:padding="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/whatsapp" />
+            <View
+                android:background="@color/very_dark_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_margin="5.0dip" />
+            <CheckBox
+                android:id="@id/whatsapp_optin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:text="@string/do_you_want_optin"
+                app:drawableLeftCompat="@drawable/whatsapp" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textColor="@color/black"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_language" />
+        <View
+            android:background="@color/very_dark_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_margin="5.0dip" />
+        <RelativeLayout
+            android:id="@id/relativelayout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rcy_language_list"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" />
+            <ProgressBar
+                android:id="@id/language_progressbar1"
+                android:visibility="visible"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/response_language_layout"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5.0dip">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/lin_lyt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip" />
+            <Button
+                android:textColor="@color/white"
+                android:id="@id/btn_lang_done"
+                android:background="@drawable/green_rounded_corner"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="5.0dip"
+                android:text="@string/txt_select_lang"
+                android:textAllCaps="false" />
+            <ProgressBar
+                android:id="@id/language_progressbar"
+                android:visibility="visible"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </LinearLayout>
+        <RadioButton
+            android:id="@id/default_language"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/txt_default_language"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</ScrollView>

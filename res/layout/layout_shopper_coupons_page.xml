@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:id="@id/ret_screen"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbarShopperCoupons"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredWhiteArrow">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:id="@id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Shopper Coupon"
+                android:maxLines="1"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="@dimen/dimen_12sp"
+                android:textColor="@color/white"
+                android:id="@id/btn_qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_qrcode"
+                android:text="Click to scan QR"
+                android:drawableTop="@drawable/ic_qrcode"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@id/tabLayoutShopperCoupon"
+        android:layout_width="0.0dip"
+        android:layout_height="36.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarShopperCoupons"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="@dimen/dimen_2"
+        app:tabTextAppearance="@style/CustomTabTextV1">
+        <com.google.android.material.tabs.TabItem
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Show coupon" />
+        <com.google.android.material.tabs.TabItem
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Redeem coupon" />
+    </com.google.android.material.tabs.TabLayout>
+    <FrameLayout
+        android:id="@id/frameLayout"
+        android:background="@color/white"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutShopperCoupon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

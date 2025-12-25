@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@id/progress_bar"
+                android:visibility="gone"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="18.0sp"
+                android:layout_gravity="center"
+                android:id="@id/no_item_msg"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_items_found"
+                android:layout_centerInParent="true" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/custsupport_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/choose_any_one_from_the_dropdown" />
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/spinner_background"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip">
+                    <Spinner
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@id/cust_support_category"
+                        android:background="@android:color/transparent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:id="@id/dropdown_img"
+                        android:layout_width="50.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/dropdown" />
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/choose_question_from_the_dropdown" />
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:id="@id/lyt_title"
+                    android:background="@drawable/spinner_background"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip">
+                    <Spinner
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@id/cust_support_desc"
+                        android:background="@android:color/transparent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:id="@id/dropdown_title_img"
+                        android:layout_width="50.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/dropdown" />
+                </RelativeLayout>
+                <EditText
+                    android:scrollbarStyle="insideInset"
+                    android:gravity="center|left|top"
+                    android:id="@id/comments_edit_txt"
+                    android:background="@drawable/light_green_rounded_corner"
+                    android:padding="10.0dip"
+                    android:scrollbars="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:lines="5"
+                    android:maxLength="500"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip">
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@id/fb_btn_cancel"
+                        android:background="@drawable/green_rounded_corner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@id/fb_btn_submit"
+                        android:background="@drawable/green_rounded_corner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/submit"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:theme="@style/ToolTheme">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_333333"
+                android:gravity="center"
+                android:id="@id/txt_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/title_enter_otp"
+                android:lineSpacingExtra="9.0sp"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff4c5b73"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="OTP has been sent to your mobile number"
+        android:lineSpacingExtra="8.0sp"
+        android:fontFamily="@font/sf_pro_display_regular" />
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff4c5b73"
+        android:gravity="center_horizontal"
+        android:id="@id/tv_mobile_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:text="+91 9XXX X898"
+        android:lineSpacingExtra="8.0sp"
+        android:fontFamily="@font/sf_pro_display_regular" />
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/pin_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginBottom="20.0dip">
+        <EditText
+            android:id="@id/pin_first_edittext"
+            android:background="@drawable/edit_text_white_box_bg"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_4"
+            android:fontFamily="@font/sf_pro_display_regular"
+            style="@style/pin_edittext_style" />
+        <EditText
+            android:id="@id/pin_second_edittext"
+            android:background="@drawable/edit_text_white_box_bg"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_4"
+            android:layout_toRightOf="@id/pin_first_edittext"
+            android:fontFamily="@font/sf_pro_display_regular"
+            style="@style/pin_edittext_style" />
+        <EditText
+            android:id="@id/pin_third_edittext"
+            android:background="@drawable/edit_text_white_box_bg"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_4"
+            android:layout_toRightOf="@id/pin_second_edittext"
+            android:fontFamily="@font/sf_pro_display_regular"
+            style="@style/pin_edittext_style" />
+        <EditText
+            android:id="@id/pin_forth_edittext"
+            android:background="@drawable/edit_text_white_box_bg"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_4"
+            android:layout_toRightOf="@id/pin_third_edittext"
+            android:fontFamily="@font/sf_pro_display_regular"
+            style="@style/pin_edittext_style" />
+        <EditText
+            android:id="@id/pin_fifth_edittext"
+            android:background="@drawable/edit_text_white_box_bg"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_4"
+            android:layout_toRightOf="@id/pin_forth_edittext"
+            android:fontFamily="@font/sf_pro_display_regular"
+            style="@style/pin_edittext_style" />
+        <EditText
+            android:id="@id/pin_sixth_edittext"
+            android:background="@drawable/edit_text_white_box_bg"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_4"
+            android:layout_toRightOf="@id/pin_fifth_edittext"
+            android:fontFamily="@font/sf_pro_display_regular"
+            style="@style/pin_edittext_style" />
+    </RelativeLayout>
+    <EditText
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/pin_hidden_edittext"
+        android:background="@null"
+        android:visibility="visible"
+        android:layout_width="1.0dip"
+        android:layout_height="1.0dip"
+        android:text=""
+        android:cursorVisible="true"
+        android:maxLength="6"
+        android:inputType="phone" />
+    <TextView
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/color_ff5f5f"
+        android:layout_gravity="center"
+        android:id="@id/error_otp_number"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:text=""
+        android:lineSpacingExtra="7.0sp"
+        android:fontFamily="@font/sf_pro_display_medium" />
+    <TextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_00a41a"
+        android:layout_gravity="center"
+        android:id="@id/resend_msg_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:text=""
+        android:fontFamily="@font/sf_pro_display_regular" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/resend_otp_lyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:text="@string/otp_not_reveiced"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_2392ff"
+            android:gravity="center"
+            android:id="@id/resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend_otp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </LinearLayout>
+    <TextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/tv_confirm"
+        android:background="@drawable/bg_login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_marginLeft="@dimen/dimen_18"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_marginRight="@dimen/dimen_18"
+        android:text="@string/confirm"
+        android:lineSpacingExtra="9.0sp"
+        android:fontFamily="@font/sf_pro_display_medium" />
+</LinearLayout>

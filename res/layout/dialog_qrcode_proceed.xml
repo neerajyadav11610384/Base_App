@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/edit_text_white_box_bg_with_blue_border"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/img_close_are_you_sure"
+        android:visibility="invisible"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginTop="12.0dip"
+        android:src="@drawable/ic_close_black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_16"
+        android:layout_width="350.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_close_are_you_sure">
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@drawable/background_blue_circle_shape"
+            android:padding="@dimen/dimen_16"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:src="@drawable/ic_add_store"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:id="@id/tv_are_you_sure"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:text="Proceed with store creation using"
+            android:textAlignment="center" />
+        <Button
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_qrcode"
+            android:background="@drawable/drawable_2392ff_5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="Store UPI QR Code"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16" />
+        <TextView
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:text="The QR code must be linked to the verified Mobile number"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/black"
+                android:layout_width="50.0dip"
+                android:layout_height="1.0dip" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" OR " />
+            <View
+                android:background="@color/black"
+                android:layout_width="50.0dip"
+                android:layout_height="1.0dip" />
+        </LinearLayout>
+        <Button
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_nonqrcode"
+            android:background="@drawable/drawable_2392ff_5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:text="Other business documents"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

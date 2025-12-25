@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:padding="@dimen/dimen_6"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_41586f"
+        android:gravity="center"
+        android:id="@id/textViewIntroStapesCount"
+        android:background="@drawable/bg_e6eaf4_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_1c1839_1"
+        android:gravity="center"
+        android:id="@id/textViewIntroStapesValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:layout_marginStart="@dimen/dimen_15"
+        app:layout_constraintBottom_toBottomOf="@id/textViewIntroStapesCount"
+        app:layout_constraintStart_toEndOf="@id/textViewIntroStapesCount"
+        app:layout_constraintTop_toTopOf="@id/textViewIntroStapesCount" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:textColor="#ff1c1839"
+        android:gravity="center"
+        android:id="@id/pendinginvoiceCount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="@string/pending_invoice_count"
+        android:lineSpacingExtra="9.0sp"
+        android:fontFamily="@font/sf_pro_display_medium" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/color_2392ff"
+        android:gravity="center"
+        android:id="@id/buttonGoToPayments"
+        android:background="@drawable/background_border_color_2392ff"
+        android:padding="@dimen/dimen_16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15"
+        android:text="@string/go_to_payments"
+        android:fontFamily="@font/sf_pro_display_bold" />
+</LinearLayout>

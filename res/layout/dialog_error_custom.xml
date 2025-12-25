@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        android:id="@id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title" />
+    <TextView
+        android:textSize="16.0sp"
+        android:id="@id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="This is a custom alert dialog message." />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:weightSum="2.0">
+        <Button
+            android:id="@id/yesButton"
+            android:visibility="visible"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:layout_weight="1.0"
+            android:layout_marginEnd="@dimen/dimen_8" />
+        <Button
+            android:id="@id/noButton"
+            android:visibility="visible"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/dimen_8" />
+        <Button
+            android:id="@id/okButton"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:paddingStart="56.0dip"
+            android:paddingEnd="56.0dip" />
+    </LinearLayout>
+</LinearLayout>

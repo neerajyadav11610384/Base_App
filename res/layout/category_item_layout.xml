@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3.0dip"
+    android:layout_marginTop="3.0dip"
+    android:layout_marginRight="3.0dip"
+    android:layout_marginBottom="3.0dip"
+    app:cardCornerRadius="5.0dip"
+    app:cardElevation="5.0dip"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/frame_item"
+        android:background="@drawable/layout_border"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="0.0dip">
+            <FrameLayout
+                android:layout_width="120.0dip"
+                android:layout_height="120.0dip">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_marginTop="10.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@id/product_image"
+                        android:layout_width="120.0dip"
+                        android:layout_height="120.0dip" />
+                </LinearLayout>
+                <com.android.volley.toolbox.NetworkImageView
+                    android:layout_gravity="right"
+                    android:id="@id/img_offer"
+                    android:visibility="visible"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="2.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="10.0sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="right"
+                    android:id="@id/savings"
+                    android:visibility="visible"
+                    android:layout_width="40.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:text="10% Off" />
+            </FrameLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center|top"
+            android:layout_gravity="center"
+            android:id="@id/product_name"
+            android:background="@color/transparent"
+            android:padding="2.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:text="CLOSE UP CLOSE UP CLOSE UP"
+            android:layout_below="@id/product_image"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:textAlignment="center" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

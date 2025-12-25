@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingTop="@dimen/dimen_20"
+    android:paddingBottom="@dimen/dimen_20"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dimen_10"
+    android:paddingEnd="@dimen/dimen_10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_1c1839_1"
+        android:gravity="center"
+        android:id="@id/textViewHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_amp_conditions"
+        android:fontFamily="@font/sf_pro_display_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyReadMore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15">
+        <View
+            android:id="@id/viewIndicater"
+            android:background="@drawable/drawable_41586e"
+            android:layout_width="@dimen/dimen_6"
+            android:layout_height="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_7" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_1c1839_1"
+            android:id="@id/textViewViewMoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dimen_7sp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginStart="@dimen/dimen_10" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:id="@id/textViewRedMoreCloseBtn"
+        android:background="@drawable/drawable_2392ff_5dp"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="@string/close" />
+</LinearLayout>

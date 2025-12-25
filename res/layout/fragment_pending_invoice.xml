@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@id/pending_invoice_progressbar"
+        android:visibility="visible"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found_msg"
+        android:fontFamily="@font/sf_pro_display_regular" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/lin_pending_invoice"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="45.0dip">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@id/swipe_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rcy_pending_invoice"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <include
+        android:layout_gravity="bottom"
+        android:id="@id/total_footer"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/pending_invoice_footer" />
+</FrameLayout>

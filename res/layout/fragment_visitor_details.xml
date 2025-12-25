@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="@color/color_2392ff"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredWhiteArrow">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@id/title_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:id="@id/title_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/visitor_details"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_toStartOf="@id/calendar_img" />
+            <ImageView
+                android:id="@id/calendar_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendar_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_toStartOf="@id/current_date" />
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@id/current_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10.0dip"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_above="@id/add"
+        android:layout_below="@id/toolbar" />
+    <RelativeLayout
+        android:id="@id/add"
+        android:background="@drawable/button_selected"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/visitor_add"
+                android:layout_marginEnd="@dimen/dimen_12" />
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@id/add_visitortxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Visitor" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

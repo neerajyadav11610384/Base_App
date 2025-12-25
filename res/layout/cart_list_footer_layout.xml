@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/dismisKeyword"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/invoice_details"
+        android:background="@drawable/dotted_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip">
+        <LinearLayout
+            android:padding="5.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@id/dot_three"
+                android:layout_width="0.0dip"
+                android:layout_height="10.0dip"
+                android:layout_weight="2.0"
+                app:srcCompat="@drawable/dots" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/total_nos_of_item"
+                android:layout_weight="2.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:id="@id/total_no_of_items"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@id/dot_two"
+                android:layout_width="0.0dip"
+                android:layout_height="10.0dip"
+                android:layout_weight="2.0"
+                app:srcCompat="@drawable/dots" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/total_quantity"
+                android:layout_weight="2.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:id="@id/quantity"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/total_amt_msg"
+                android:layout_weight="2.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@id/dot_one"
+                android:layout_width="0.0dip"
+                android:layout_height="10.0dip"
+                android:layout_weight="1.5"
+                app:srcCompat="@drawable/dots" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:id="@id/total_amount"
+                android:paddingLeft="5.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="RS 200.00"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/retailer_margin"
+                android:layout_weight="2.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="10.0dip"
+                android:layout_weight="1.5"
+                app:srcCompat="@drawable/dots" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:id="@id/retailer_margin"
+                android:paddingLeft="5.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="RS 200.00"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_disc"
+                android:layout_weight="2.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="10.0dip"
+                android:layout_weight="1.5"
+                app:srcCompat="@drawable/dots" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:id="@id/additional_discount"
+                android:paddingLeft="5.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="RS 200.00"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/total_savings"
+                android:layout_weight="2.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@id/dot_one1"
+                android:layout_width="0.0dip"
+                android:layout_height="10.0dip"
+                android:layout_weight="1.5"
+                app:srcCompat="@drawable/dots" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:id="@id/disount_amt"
+                android:paddingLeft="5.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="RS 200.00"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/margin_perct"
+                android:layout_weight="2.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@id/dot_one3"
+                android:layout_width="0.0dip"
+                android:layout_height="10.0dip"
+                android:layout_weight="1.5"
+                app:srcCompat="@drawable/dots" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:id="@id/disount_margin"
+                android:paddingLeft="5.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="RS 200.00"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/estimated_bill"
+                android:layout_weight="2.0"
+                android:fontFamily="@font/sf_pro_display_bold" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@id/dot_one2"
+                android:layout_width="0.0dip"
+                android:layout_height="10.0dip"
+                android:layout_weight="1.5"
+                app:srcCompat="@drawable/dots" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/very_dark_gray"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:id="@id/estimated_amt"
+                android:paddingLeft="5.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="RS 200.00"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@id/unipay_txt"
+            android:padding="5.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@id/unipay_symbol"
+                android:visibility="gone"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_toRightOf="@id/unipay_points_txt_partone"
+                app:srcCompat="@drawable/unipay_symbol" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/dark_red"
+                android:layout_gravity="center"
+                android:id="@id/unipay_points_txt_partone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/dark_red"
+                android:layout_gravity="center"
+                android:id="@id/unipay_points_txt_parttwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toRightOf="@id/unipay_symbol"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/dotted_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="15.0sp"
+            android:textColor="@color/black"
+            android:id="@id/delivery_date"
+            android:padding="10.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="Delivered by 3 Feb" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/recyclerview"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/unipay_lyt"
+            android:padding="2.0dip"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:textColor="@color/black"
+                android:id="@id/unipay_redeem_checkbox"
+                android:paddingLeft="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:checked="false"
+                android:text="@string/redeem_unipay_msg"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:text="@string/balance"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/black"
+                    android:id="@id/unipay_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:fontFamily="@font/unipay_regular" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="10.0">
+                <Button
+                    android:textSize="12.0sp"
+                    android:textColor="@color/white"
+                    android:id="@id/redeem_unipay"
+                    android:background="@drawable/green_rounded_corner"
+                    android:layout_width="0.0dip"
+                    android:layout_height="33.0dip"
+                    android:layout_margin="10.0dip"
+                    android:text="@string/redeem"
+                    android:layout_weight="2.5" />
+                <EditText
+                    android:textSize="14.0sp"
+                    android:id="@id/unipay_redeem_edt"
+                    android:background="@drawable/edittext_bg"
+                    android:paddingLeft="10.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_margin="10.0dip"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_weight="7.5"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/whatsapp_layout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="10.0dip">
+            <CheckBox
+                android:id="@id/whatsapp_optin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/do_you_want_optin"
+                android:fontFamily="@font/sf_pro_display_regular"
+                app:drawableLeftCompat="@drawable/whatsapp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/cod_layout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="10.0dip">
+            <CheckBox
+                android:id="@id/cod_optin"
+                android:paddingLeft="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cod_msg"
+                android:fontFamily="@font/sf_pro_display_regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/checkout"
+        android:background="@drawable/green_rounded_corner"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_margin="10.0dip"
+        android:text="@string/checkout"
+        android:fontFamily="@font/sf_pro_display_regular" />
+</LinearLayout>

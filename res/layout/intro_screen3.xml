@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient_intro_screen3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_24sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76.0dip"
+        android:text="Order Status"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/sf_pro_display_semibold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_32"
+        android:layout_marginTop="@dimen/dimen_19"
+        android:layout_marginRight="@dimen/dimen_32"
+        android:text="Check status of your orders placed via salesman or through Shikhar app."
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:lineSpacingExtra="@dimen/dimen_8sp" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/distributor" />
+</RelativeLayout>

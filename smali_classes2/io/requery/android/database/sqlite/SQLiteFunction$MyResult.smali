@@ -1,0 +1,38 @@
+.class Lio/requery/android/database/sqlite/SQLiteFunction$MyResult;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/requery/android/database/sqlite/SQLiteFunction;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "MyResult"
+.end annotation
+
+
+# instance fields
+.field contextPtr:J
+
+.field isSet:Z
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lio/requery/android/database/sqlite/SQLiteFunction$1;)V
+    .locals 0
+
+    invoke-direct {p0}, Lio/requery/android/database/sqlite/SQLiteFunction$MyResult;-><init>()V
+
+    return-void
+.end method

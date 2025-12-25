@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/ic_task_border"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginEnd="@dimen/dimen_30">
+            <ImageView
+                android:id="@id/img_triangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_alert_triangle" />
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_gravity="center_vertical"
+                android:id="@id/complete_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complete"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_toEndOf="@id/img_triangle" />
+            <ImageView
+                android:id="@id/must_do"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_must_do"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_toEndOf="@id/complete_txt" />
+            <TextView
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_toEndOf="@id/must_do" />
+        </RelativeLayout>
+        <TextView
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="Take order for at least one pack or select reason in product recommendation page to complete task"
+            android:layout_below="@id/rl"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_20" />
+    </RelativeLayout>
+</LinearLayout>

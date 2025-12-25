@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dimen_48"
+    app:cardCornerRadius="4.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@id/widget_notify_data"
+        android:background="@color/colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/img_icon"
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_32"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_marginLeft="@dimen/dimen_20" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:id="@id/tv_notify_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_9"
+            android:text="BIGGEST Holi sale!"
+            android:lineSpacingExtra="0.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

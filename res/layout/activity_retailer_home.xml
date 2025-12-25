@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/app_bar_retailer_home" />
+    <include
+        layout="@layout/activity_exit_coordinate" />
+    <include
+        layout="@layout/sf_layout_basepack" />
+    <include
+        layout="@layout/sf_layout_basepack_oos" />
+    <include
+        layout="@layout/sf_layout_opening_stock" />
+</androidx.constraintlayout.widget.ConstraintLayout>

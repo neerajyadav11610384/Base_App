@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:id="@id/otp_bottom_sheet"
+    android:visibility="visible"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    mask:layout_behavior="@string/bottom_sheet_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16">
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1c1839"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Mobile"
+            android:layout_centerVertical="true"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+        <ImageView
+            android:id="@id/close_otp"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_close_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View
+        android:background="#ffe6eaf4"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_below="@id/cancel_button" />
+    <RelativeLayout
+        android:id="@id/lyt_mobile_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_14">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff4c5b73"
+            android:id="@id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP sent to store mobile number"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular"
+            tools="Enter OTP sent to store mobile number" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff4c5b73"
+            android:id="@id/tv_mobile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/tv_content"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+        <ImageView
+            android:id="@id/img_edit_mobile"
+            android:layout_width="18.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_4"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_toRightOf="@id/tv_mobile_number"
+            android:layout_below="@id/tv_content" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="#ff2392ff"
+            android:id="@id/tv_edit_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_toRightOf="@id/img_edit_mobile"
+            android:layout_below="@id/tv_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@id/lyt_otp"
+        android:background="@drawable/edit_text_white_box_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_below="@id/lyt_mobile_info">
+        <EditText
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:id="@id/et_otp"
+            android:background="@null"
+            android:paddingLeft="@dimen/dimen_8"
+            android:focusableInTouchMode="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Enter OTP"
+            android:maxLength="6"
+            android:lineSpacingExtra="0.0sp"
+            android:inputType="number"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff758da6"
+            android:gravity="end"
+            android:id="@id/tv_timer"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff2392ff"
+            android:gravity="end"
+            android:id="@id/tv_resend_otp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:layout_alignParentRight="true"
+            android:lineSpacingExtra="0.0sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@id/btn_verify_otp"
+        android:background="@drawable/add_blue_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="30.0dip">
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:id="@id/tx_verify_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:layout_centerInParent="true"
+            android:lineSpacingExtra="9.0sp"
+            android:textAlignment="center" />
+    </RelativeLayout>
+</LinearLayout>

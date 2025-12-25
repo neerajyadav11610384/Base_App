@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:padding="@dimen/dimen_7"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutBTPRHeader"
+        android:background="@drawable/drawable_8b36cf_2dp"
+        android:padding="5.0dip"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:id="@id/textViewBTPRHeader"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="Activity 1 DESC"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewBTPRExpend"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/imageViewBTPRExpend"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add_white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/groupMainExpend"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="layoutBTPRSlot,recyclerViewBTPRType" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutBTPRSlot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginStart="@dimen/dimen_15"
+        android:layout_marginEnd="@dimen/dimen_15"
+        android:elevation="5.0dip"
+        app:layout_constraintTop_toBottomOf="@id/layoutBTPRHeader">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="#fff4ff55"
+            android:gravity="center"
+            android:id="@id/textViewFrom"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="CL Slab From"
+            android:layout_marginStart="@dimen/dimen_10"
+            app:layout_constraintEnd_toStartOf="@id/textViewTo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.36" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="#fff4ff55"
+            android:gravity="center"
+            android:id="@id/textViewTo"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="CL Slab To"
+            app:layout_constraintEnd_toStartOf="@id/textViewDiscount"
+            app:layout_constraintStart_toEndOf="@id/textViewFrom"
+            app:layout_constraintTop_toTopOf="@id/textViewFrom"
+            app:layout_constraintWidth_percent="0.36" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="#fff4ff55"
+            android:gravity="center"
+            android:id="@id/textViewDiscount"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="Disc"
+            android:layout_marginEnd="@dimen/dimen_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewTo"
+            app:layout_constraintTop_toTopOf="@id/textViewFrom"
+            app:layout_constraintWidth_percent="0.25" />
+        <View
+            android:id="@id/viewDivider"
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginTop="@dimen/dimen_5"
+            app:layout_constraintEnd_toEndOf="@id/textViewDiscount"
+            app:layout_constraintStart_toStartOf="@id/textViewFrom"
+            app:layout_constraintTop_toBottomOf="@id/textViewFrom" />
+        <androidx.constraintlayout.widget.Group
+            android:id="@id/groupBTPRSlab"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="viewDivider,textViewDiscount,textViewTo,textViewFrom" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/recyclerViewBTPRSlot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerViewBTPRType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutBTPRSlot" />
+</androidx.constraintlayout.widget.ConstraintLayout>

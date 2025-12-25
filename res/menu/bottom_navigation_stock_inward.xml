@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_take_order"
+        android:id="@id/actionMenuStockInwardRequest"
+        android:title="@string/stock_inward_request" />
+    <item
+        android:icon="@drawable/ic_my_orders"
+        android:id="@id/actionMenuStockInwardSummary"
+        android:title="@string/stock_inward_summary" />
+</menu>

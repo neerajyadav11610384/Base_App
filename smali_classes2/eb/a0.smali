@@ -1,0 +1,40 @@
+.class public final synthetic Leb/a0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lcom/hul/sambhav/salesJourney/ui/primestores/c$a;
+
+.field public final synthetic b:Lcom/hul/sambhav/salesJourney/datamodel/Beats;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/hul/sambhav/salesJourney/ui/primestores/c$a;Lcom/hul/sambhav/salesJourney/datamodel/Beats;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Leb/a0;->a:Lcom/hul/sambhav/salesJourney/ui/primestores/c$a;
+
+    iput-object p2, p0, Leb/a0;->b:Lcom/hul/sambhav/salesJourney/datamodel/Beats;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
+
+    iget-object v0, p0, Leb/a0;->a:Lcom/hul/sambhav/salesJourney/ui/primestores/c$a;
+
+    iget-object v1, p0, Leb/a0;->b:Lcom/hul/sambhav/salesJourney/datamodel/Beats;
+
+    invoke-static {v0, v1, p1}, Lcom/hul/sambhav/salesJourney/ui/primestores/c$a;->a(Lcom/hul/sambhav/salesJourney/ui/primestores/c$a;Lcom/hul/sambhav/salesJourney/datamodel/Beats;Landroid/view/View;)V
+
+    return-void
+.end method

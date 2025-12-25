@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@id/lyt_beat_info"
+    android:paddingLeft="@dimen/dimen_12"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5">
+        <CheckBox
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff1c1839"
+            android:id="@id/beat_check_id"
+            android:paddingLeft="@dimen/dimen_5"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="0.0dip"
+            android:minHeight="0.0dip"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10.0dip">
+        <CheckBox
+            android:paddingLeft="@dimen/dimen_5"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0.0dip"
+            android:minHeight="0.0dip" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff758da6"
+            android:id="@id/outlet_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="7.0sp"
+            app:layout_constraintStart_toStartOf="parent"
+            fontFamily="\@fonts/sf_pro_display_medium" />
+    </LinearLayout>
+    <View
+        android:background="@color/color_e6eaf4"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_16" />
+</LinearLayout>

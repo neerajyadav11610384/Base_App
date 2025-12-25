@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="34.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ff000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12  px"
+                    android:lineSpacingExtra="6.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the when an unknown printer took a 12px + Bold"
+                    android:lineSpacingExtra="6.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the when an unknown printer took a galley 12px + Medium"
+                    android:lineSpacingExtra="6.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's unknown printer took a galley of type 12px + Regular"
+                    android:lineSpacingExtra="6.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_20" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="34.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ff000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14  px"
+                    android:lineSpacingExtra="6.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  14px + Bold"
+                    android:lineSpacingExtra="7.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 14px + Medium"
+                    android:lineSpacingExtra="7.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  14px + Regular"
+                    android:lineSpacingExtra="7.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_20" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="34.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16  px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 16px + Bold"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 16px + Medium"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 16px + Regular"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_24" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="34.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="18.0sp"
+                    android:textColor="#ff000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18  px"
+                    android:lineSpacingExtra="9.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="18.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 18px + Bold"
+                    android:lineSpacingExtra="9.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="18.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 18px + Medium"
+                    android:lineSpacingExtra="9.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="18.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 18px + Regular"
+                    android:lineSpacingExtra="9.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_24" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="34.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="20.0sp"
+                    android:textColor="#ff000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20  px"
+                    android:lineSpacingExtra="10.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="20.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting i 20px + Bold"
+                    android:lineSpacingExtra="10.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="20.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting 20px + Medium"
+                    android:lineSpacingExtra="10.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="20.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 20px + Regular"
+                    android:lineSpacingExtra="10.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_24" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="34.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="24.0sp"
+                    android:textColor="#ff000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24  px"
+                    android:lineSpacingExtra="12.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="24.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting 24px + Bold"
+                    android:lineSpacingExtra="12.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="24.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting 24px + Medium"
+                    android:lineSpacingExtra="12.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="24.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 24px + Regular"
+                    android:lineSpacingExtra="12.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_24" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="34.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="28.0sp"
+                    android:textColor="#ff000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28  px"
+                    android:lineSpacingExtra="14.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="28.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing 28px + Bold"
+                    android:lineSpacingExtra="14.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="28.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing 28px + Medium "
+                    android:lineSpacingExtra="14.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="28.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and 28px + Regular "
+                    android:lineSpacingExtra="14.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_24" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="34.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="28.0sp"
+                    android:textColor="#ff000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30  px"
+                    android:lineSpacingExtra="14.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="28.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing 30px + Bold"
+                    android:lineSpacingExtra="14.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="28.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing 30px + Medium "
+                    android:lineSpacingExtra="14.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="28.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.0dip"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and 30px + Regular "
+                    android:lineSpacingExtra="14.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_24" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="26.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="20.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Box"
+                    android:lineSpacingExtra="10.0sp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <View
+                    android:background="#ff2392ff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="4px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff2392ff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="8.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="8px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff2392ff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="16.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="16px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff2392ff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="24px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff2392ff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="32px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff2392ff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="40px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff2392ff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="48px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff2392ff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="56px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_24" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginRight="26.0dip">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="20.0sp"
+                    android:textColor="#ff1c1839"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Divider lines"
+                    android:lineSpacingExtra="10.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff1c1839"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="1px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff1c1839"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="2px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff1c1839"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="3px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <View
+                    android:background="#ff1c1839"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4.0dip"
+                    android:layout_marginTop="19.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="4px"
+                    android:lineSpacingExtra="8.0sp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

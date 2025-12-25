@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/visitorNameTL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/visitor_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:id="@id/visitorName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/visitorDesignationTL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:hint="@string/visitor_designation"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:id="@id/visitorDesignation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/feedbackTL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:hint="@string/visitor_feedback"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:gravity="start"
+                    android:id="@id/feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100.0dip"
+                    android:maxLength="50"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/submitBtn"
+                android:background="@drawable/bg_login_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginTop="50.0dip"
+                android:text="@string/submit_camel_case"
+                android:textAllCaps="false"
+                android:fontFamily="@font/sf_pro_display_medium" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

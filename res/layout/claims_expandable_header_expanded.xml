@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:id="@id/claim_exp_header1"
+        android:background="@drawable/rounded_corner"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="right"
+            android:id="@id/claim_indicator_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/icon_collapse" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:layout_gravity="left"
+            android:id="@id/txt_claim_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:text="@string/lbl_month_year"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</LinearLayout>

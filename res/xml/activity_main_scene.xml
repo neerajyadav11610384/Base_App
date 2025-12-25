@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        motion:constraintSetEnd="@id/activity_main_end"
+        motion:constraintSetStart="@id/activity_main_start"
+        motion:duration="1600">
+        <OnClick
+            motion:clickAction="transitionToStart"
+            motion:targetId="@id/imageView" />
+    </Transition>
+    <ConstraintSet
+        android:id="@id/activity_main_start">
+        <Constraint
+            android:id="@id/btn_add_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.866"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.281" />
+        <Constraint
+            android:id="@id/imageView"
+            android:visibility="invisible"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.87"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.289"
+            motion:pathMotionArc="startHorizontal" />
+        <Constraint
+            android:id="@id/vmq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="204.0dip"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.106"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@id/activity_main_end">
+        <Constraint
+            android:id="@id/btn_add_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="34.0dip"
+            motion:layout_editor_absoluteY="483.0dip" />
+        <Constraint
+            android:id="@id/imageView"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.091"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.698"
+            motion:pathMotionArc="startHorizontal" />
+        <Constraint
+            android:id="@id/vmq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="204.0dip"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.106"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+</MotionScene>

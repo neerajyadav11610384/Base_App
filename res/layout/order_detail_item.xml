@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@drawable/item_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@id/nonoverlay_lyt"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_gravity="center"
+            android:id="@id/img_prodcut_thumb"
+            android:background="@drawable/image_frame"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10.0">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.0">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textColor="@color/very_dark_gray"
+                    android:ellipsize="end"
+                    android:id="@id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:text="Surf excel Product 100g"
+                    android:maxLines="2"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+            <View
+                android:id="@id/view_divider"
+                android:background="@color/colorAccent"
+                android:visibility="invisible"
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginBottom="15.0dip" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/order_info_lyt"
+                android:visibility="invisible"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0">
+                <com.android.volley.toolbox.NetworkImageView
+                    android:layout_gravity="center"
+                    android:id="@id/img_product_status"
+                    android:visibility="gone"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_marginBottom="5.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textColor="@color/very_dark_gray"
+                    android:gravity="center"
+                    android:id="@id/product_status"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:text=""
+                    android:fontFamily="@font/sf_pro_display_regular" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textColor="@color/very_dark_gray"
+                    android:gravity="center"
+                    android:id="@id/product_status_info"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:text=""
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/overlay_lyt"
+        android:background="@drawable/ic_overlay"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</FrameLayout>

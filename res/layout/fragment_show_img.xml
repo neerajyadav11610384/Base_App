@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#ffeaeef8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:theme="?actionBarTheme"
+            android:id="@id/toolbar"
+            android:background="#ff2392ff"
+            android:paddingLeft="@dimen/dimen_50"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="View Image"
+            app:titleTextColor="#ffffffff" />
+        <ImageView
+            android:id="@id/close_fgmt"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_margin="@dimen/dimen_16"
+            android:src="@drawable/close"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@id/img_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/bad_img_d"
+        android:scaleType="centerCrop" />
+</LinearLayout>

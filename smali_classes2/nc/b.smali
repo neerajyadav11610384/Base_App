@@ -1,0 +1,36 @@
+.class public final synthetic Lnc/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/android/volley/Response$Listener;
+
+
+# instance fields
+.field public final synthetic a:Lnc/x;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lnc/x;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lnc/b;->a:Lnc/x;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onResponse(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lnc/b;->a:Lnc/x;
+
+    check-cast p1, Lcom/hul/sambhav/datamodel/order/ProductInfo;
+
+    invoke-static {v0, p1}, Lnc/x;->J3(Lnc/x;Lcom/hul/sambhav/datamodel/order/ProductInfo;)V
+
+    return-void
+.end method

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/fragment_skip_image_capture"
+    android:background="#b3000000"
+    android:visibility="gone"
+    android:clickable="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/stock_image_frames"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16">
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="#ff1c1839"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ICD Skip"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="8.0sp"
+                fontFamily="\@fonts/sf_pro_display_medium" />
+            <ImageView
+                android:id="@id/skip_image_cancel_button"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_close_black"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View
+            android:background="#ffe6eaf4"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_2"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_below="@id/cancel_button" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="#ff1c1839"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_14"
+            android:text="Provide reason for skipping scan"
+            android:lineSpacingExtra="8.0sp"
+            fontFamily="\@fonts/sf_pro_display_regular" />
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_14"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_6">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff1c1839"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_16"
+                android:text="Store :"
+                android:lineSpacingExtra="8.0sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff1c1839"
+                android:id="@id/tv_store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mandakini General Store-P"
+                android:lineSpacingExtra="8.0sp"
+                fontFamily="\@fonts/sf_pro_display_medium" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:textColor="@android:color/white"
+                android:entries="@array/icd_skip"
+                android:id="@id/img_skip_reason"
+                android:background="@drawable/spinner_background"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_24"
+                android:spinnerMode="dropdown"
+                style="@style/Widget.AppCompat.Light.DropDownItem.Spinner" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-50.0dip"
+                android:layout_marginTop="10.0dip"
+                android:src="@drawable/ic_down_arrow" />
+        </LinearLayout>
+        <Button
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_skip_confirm"
+            android:background="@drawable/drawable_2392ff_5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_8"
+            android:text="@string/confirm"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>

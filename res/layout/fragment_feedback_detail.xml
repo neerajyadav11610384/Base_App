@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/lyt_notification_summary"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="14.0sp"
+                android:textColor="#ff929292"
+                android:id="@id/date_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginBottom="5.0dip" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:layout_alignParentRight="true">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/dark_green"
+                    android:id="@id/type_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginBottom="3.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/dark_blue"
+                    android:id="@id/status_feedback"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginBottom="10.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/very_dark_gray"
+            android:id="@id/id_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:text=""
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:textColor="#ff141414"
+                    android:id="@id/content_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/very_dark_gray"
+                    android:id="@id/feedback_replay_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text=""
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/dark_green"
+                    android:id="@id/feedback_reply"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

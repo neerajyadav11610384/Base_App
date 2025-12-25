@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:id="@id/ret_screen"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.04" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.96" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/nestedScrollView"
+        android:fitsSystemWindows="true"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintBottom_toTopOf="@id/layoutSaveBillCapture"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_15"
+                android:textColor="@color/black"
+                android:id="@id/editTextCalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:drawablePadding="@dimen/dimen_8"
+                android:drawableStart="@drawable/calender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:textSize="@dimen/dimen_16sp"
+                android:textColorHint="@color/dark_gray"
+                android:id="@id/mobileNumEdittxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:hint="Enter 10 digit mobile number"
+                android:maxLength="10"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextCalender" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/blue_selector"
+                android:id="@id/getOtptextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="Verify"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextCalender" />
+            <androidx.constraintlayout.widget.Group
+                android:id="@id/groupMobileNoOtp"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="getOtptextview,mobileNumEdittxt" />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:textSize="@dimen/dimen_12sp"
+                android:textColor="@color/dark_gray"
+                android:id="@id/checkBoxWithoutPhoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7.0dip"
+                android:text="Proceed without phone number"
+                android:fontFamily="@font/sf_pro_display_regular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mobileNumEdittxt" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="@dimen/dimen_16sp"
+                android:textColorHint="@color/dark_gray"
+                android:id="@id/editTextCustomerName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="Name"
+                android:maxLength="50"
+                android:digits="@string/allowed_only_alphabets"
+                android:inputType="textCapWords"
+                android:imeOptions="flagForceAscii"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkBoxWithoutPhoneNo" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="@dimen/dimen_16sp"
+                android:textColorHint="@color/dark_gray"
+                android:id="@id/editTextCustomerEmailId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email ID"
+                android:maxLength="30"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/sf_pro_display_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextCustomerName" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:textColor="#ff2c2c6f"
+                android:id="@id/textViewGender"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="Gender"
+                app:layout_constraintEnd_toStartOf="@id/genderMale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextCustomerEmailId" />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@id/radioGroupGender"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_60"
+                app:layout_constraintBottom_toBottomOf="@id/textViewGender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textViewGender"
+                app:layout_constraintTop_toTopOf="@id/textViewGender">
+                <RadioButton
+                    android:textSize="@dimen/dimen_16"
+                    android:textColor="@color/black"
+                    android:id="@id/genderMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Male"
+                    android:layoutDirection="rtl"
+                    android:layout_marginEnd="@dimen/dimen_10" />
+                <RadioButton
+                    android:textSize="@dimen/dimen_16"
+                    android:textColor="@color/black"
+                    android:id="@id/genderfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Female"
+                    android:layoutDirection="rtl"
+                    android:layout_marginEnd="@dimen/dimen_30" />
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:id="@id/textViewMOA"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="Makeover Activation"
+                app:layout_constraintEnd_toStartOf="@id/moaYes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radioGroupGender" />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@id/radioGroupMOA"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_40"
+                app:layout_constraintBottom_toBottomOf="@id/textViewMOA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textViewMOA"
+                app:layout_constraintTop_toTopOf="@id/textViewMOA">
+                <RadioButton
+                    android:textSize="@dimen/dimen_16"
+                    android:textColor="@color/black"
+                    android:id="@id/moaYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Yes"
+                    android:layoutDirection="rtl"
+                    android:layout_marginEnd="@dimen/dimen_4" />
+                <RadioButton
+                    android:textSize="@dimen/dimen_16"
+                    android:textColor="@color/black"
+                    android:id="@id/moaNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No"
+                    android:layoutDirection="rtl"
+                    android:layout_marginEnd="@dimen/dimen_30" />
+            </RadioGroup>
+            <View
+                android:id="@id/viewDivider"
+                android:background="@drawable/dots"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radioGroupMOA" />
+            <AutoCompleteTextView
+                android:textSize="@dimen/dimen_15sp"
+                android:id="@id/actvSearchProduct"
+                android:background="@drawable/light_green_rounded_corner"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="@string/search_products"
+                android:drawablePadding="@dimen/dimen_10"
+                android:inputType="textAutoComplete|textAutoCorrect"
+                android:drawableStart="@drawable/ic_search_wrapped"
+                android:layout_marginEnd="@dimen/dimen_10"
+                app:layout_constraintEnd_toStartOf="@id/imageViewBarCode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewDivider" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/imageViewBarCode"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_0"
+                android:src="@drawable/ic_barcode_scanner"
+                app:layout_constraintBottom_toBottomOf="@id/actvSearchProduct"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/actvSearchProduct"
+                app:layout_constraintTop_toTopOf="@id/actvSearchProduct" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_15sp"
+                android:textStyle="bold"
+                android:textColor="#ff2c2c6f"
+                android:id="@id/addedProductTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:text="Added products"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/actvSearchProduct" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/black"
+                android:id="@id/textViewNoDataAvalable"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data_found_msg"
+                android:fontFamily="@font/sf_pro_display_bold"
+                app:layout_constraintBottom_toBottomOf="@id/recyclerViewOffTakeSearch"
+                app:layout_constraintEnd_toEndOf="@id/recyclerViewOffTakeSearch"
+                app:layout_constraintStart_toStartOf="@id/recyclerViewOffTakeSearch"
+                app:layout_constraintTop_toTopOf="@id/recyclerViewOffTakeSearch" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recyclerViewOffTakeSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:minHeight="200.0dip"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/addedProductTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layoutSaveBillCapture"
+        android:background="@drawable/drawable_2392ff_5dp"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/nestedScrollView">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:id="@id/textViewTotalMrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total : 500"
+            android:layout_marginStart="@dimen/dimen_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/viewMrpSaveDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@id/viewMrpSaveDivider"
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_0"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/textViewSave"
+            app:layout_constraintStart_toEndOf="@id/textViewTotalMrp"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:id="@id/textViewSave"
+            android:paddingTop="@dimen/dimen_6"
+            android:paddingBottom="@dimen/dimen_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:paddingStart="@dimen/dimen_12"
+            android:paddingEnd="@dimen/dimen_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewMrpSaveDivider"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@id/progressBar"
+        android:visibility="gone"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerViewAnnouncement"
+        android:background="@color/color_e6eaf4"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="76.0dip"
+        android:overScrollMode="never" />
+    <FrameLayout
+        android:id="@id/layoutAnnouncement"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewAnnouncement">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@id/announcement_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="76.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginBottom="8.0dip" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/SliderDots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66.0dip" />
+    </FrameLayout>
+</RelativeLayout>

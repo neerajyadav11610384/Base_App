@@ -1,0 +1,819 @@
+.class abstract Lcom/google/common/collect/e1$g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/Iterator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/common/collect/e1;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x400
+    name = "g"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Iterator<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field a:I
+
+.field b:I
+
+.field c:Lcom/google/common/collect/e1$m;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/collect/e1$m<",
+            "TK;TV;TE;TS;>;"
+        }
+    .end annotation
+.end field
+
+.field d:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReferenceArray<",
+            "TE;>;"
+        }
+    .end annotation
+.end field
+
+.field e:Lcom/google/common/collect/e1$h;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TE;"
+        }
+    .end annotation
+.end field
+
+.field f:Lcom/google/common/collect/e1$b0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/collect/e1<",
+            "TK;TV;TE;TS;>.b0;"
+        }
+    .end annotation
+.end field
+
+.field g:Lcom/google/common/collect/e1$b0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/collect/e1<",
+            "TK;TV;TE;TS;>.b0;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic h:Lcom/google/common/collect/e1;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/common/collect/e1;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/common/collect/e1$g;->h:Lcom/google/common/collect/e1;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p1, p1, Lcom/google/common/collect/e1;->c:[Lcom/google/common/collect/e1$m;
+
+    .line 7
+    .line 8
+    array-length p1, p1
+
+    .line 9
+    add-int/lit8 p1, p1, -0x1
+
+    .line 10
+    .line 11
+    iput p1, p0, Lcom/google/common/collect/e1$g;->a:I
+
+    .line 12
+    .line 13
+    const/4 p1, -0x1
+
+    .line 14
+    iput p1, p0, Lcom/google/common/collect/e1$g;->b:I
+
+    .line 15
+    .line 16
+    invoke-virtual {p0}, Lcom/google/common/collect/e1$g;->a()V
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+.end method
+
+
+# virtual methods
+.method final a()V
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lcom/google/common/collect/e1$g;->f:Lcom/google/common/collect/e1$b0;
+
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/google/common/collect/e1$g;->d()Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :cond_0
+    invoke-virtual {p0}, Lcom/google/common/collect/e1$g;->e()Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-eqz v0, :cond_1
+
+    .line 16
+    .line 17
+    return-void
+
+    .line 18
+    :cond_1
+    iget v0, p0, Lcom/google/common/collect/e1$g;->a:I
+
+    .line 19
+    .line 20
+    if-ltz v0, :cond_2
+
+    .line 21
+    .line 22
+    iget-object v1, p0, Lcom/google/common/collect/e1$g;->h:Lcom/google/common/collect/e1;
+
+    .line 23
+    .line 24
+    iget-object v1, v1, Lcom/google/common/collect/e1;->c:[Lcom/google/common/collect/e1$m;
+
+    .line 25
+    .line 26
+    add-int/lit8 v2, v0, -0x1
+
+    .line 27
+    .line 28
+    iput v2, p0, Lcom/google/common/collect/e1$g;->a:I
+
+    .line 29
+    .line 30
+    aget-object v0, v1, v0
+
+    .line 31
+    .line 32
+    iput-object v0, p0, Lcom/google/common/collect/e1$g;->c:Lcom/google/common/collect/e1$m;
+
+    .line 33
+    .line 34
+    iget v0, v0, Lcom/google/common/collect/e1$m;->b:I
+
+    .line 35
+    .line 36
+    if-eqz v0, :cond_1
+
+    .line 37
+    .line 38
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->c:Lcom/google/common/collect/e1$m;
+
+    .line 39
+    .line 40
+    iget-object v0, v0, Lcom/google/common/collect/e1$m;->e:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    .line 41
+    .line 42
+    iput-object v0, p0, Lcom/google/common/collect/e1$g;->d:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    .line 43
+    .line 44
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result v0
+
+    .line 48
+    add-int/lit8 v0, v0, -0x1
+
+    .line 49
+    .line 50
+    iput v0, p0, Lcom/google/common/collect/e1$g;->b:I
+
+    .line 51
+    .line 52
+    invoke-virtual {p0}, Lcom/google/common/collect/e1$g;->e()Z
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v0
+
+    .line 56
+    if-eqz v0, :cond_1
+
+    .line 57
+    .line 58
+    :cond_2
+    return-void
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+.end method
+
+.method b(Lcom/google/common/collect/e1$h;)Z
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;)Z"
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-interface {p1}, Lcom/google/common/collect/e1$h;->getKey()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget-object v1, p0, Lcom/google/common/collect/e1$g;->h:Lcom/google/common/collect/e1;
+
+    .line 6
+    .line 7
+    invoke-virtual {v1, p1}, Lcom/google/common/collect/e1;->d(Lcom/google/common/collect/e1$h;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    if-eqz p1, :cond_0
+
+    .line 12
+    .line 13
+    new-instance v1, Lcom/google/common/collect/e1$b0;
+
+    .line 14
+    .line 15
+    iget-object v2, p0, Lcom/google/common/collect/e1$g;->h:Lcom/google/common/collect/e1;
+
+    .line 16
+    .line 17
+    invoke-direct {v1, v2, v0, p1}, Lcom/google/common/collect/e1$b0;-><init>(Lcom/google/common/collect/e1;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 18
+    .line 19
+    .line 20
+    iput-object v1, p0, Lcom/google/common/collect/e1$g;->f:Lcom/google/common/collect/e1$b0;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 21
+    .line 22
+    iget-object p1, p0, Lcom/google/common/collect/e1$g;->c:Lcom/google/common/collect/e1$m;
+
+    .line 23
+    .line 24
+    invoke-virtual {p1}, Lcom/google/common/collect/e1$m;->s()V
+
+    .line 25
+    .line 26
+    .line 27
+    const/4 p1, 0x1
+
+    .line 28
+    return p1
+
+    .line 29
+    :cond_0
+    iget-object p1, p0, Lcom/google/common/collect/e1$g;->c:Lcom/google/common/collect/e1$m;
+
+    .line 30
+    .line 31
+    invoke-virtual {p1}, Lcom/google/common/collect/e1$m;->s()V
+
+    .line 32
+    .line 33
+    .line 34
+    const/4 p1, 0x0
+
+    .line 35
+    return p1
+
+    .line 36
+    :catchall_0
+    move-exception p1
+
+    .line 37
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->c:Lcom/google/common/collect/e1$m;
+
+    .line 38
+    .line 39
+    invoke-virtual {v0}, Lcom/google/common/collect/e1$m;->s()V
+
+    .line 40
+    .line 41
+    .line 42
+    throw p1
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+.end method
+
+.method c()Lcom/google/common/collect/e1$b0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/collect/e1<",
+            "TK;TV;TE;TS;>.b0;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->f:Lcom/google/common/collect/e1$b0;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iput-object v0, p0, Lcom/google/common/collect/e1$g;->g:Lcom/google/common/collect/e1$b0;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/google/common/collect/e1$g;->a()V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->g:Lcom/google/common/collect/e1$b0;
+
+    .line 11
+    .line 12
+    return-object v0
+
+    .line 13
+    :cond_0
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    .line 14
+    .line 15
+    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+
+    .line 16
+    .line 17
+    .line 18
+    throw v0
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+.end method
+
+.method d()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->e:Lcom/google/common/collect/e1$h;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_1
+
+    .line 4
+    .line 5
+    :goto_0
+    invoke-interface {v0}, Lcom/google/common/collect/e1$h;->a()Lcom/google/common/collect/e1$h;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/google/common/collect/e1$g;->e:Lcom/google/common/collect/e1$h;
+
+    .line 10
+    .line 11
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->e:Lcom/google/common/collect/e1$h;
+
+    .line 12
+    .line 13
+    if-eqz v0, :cond_1
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, v0}, Lcom/google/common/collect/e1$g;->b(Lcom/google/common/collect/e1$h;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-eqz v0, :cond_0
+
+    .line 20
+    .line 21
+    const/4 v0, 0x1
+
+    .line 22
+    return v0
+
+    .line 23
+    :cond_0
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->e:Lcom/google/common/collect/e1$h;
+
+    .line 24
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 27
+    return v0
+    .line 28
+    .line 29
+.end method
+
+.method e()Z
+    .locals 3
+
+    .line 1
+    :cond_0
+    iget v0, p0, Lcom/google/common/collect/e1$g;->b:I
+
+    .line 2
+    .line 3
+    if-ltz v0, :cond_2
+
+    .line 4
+    .line 5
+    iget-object v1, p0, Lcom/google/common/collect/e1$g;->d:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    .line 6
+    .line 7
+    add-int/lit8 v2, v0, -0x1
+
+    .line 8
+    .line 9
+    iput v2, p0, Lcom/google/common/collect/e1$g;->b:I
+
+    .line 10
+    .line 11
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, Lcom/google/common/collect/e1$h;
+
+    .line 16
+    .line 17
+    iput-object v0, p0, Lcom/google/common/collect/e1$g;->e:Lcom/google/common/collect/e1$h;
+
+    .line 18
+    .line 19
+    if-eqz v0, :cond_0
+
+    .line 20
+    .line 21
+    invoke-virtual {p0, v0}, Lcom/google/common/collect/e1$g;->b(Lcom/google/common/collect/e1$h;)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v0
+
+    .line 25
+    if-nez v0, :cond_1
+
+    .line 26
+    .line 27
+    invoke-virtual {p0}, Lcom/google/common/collect/e1$g;->d()Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
+    if-eqz v0, :cond_0
+
+    .line 32
+    .line 33
+    :cond_1
+    const/4 v0, 0x1
+
+    .line 34
+    return v0
+
+    .line 35
+    :cond_2
+    const/4 v0, 0x0
+
+    .line 36
+    return v0
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+.end method
+
+.method public hasNext()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->f:Lcom/google/common/collect/e1$b0;
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public remove()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->g:Lcom/google/common/collect/e1$b0;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, 0x1
+
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 8
+    :goto_0
+    invoke-static {v0}, Lcom/google/common/collect/t;->d(Z)V
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object v0, p0, Lcom/google/common/collect/e1$g;->h:Lcom/google/common/collect/e1;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lcom/google/common/collect/e1$g;->g:Lcom/google/common/collect/e1$b0;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1}, Lcom/google/common/collect/e1$b0;->getKey()Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/e1;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    .line 22
+    const/4 v0, 0x0
+
+    .line 23
+    iput-object v0, p0, Lcom/google/common/collect/e1$g;->g:Lcom/google/common/collect/e1$b0;
+
+    .line 24
+    .line 25
+    return-void
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+.end method

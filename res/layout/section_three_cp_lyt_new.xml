@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/banner_lyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/layoutSectionThreeHeader"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_17"
+            android:paddingTop="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_17"
+            android:paddingBottom="@dimen/dimen_15"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/imageIcon"
+                android:visibility="gone"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_50"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/channel_target_logo" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/max_earn_vbpacks"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_18sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:gravity="left"
+                    android:id="@id/third_section_name"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_18sp"
+                        android:textColor="@color/color_1c1839_1"
+                        android:id="@id/vbpacks_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/dimen_2sp"
+                        android:fontFamily="@font/sf_pro_display_regular" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_14sp"
+                        android:textColor="@color/white"
+                        android:id="@id/vbpacks_value"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:lineSpacingExtra="@dimen/dimen_2sp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:lineHeight="16.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@id/banner_view_pager"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="180.0dip"
+                android:foregroundGravity="center"
+                android:overScrollMode="never" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@id/SliderDots"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

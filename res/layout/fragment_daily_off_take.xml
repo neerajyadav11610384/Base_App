@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="#eeffffff"
+        android:visibility="gone"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/DrawerIcon" />
+    <View
+        android:id="@id/divider"
+        android:background="#ffe2e2e2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="16.0dip"
+        android:paddingBottom="16.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:paddingVertical="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/mocTL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:hint="Select MOC"
+            android:layout_marginHorizontal="16.0dip"
+            app:endIconMode="dropdown_menu"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/mocAC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:fontFamily="@font/sf_pro_display_regular" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/dailyOffTakeLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginTop="16.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginHorizontal="12.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#fff5f7f9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingTop="8.0dip"
+                    android:paddingBottom="8.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="Date"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:paddingVertical="8.0dip" />
+                <View
+                    android:background="#ffeeeeee"
+                    android:visibility="gone"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingTop="8.0dip"
+                    android:paddingBottom="8.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="Total Bill"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:paddingVertical="8.0dip" />
+                <View
+                    android:background="#ffeeeeee"
+                    android:visibility="gone"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:gravity="center"
+                    android:paddingTop="8.0dip"
+                    android:paddingBottom="8.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Total Offtake Unit"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:paddingVertical="8.0dip" />
+                <View
+                    android:background="#ffeeeeee"
+                    android:visibility="gone"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:gravity="center"
+                    android:paddingTop="8.0dip"
+                    android:paddingBottom="8.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Total Offtake Value"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:paddingVertical="8.0dip" />
+            </LinearLayout>
+            <View
+                android:background="#ffeeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recyclerView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0sp"
+        android:textColor="@color/color_1c1839_1"
+        android:id="@id/noDataFoundTv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar
+        android:id="@id/progressBar"
+        android:visibility="gone"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

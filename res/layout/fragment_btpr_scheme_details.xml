@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/view_qps"
+    android:background="@color/color_eaeef8"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/hdr1"
+        android:background="@drawable/add_blue_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:layout_marginBottom="@dimen/dimen_1"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/dimen_2"
+        android:layout_marginEnd="@dimen/dimen_2">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/dimen_10"
+            android:paddingBottom="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bundle TPR Details "
+            android:paddingStart="@dimen/dimen_10"
+            android:paddingEnd="@dimen/dimen_10" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:id="@id/tv_scheme_desc"
+            android:paddingBottom="@dimen/dimen_10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingStart="@dimen/dimen_10"
+            android:paddingEnd="@dimen/dimen_10" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/hdr2"
+        android:background="@drawable/add_blue_button"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_1"
+        android:layout_below="@id/hdr1"
+        android:layout_marginStart="@dimen/dimen_2"
+        android:layout_marginEnd="@dimen/dimen_2">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6">
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:id="@id/tx_scheme_type"
+                android:paddingTop="@dimen/dimen_4"
+                android:paddingBottom="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Scheme Type"
+                android:layout_weight="1.0"
+                android:paddingStart="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_10" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:id="@id/tx_scheme_type_value"
+                android:paddingTop="@dimen/dimen_4"
+                android:paddingBottom="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1.0"
+                android:paddingStart="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:id="@id/tx_dis_type"
+                android:paddingTop="@dimen/dimen_4"
+                android:paddingBottom="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Discount Type"
+                android:layout_weight="1.0"
+                android:paddingStart="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_10" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:id="@id/tx_dis_type_value"
+                android:paddingTop="@dimen/dimen_4"
+                android:paddingBottom="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1.0"
+                android:paddingStart="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_6">
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:id="@id/tx_rupee_type"
+                android:paddingTop="@dimen/dimen_4"
+                android:paddingBottom="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Discount Basis"
+                android:layout_weight="1.0"
+                android:paddingStart="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_10" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:id="@id/tx_rupee_value"
+                android:paddingTop="@dimen/dimen_4"
+                android:paddingBottom="@dimen/dimen_4"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1.0"
+                android:paddingStart="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_10" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@id/hdr3"
+        android:background="@drawable/add_blue_button"
+        android:padding="@dimen/dimen_10"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2"
+        android:layout_below="@id/hdr2"
+        android:layout_marginStart="@dimen/dimen_2"
+        android:layout_marginEnd="@dimen/dimen_2">
+        <TextView
+            android:textSize="@dimen/dimen_15sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:id="@id/tx_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valid From: "
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tx_valid_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toRightOf="@id/tx_date"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:textSize="@dimen/dimen_15sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valid To: "
+            android:layout_toLeftOf="@id/tv_valid_to" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/tv_valid_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@id/hdr4"
+        android:background="#ff3ea5f6"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hdr3">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tx_clus_hdr"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Clus ID "
+            android:layout_weight="1.0" />
+        <View
+            android:background="#ffdcd9d9"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tx_cls_item"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Item"
+            android:layout_weight="2.0" />
+        <View
+            android:background="#ffdcd9d9"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tx_ratio"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Ratio"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_product_list"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/hdr5"
+        android:layout_below="@id/hdr4" />
+    <LinearLayout
+        android:id="@id/hdr5"
+        android:background="#ff3ea5f6"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rv_slab_list">
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tx_from_hdr"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="From "
+            android:layout_weight="1.0" />
+        <View
+            android:background="#ffdcd9d9"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tx_to_item"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:layout_weight="1.0" />
+        <View
+            android:background="#ffdcd9d9"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tx_disc"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="Disc"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_slab_list"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100.0dip"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

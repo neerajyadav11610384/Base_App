@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerViewPaymentPending"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/color_2392ff"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_17">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/white"
+                android:id="@id/tot_pending_amt_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tot_payment_pending"
+                android:fontFamily="@font/sf_pro_display_medium" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@id/tot_pending_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </LinearLayout>
+        <View
+            android:background="@color/white"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="right"
+            android:layout_gravity="end|center"
+            android:id="@id/clear_all_dues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_17"
+            android:text="@string/clear_all_dues"
+            android:layout_weight="1.0"
+            android:fontFamily="@font/sf_pro_display_bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

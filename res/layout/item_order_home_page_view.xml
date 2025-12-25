@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/white_left_corner"
+    android:layout_width="300.0dip"
+    android:layout_height="wrap_content"
+    android:layout_margin="8.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:id="@id/layoutOrderId"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginBottom="@dimen/dimen_5">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/imageViewIsShikharOrder"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_1c1839_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_date"
+            android:fontFamily="@font/sf_pro_display_medium" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_1c1839_1"
+            android:id="@id/textViewOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_medium" />
+    </LinearLayout>
+    <View
+        android:id="@id/orderDividerView"
+        android:background="#33b4c8dc"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_1" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/color_1c1839_1"
+            android:ellipsize="end"
+            android:id="@id/textViewExpectedDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:text="@string/expected_delivery"
+            android:maxLines="1"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_3e2ec0"
+            android:id="@id/textViewItemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:text="Items : 14"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:maxHeight="@dimen/dimen_40"
+        android:minHeight="@dimen/dimen_40">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/imageViewStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

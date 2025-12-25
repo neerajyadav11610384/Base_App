@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_30"
+    android:layout_marginBottom="@dimen/dimen_30"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/relativeLayoutBrand"
+        android:background="@drawable/drawable_oral_stoke_e6eaf4"
+        android:layout_width="58.0dip"
+        android:layout_height="58.0dip">
+        <RelativeLayout
+            android:id="@id/mainBackground"
+            android:background="@drawable/drawable_oral_language"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="@dimen/dimen_40"
+                android:textColor="@color/white"
+                android:id="@id/textViewLanguageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sf_pro_display_bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/relativelayoutSelcted"
+            android:background="@drawable/drawable_oral_language_selcted"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/viewBrandSelected"
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_2"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/dimen_2"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/ic_checkmark_new" />
+        </RelativeLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/imageViewBrand"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/default_img" />
+    </RelativeLayout>
+    <TextView
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/black"
+        android:id="@id/languageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:fontFamily="@font/sf_pro_display_regular" />
+</LinearLayout>

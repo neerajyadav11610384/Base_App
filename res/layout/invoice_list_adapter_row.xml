@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="250.0dip"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff2392ff"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@id/textViewBillNo"
+        android:padding="@dimen/dimen_5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5"
+        android:lineSpacingExtra="7.0sp"
+        android:fontFamily="sans-serif-medium" />
+    <View
+        android:background="#ff2392ff"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+.class public final synthetic Lpc/b2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnTouchListener;
+
+
+# instance fields
+.field public final synthetic a:Lpc/h2;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lpc/h2;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lpc/b2;->a:Lpc/h2;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    iget-object v0, p0, Lpc/b2;->a:Lpc/h2;
+
+    invoke-static {v0, p1, p2}, Lpc/h2;->y(Lpc/h2;Landroid/view/View;Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+.end method

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/sub_category_block_lyt"
+    android:background="@color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0sp"
+        android:textColor="@color/color_1c1839_1"
+        android:gravity="center|left"
+        android:id="@id/sub_category_section_title"
+        android:paddingLeft="24.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="51.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:text="Category Name"
+        android:fontFamily="@font/sf_pro_display_medium" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rcy_sub_category_blocks"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="9.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="16.0dip" />
+</LinearLayout>

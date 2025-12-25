@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/lyt_performance_widget"
+    android:visibility="visible"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        cardview:cardBackgroundColor="@color/white"
+        cardview:cardCornerRadius="@dimen/dimen_2"
+        cardview:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12">
+            <RelativeLayout
+                android:id="@id/lyt_hdr"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:minHeight="@dimen/dimen_40">
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:id="@id/lyt_spinner_date"
+                    android:background="@drawable/moc_background"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@id/img_incentive_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_12"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    android:layout_alignParentStart="true">
+                    <Spinner
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@id/sp_moc_dropdown"
+                        android:background="@drawable/null_selector"
+                        android:layout_width="75.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_centerVertical="true"
+                        android:lineSpacingExtra="0.0sp"
+                        android:spinnerMode="dropdown"
+                        android:overlapAnchor="false"
+                        fontFamily="\@fonts/sf_pro_display_regular" />
+                    <ImageView
+                        android:id="@id/img_moc_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/sp_moc_dropdown"
+                        android:layout_centerVertical="true"
+                        cardview:srcCompat="@drawable/ic_icon_chevron_bottom" />
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="#ffffffff"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dashboard"
+                        android:layout_centerInParent="true"
+                        android:lineSpacingExtra="0.0sp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+                    <TextView
+                        android:textSize="14.0sp"
+                        android:textColor="@color/white"
+                        android:id="@id/tv_viewmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View More"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@id/img_incentive_icon"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_icon_info"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    cardview:tint="#ff2392ff" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rv_performance_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lyt_incentives_calc"
+                android:layout_marginStart="@dimen/dimen_2" />
+            <RelativeLayout
+                android:id="@id/lyt_incentives_calc"
+                android:background="@drawable/incentive_background"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_below="@id/lyt_hdr"
+                android:layout_marginStart="@dimen/dimen_12"
+                android:layout_marginEnd="@dimen/dimen_12">
+                <TextView
+                    android:textSize="14.0sp"
+                    android:textStyle="normal"
+                    android:textColor="#ff2392ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL INCENTIVES"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="0.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:id="@id/tv_tot_incent_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 / 0 "
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="0.0sp"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

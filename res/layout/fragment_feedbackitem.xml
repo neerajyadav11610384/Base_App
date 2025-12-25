@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    android:padding="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5.0dip"
+    android:layout_marginTop="5.0dip"
+    android:layout_marginRight="5.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textAppearance="?textAppearanceListItem"
+            android:textSize="12.0sp"
+            android:id="@id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textAppearance="?textAppearanceListItem"
+            android:textSize="12.0sp"
+            android:textColor="#ff929292"
+            android:gravity="center"
+            android:id="@id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text=""
+            android:layout_below="@id/id"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textAppearance="?textAppearanceListItem"
+            android:textSize="12.0sp"
+            android:textColor="@color/dark_green"
+            android:gravity="center"
+            android:id="@id/type"
+            android:padding="5.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type_open"
+            android:layout_alignParentRight="true" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textAppearance="?textAppearanceListItem"
+            android:textSize="12.0sp"
+            android:textColor="@color/dark_blue"
+            android:gravity="center"
+            android:id="@id/status"
+            android:padding="3.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:text="@string/status_open"
+            android:layout_below="@id/type"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

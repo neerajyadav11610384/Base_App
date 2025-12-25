@@ -1,0 +1,1413 @@
+{"oosmbrands":[
+  {
+    "mbrand_name": "Lakme Abs Lip Mousse",
+    "total_values": 18444,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Xtraordin-airy Lip Mousse Bare Nude",
+        "total_values": 1400,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 700
+          },
+          {
+            "moc": "02/2025",
+            "value": 700
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Sheer Lip Mousse 103 Dark Cherry 4.",
+        "total_values": 4499,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1799
+          },
+          {
+            "moc": "02/2025",
+            "value": 2700
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Sheer Lip Mousse 203 Plum Punch 4.6",
+        "total_values": 650,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 650
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Xtraordin-airy Lip Mousse Passion Pink",
+        "total_values": 700,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 700
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Xtraordin-airy Lip Mousse Blush Nude",
+        "total_values": 700,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 700
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Sheer Lip Mousse 201 Purple Haze 4.",
+        "total_values": 1300,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 1300
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Xtraordin-airy Lip Mousse Lovestruck Red",
+        "total_values": 700,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 700
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Sheer Lip Mousse 202 Pink Veil 4.6g",
+        "total_values": 650,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 650
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Sheer Lip Mousse 204 Fuchsia Fantas",
+        "total_values": 1300,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 650
+          },
+          {
+            "moc": "02/2025",
+            "value": 650
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Sheer Lip Mousse 303 Nude Naturalle",
+        "total_values": 1798,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          },
+          {
+            "moc": "02/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Xtraordin-airy Lip Mousse Right Swipe Pink",
+        "total_values": 700,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 700
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Sheer Lip Mousse 102 Crimson Sky 4.",
+        "total_values": 650,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 650
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Sheer Lip Mousse 304 Chocolate Temp",
+        "total_values": 2697,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1798
+          },
+          {
+            "moc": "03/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Xtraordin-airy Lip Mousse Date Night Pink",
+        "total_values": 700,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 700
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "LAKME ABSOLUTE MOUSSE",
+    "total_values": 26643,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Mousse 25G01 Ivory Fair",
+        "total_values": 9249,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 2849
+          },
+          {
+            "moc": "02/2025",
+            "value": 6400
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Mousse 02 Rose Fair",
+        "total_values": 4799,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 4799
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Mousse 06 Almond Honey",
+        "total_values": 2949,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 1950
+          },
+          {
+            "moc": "03/2025",
+            "value": 999
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Mousse 25G05 Beige Honey",
+        "total_values": 6773,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 2849
+          },
+          {
+            "moc": "02/2025",
+            "value": 3924
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Mousse 04 Golden Light",
+        "total_values": 1898,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 1898
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Mousse 25G03 Golden Md",
+        "total_values": 975,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 975
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ROUGE BLOOM MATTE BULLET",
+    "total_values": 16983,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Rouge Bloom Powder Matte Bullet - Blush Peon",
+        "total_values": 999,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 999
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Rouge Bloom Powder Matte Bullet - Nude Necta",
+        "total_values": 4995,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1998
+          },
+          {
+            "moc": "02/2025",
+            "value": 2997
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Rouge Bloom Powder Matte Bullet - CocoaCarna",
+        "total_values": 6993,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 2997
+          },
+          {
+            "moc": "02/2025",
+            "value": 3996
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Rouge Bloom Powder Matte Bullet - Pink Poppy",
+        "total_values": 1998,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 1998
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Rouge Bloom Powder Matte Bullet - Scarlet Ro",
+        "total_values": 999,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 999
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Rouge Bloom Powder Matte Bullet-Peach Petal ",
+        "total_values": 999,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 999
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ROUGE BLOOM MATTE LIQUID LIP",
+    "total_values": 31174,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Rouge Bloom Matte Lip Liquid Mocha Maiden 30",
+        "total_values": 8393,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 2398
+          },
+          {
+            "moc": "02/2025",
+            "value": 5995
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Rouge Bloom Matte Lip Liquid Enchanted Woods",
+        "total_values": 10791,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 4796
+          },
+          {
+            "moc": "02/2025",
+            "value": 5995
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Rouge Bloom Matte Lip Liquid Cinnamon Sensat",
+        "total_values": 8393,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 4796
+          },
+          {
+            "moc": "02/2025",
+            "value": 3597
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Rouge Bloom Matte Lip Liquid Blushing Bae 20",
+        "total_values": 3597,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1199
+          },
+          {
+            "moc": "02/2025",
+            "value": 2398
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ABSOLUTE WET & DRY COMPACT",
+    "total_values": 29072,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Compact  03 Golden Medium",
+        "total_values": 1798,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          },
+          {
+            "moc": "02/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Compact 05 Beige Honey",
+        "total_values": 14612,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 7192
+          },
+          {
+            "moc": "02/2025",
+            "value": 7420
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Compact 04 Golden Light",
+        "total_values": 5394,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 4495
+          },
+          {
+            "moc": "02/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Compact 01 Ivory Fair",
+        "total_values": 3672,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 3672
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Compact Rose Fair",
+        "total_values": 2697,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 2697
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Compact 06 Almond Honey",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Abs 3D Matt Lipstick",
+    "total_values": 57134,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme 3D Matte Lipstick  04 Plum Spell",
+        "total_values": 10338,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 5943
+          },
+          {
+            "moc": "02/2025",
+            "value": 4395
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme 3D Matte Lipstick 11 British Brown",
+        "total_values": 9489,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 5094
+          },
+          {
+            "moc": "02/2025",
+            "value": 4395
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme 3D Matte Lipstick 03 Maroon Magic",
+        "total_values": 14134,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 4245
+          },
+          {
+            "moc": "02/2025",
+            "value": 8091
+          },
+          {
+            "moc": "03/2025",
+            "value": 1798
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme 3D Matte Lipstick 12 Elegant Pink",
+        "total_values": 16980,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 8490
+          },
+          {
+            "moc": "02/2025",
+            "value": 8490
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme 3D Matte Lipstick 05 Pink Passion",
+        "total_values": 2647,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 2647
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme 3D Matte Lipstick 02 Red Carnival",
+        "total_values": 3546,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 3546
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "NA",
+    "total_values": 14944,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Lip 131 Rhythmic Red 6ml",
+        "total_values": 800,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 800
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Mini 102 Indie Maroon",
+        "total_values": 1350,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1350
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Cream Absolute Perfect Radiance Brightening ",
+        "total_values": 650,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 650
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Liquid Lip Color 04 Mulb",
+        "total_values": 800,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 800
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Face Stylist Blush Duos Rose Blush",
+        "total_values": 800,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 800
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Matte Ultimate Lip Color 205 Orchid",
+        "total_values": 825,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 825
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Liquid Lip Color 20 Rhyt",
+        "total_values": 1649,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1649
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Mini 301 Nude Umbrella",
+        "total_values": 850,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 850
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Mini 503 Wine Voyage",
+        "total_values": 450,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 450
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme 3D Lip Definer 01 Ruby 1.2g",
+        "total_values": 1500,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Explore Eye Pencil Ethereal White",
+        "total_values": 650,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 650
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Sheer Cheek Mousse Pink Berry 6ml",
+        "total_values": 650,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 650
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "SHINE LINE EYE LINER",
+    "total_values": 30567,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Shine Eye Liner Black",
+        "total_values": 30567,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 10485
+          },
+          {
+            "moc": "02/2025",
+            "value": 19383
+          },
+          {
+            "moc": "03/2025",
+            "value": 699
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Absolute 3D Lash Volumizer",
+    "total_values": 825,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute 3D Lash Volumizer",
+        "total_values": 825,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 825
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Glitterati LipGlze",
+    "total_values": 6293,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Gliterati Lip Glaze 202 Peach Punch 5ml",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Gliterati Lip Glaze 501 Berry Sparkler 5ml",
+        "total_values": 2697,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1798
+          },
+          {
+            "moc": "02/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Gliterati Lip Glaze 303 Caramel Drizzle 5ml",
+        "total_values": 1798,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          },
+          {
+            "moc": "03/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Gliterati Lip Glaze 302 Honey Haze 5ml",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Absolute Mini Mattreal Mousse",
+    "total_values": 1497,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Xtraordinary Airy Matte Mousse Rose Fair",
+        "total_values": 499,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 499
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Xtraordinary Airy Matte Mousse Beige Honey",
+        "total_values": 998,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 998
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Facelift Foundation Stick",
+    "total_values": 5394,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Facelift Foundation Stick Warm Beige - W240",
+        "total_values": 2697,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1798
+          },
+          {
+            "moc": "02/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Facelift Foundation Stick Neutral Medium - N",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Facelift Foundation Stick Warm Natural - W18",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Facelift Foundation Stick Cool Ivory - C100",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "LAKME ABSOLUTE SHINE EYE LINER",
+    "total_values": 2349,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Shine Eye Liner Steel Grey",
+        "total_values": 1650,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1650
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Shine Eye Liner Sparkling Olive",
+        "total_values": 699,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 699
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "LAKME ABSOLUTE UNDERCOVER GEL PRIMER",
+    "total_values": 23374,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Undercover Gel Primer 30ml",
+        "total_values": 23374,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 10788
+          },
+          {
+            "moc": "02/2025",
+            "value": 12586
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lk 9-5 Primer+Shine Lipstick",
+    "total_values": 2950,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme 9 to 5 Primer+Shine Lip SN3 Sand Nude",
+        "total_values": 650,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 650
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme 9 to 5 Primer+Shine Lip SB1 Chocolate Brown",
+        "total_values": 1650,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 1650
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme 9 to 5 Primer+Shine Lip SR3 Red Pop",
+        "total_values": 650,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 650
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Abs Airbrush Concl Pen",
+    "total_values": 1398,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute InstAirbrush Concealer PenSand 1.8g",
+        "total_values": 699,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 699
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute InstAirbrush Concealer Pen Walnut1.",
+        "total_values": 699,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 699
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Absolute Made To Last Setting Spray",
+    "total_values": 12950,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Made To Last Setting Spray 60ml",
+        "total_values": 12950,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 5750
+          },
+          {
+            "moc": "02/2025",
+            "value": 7200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ROUGE BLOOM SETTING POWDER",
+    "total_values": 9889,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme SSC Rouge Bloom Setting Powder - Almond-2",
+        "total_values": 2697,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          },
+          {
+            "moc": "02/2025",
+            "value": 899
+          },
+          {
+            "moc": "03/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme SSC Rouge Bloom Setting Powder - Neutral Nud",
+        "total_values": 7192,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 4495
+          },
+          {
+            "moc": "02/2025",
+            "value": 2697
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ABS ONE&DONE TINT",
+    "total_values": 1398,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Xtraordin-airy One-and-Done Tint -Ã‚Â Aprico",
+        "total_values": 699,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 699
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Xtraordin-airy One-and-Done Tint - Nude Nudg",
+        "total_values": 699,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 699
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Facelift Multi Slayer Stick",
+    "total_values": 7192,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Facelift Multi Slayer Stick  - 3 Pink Power ",
+        "total_values": 1798,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1798
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Facelift Multi Slayer Stick  - 4 Coral Queen",
+        "total_values": 1798,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 1798
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Facelift Multi Slayer Stick  - 7 Golden Glea",
+        "total_values": 2697,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          },
+          {
+            "moc": "02/2025",
+            "value": 1798
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Facelift Multi Slayer Stick  - 2 Blushing Ba",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "LAKME ABS EXPLORE EYE PENCIL",
+    "total_values": 650,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Explore Eye Pencil Mysterious Black",
+        "total_values": 650,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 650
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "LAKME XTRA 1ANDDONE LIP & CHEEK TINT",
+    "total_values": 2796,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Xtraordin-airy One-and-Done Tint -Ã‚Â  Crims",
+        "total_values": 2097,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 2097
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Xtraordin-airy One-and-Done Tint - Candy Flo",
+        "total_values": 699,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 699
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ROUGE BLOOM POWDER BLUSH",
+    "total_values": 3596,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme SSC Rouge Bloom Powder Blush - Vintage Rose ",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme SSC Rouge Bloom Powder Blush - Pink Blossom ",
+        "total_values": 2697,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1798
+          },
+          {
+            "moc": "02/2025",
+            "value": 899
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ABS MATTE MELT LIQUID LIP",
+    "total_values": 7900,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Lip 333 Pink Silk 6ml",
+        "total_values": 800,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 800
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Lip 531 Wine N Dine 6ml",
+        "total_values": 1600,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 800
+          },
+          {
+            "moc": "02/2025",
+            "value": 800
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Lip 335 Mochas Hot 6ml",
+        "total_values": 800,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 800
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Lip 336 Browntan 6ml",
+        "total_values": 4700,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 3200
+          },
+          {
+            "moc": "02/2025",
+            "value": 1500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Caring Waterproof Mascara",
+    "total_values": 11037,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Lash Boost Extreme Mascara 10ml",
+        "total_values": 11037,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 7641
+          },
+          {
+            "moc": "02/2025",
+            "value": 3396
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ROUGE BLOOM EYESHADOW PALETTE",
+    "total_values": 3598,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Rouge Bloom Eyeshadow Pro-Palette 27g",
+        "total_values": 3598,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 3598
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Spotlight Eyeshadow Collection",
+    "total_values": 995,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Spotlight Eyeshadow Collection Berry Martini",
+        "total_values": 995,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 995
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "LAKME ABSOLUTE PRIMER FOUNDATION",
+    "total_values": 7144,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Primer Foundation Makeup Primer",
+        "total_values": 7144,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 5346
+          },
+          {
+            "moc": "02/2025",
+            "value": 1798
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Glitterati Face Palette",
+    "total_values": 2398,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Glitterati Face Palette-Day Queen",
+        "total_values": 1199,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 1199
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Glitterati Face Palette-Night Diva",
+        "total_values": 1199,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 1199
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ABS EXPLORE EYE PENCIL",
+    "total_values": 699,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Explore Eye Pencil Daring Blue",
+        "total_values": 699,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 699
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "Lakme Xtra 1andDone Lip & Cheek Tint",
+    "total_values": 699,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Xtraordin-airy One-and-Done Tint - Dusty Ros",
+        "total_values": 699,
+        "basepack_detail": [
+          {
+            "moc": "02/2025",
+            "value": 699
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "ABSOLUTE MATT MELT LIP",
+    "total_values": 800,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Matte Melt Lip 530 Mulberry Feast 6",
+        "total_values": 800,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 800
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "LAKME ABSOLUTE ULTIMATE KOHL",
+    "total_values": 825,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Absolute Ultimate Kohl 1.2gm",
+        "total_values": 825,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 825
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mbrand_name": "LAKME LIP GLAZE",
+    "total_values": 5394,
+    "basepacks": [
+      {
+        "basepack_name": "Lakme Gliterati Lip Glaze 304 Espresso Martini 5ml",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Gliterati Lip Glaze 101 Scarlet Spritzer 5ml",
+        "total_values": 3596,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 2697
+          },
+          {
+            "moc": "02/2025",
+            "value": 899
+          }
+        ]
+      },
+      {
+        "basepack_name": "Lakme Gliterati Lip Glaze 204 Frosted Rose 5ml",
+        "total_values": 899,
+        "basepack_detail": [
+          {
+            "moc": "01/2025",
+            "value": 899
+          }
+        ]
+      }
+    ]
+  }
+]
+}

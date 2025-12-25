@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/sj_home"
+        android:id="@id/action_home_sales_journey"
+        android:title="@string/sj_home" />
+    <item
+        android:icon="@drawable/sj_my_orders"
+        android:id="@id/action_my_beat"
+        android:title="@string/sj_my_beat" />
+    <item
+        android:icon="@drawable/sj_task"
+        android:id="@id/action_my_task"
+        android:visible="false"
+        android:title="@string/sj_my_task" />
+</menu>

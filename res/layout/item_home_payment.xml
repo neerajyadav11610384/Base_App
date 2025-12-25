@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:background="@drawable/homepayment_bg_border"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_1c1839_1"
+            android:id="@id/bill_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_758da6"
+            android:id="@id/bill_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_758da6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/due_amount"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_41586f"
+            android:id="@id/bill_pending_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+    </LinearLayout>
+</LinearLayout>

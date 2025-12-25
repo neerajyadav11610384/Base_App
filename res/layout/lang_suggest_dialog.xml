@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:text="@string/select_language"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@id/response_language_layout"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:id="@id/scroll_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/lin_lyt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip" />
+                    <LinearLayout
+                        android:id="@id/click_more_layt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginTop="10.0dip">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="14.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue_selector"
+                            android:gravity="left"
+                            android:id="@id/click_more_lang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/click_more_languages" />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_gravity="left"
+                            android:id="@id/drop_down"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btn_lang_done"
+                            app:srcCompat="@drawable/arrow_downward" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/scroll_view">
+                        <Button
+                            android:textSize="16.0sp"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:id="@id/btn_lang_done"
+                            android:background="@drawable/green_rounded_corner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:layout_marginTop="10.0dip"
+                            android:text="@string/done"
+                            android:textAllCaps="false" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

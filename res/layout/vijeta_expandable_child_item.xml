@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:weightSum="10.0">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="12.0sp"
+                android:textColor="@color/very_dark_gray"
+                android:layout_gravity="left"
+                android:id="@id/txt_vijeta_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="TOTAL"
+                android:fontFamily="@font/sf_pro_display_bold" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="10.0sp"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:id="@id/txt_target_amount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:text="Target: 1000000"
+                android:fontFamily="@font/sf_pro_display_regular" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.0">
+            <ProgressBar
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/progress"
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:max="100"
+                android:progress="70"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/custom_progress_drawable_green"
+                style="?android:progressBarStyleHorizontal" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="10.0sp"
+                android:textColor="#ff2ab205"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:id="@id/txt_achievement_amount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:text="Achivement : 1000000"
+                android:fontFamily="@font/sf_pro_display_regular" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="12.0sp"
+                android:textColor="#fff7720c"
+                android:layout_gravity="center"
+                android:id="@id/txt_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="8000"
+                android:fontFamily="@font/sf_pro_display_bold" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="10.0sp"
+                android:textColor="#fff7720c"
+                android:layout_gravity="center"
+                android:id="@id/txt_balance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:text="@string/balance"
+                android:fontFamily="@font/sf_pro_display_regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@id/dot_one"
+            android:background="@drawable/dots"
+            android:layout_width="0.0dip"
+            android:layout_height="5.0dip"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

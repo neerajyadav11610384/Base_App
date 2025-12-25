@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:background="@color/color_2392ff"
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            app:contentInsetLeft="0.0dip"
+            app:contentInsetStart="0.0dip"
+            app:contentInsetStartWithNavigation="0.0dip"
+            app:popupTheme="@style/AppTheme"
+            app:theme="@style/ToolbarColoredWhiteArrow">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:id="@id/title_lyt"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingStart="16.0dip">
+                <com.google.android.material.textview.MaterialTextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:ellipsize="end"
+                    android:gravity="start|center"
+                    android:id="@id/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Location Check-in"
+                    android:maxLines="1"
+                    android:layout_centerVertical="true" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/logoutIV"
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:src="@drawable/ic_logout_blue"
+                    android:tint="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16.0dip"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <Button
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btnVisitorDetails"
+            android:background="@drawable/bg_login_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:text="@string/visitor_details"
+            android:layout_below="@id/toolbar"
+            android:textAllCaps="false"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:layout_marginHorizontal="16.0dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/storeStatusLL"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="16.0dip"
+            android:layout_below="@id/btnVisitorDetails">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/storeStatusTL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Store Status"
+                app:endIconMode="dropdown_menu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                <AutoCompleteTextView
+                    android:id="@id/storeStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textview.MaterialTextView
+                android:textSize="14.0sp"
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/takePhotoTV"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:text="Please Take Photo"
+                android:fontFamily="@font/sf_pro_display_semibold" />
+            <RelativeLayout
+                android:id="@id/imageCaptureRL"
+                android:background="@drawable/dashed_border"
+                android:padding="2.0dip"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip"
+                android:layout_marginTop="5.0dip">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/previewIV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/captureIV"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:src="@drawable/camera_with_border"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <Button
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/btnLocationCheckout"
+                android:background="@drawable/bg_login_btn"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginTop="50.0dip"
+                android:text="Location Checkout"
+                android:textAllCaps="false"
+                android:fontFamily="@font/sf_pro_display_medium" />
+            <Button
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/btnContinue"
+                android:background="@drawable/bg_login_btn"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginTop="50.0dip"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:fontFamily="@font/sf_pro_display_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include
+        layout="@layout/activity_custom_camera_visitor_details" />
+</RelativeLayout>

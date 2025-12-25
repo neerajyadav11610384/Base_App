@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_6"
+    app:cardCornerRadius="4.0dip"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingTop="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12"
+        android:paddingBottom="@dimen/dimen_6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_5">
+            <RelativeLayout
+                android:id="@id/rl_add_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@id/im_arrow_up_plus"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20"
+                    android:layout_marginRight="@dimen/dimen_3"
+                    android:src="@drawable/ic_action__add_blue" />
+                <ImageView
+                    android:id="@id/im_arrow_up_minus"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20"
+                    android:layout_marginRight="@dimen/dimen_3"
+                    android:src="@drawable/ic_minus" />
+            </RelativeLayout>
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawablePadding="@dimen/dimen_8"
+                android:layout_toLeftOf="@id/rupee_symbol"
+                android:layout_toRightOf="@id/rl_add_minus"
+                android:lineSpacingExtra="@dimen/dimen_8sp"
+                fontFamily="\@fonts/sf_pro_display_medium" />
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="#ff4caf50"
+                android:gravity="center"
+                android:id="@id/rupee_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:text="@string/rs_symbol"
+                android:layout_toLeftOf="@id/tc_val"
+                android:lineSpacingExtra="@dimen/dimen_7sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+            <TextView
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                android:textColor="#ff4caf50"
+                android:gravity="end"
+                android:id="@id/tc_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_0"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="@dimen/dimen_8sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+        </RelativeLayout>
+        <View
+            android:id="@id/view2"
+            android:background="@color/color_e6eaf4"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="@dimen/dimen_10" />
+        <RelativeLayout
+            android:id="@id/rel_bill_rec"
+            android:padding="2.0dip"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/bill_recyclerview"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/tcv_rel"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8">
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:textColor="#ff41586f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Collection Value"
+                android:layout_toLeftOf="@id/tc_val_d"
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="@dimen/dimen_8sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:textColor="#ff1c1839"
+                android:gravity="end"
+                android:id="@id/tc_val_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="@dimen/dimen_8sp"
+                fontFamily="\@fonts/sf_pro_display_regular" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

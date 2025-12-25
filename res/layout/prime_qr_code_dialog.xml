@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_8"
+    android:paddingBottom="@dimen/dimen_16"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dimen_8"
+    android:paddingEnd="@dimen/dimen_8"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8"
+        android:src="@drawable/ic_close_black" />
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/iv_qrcode"
+        android:layout_width="200.0dip"
+        android:layout_height="200.0dip"
+        android:src="@drawable/ic_close_black" />
+    <TextView
+        android:textSize="@dimen/dimen_15sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan the QR Code to view the Shopper Coupons" />
+</LinearLayout>

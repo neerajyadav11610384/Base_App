@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/items_card_view"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        cardview:cardBackgroundColor="@color/color_e4fcff"
+        cardview:cardCornerRadius="@dimen/dimen_2"
+        cardview:cardUseCompatPadding="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_8">
+            <TextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_1"
+                android:text="Useful Links"
+                android:fontFamily="@font/sf_pro_display_semibold" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:weightSum="3.0">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner_c8e6c9_bg"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/dimen_48"
+                        android:layout_height="@dimen/dimen_48"
+                        android:src="@drawable/ic_additional_incentives" />
+                    <TextView
+                        android:textSize="@dimen/dimen_13sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1"
+                        android:text="Incentives"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/dimen_48"
+                        android:layout_height="@dimen/dimen_48"
+                        android:src="@drawable/ic_i_teams" />
+                    <TextView
+                        android:textSize="@dimen/dimen_13sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1"
+                        android:text="I-Teams"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner_c8e6c9_bg"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/dimen_48"
+                        android:layout_height="@dimen/dimen_48"
+                        android:src="@drawable/ic_outlet" />
+                    <TextView
+                        android:textSize="@dimen/dimen_13sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1"
+                        android:text="NOC"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:weightSum="3.0">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/dimen_48"
+                        android:layout_height="@dimen/dimen_48"
+                        android:src="@drawable/ic_sales_survey" />
+                    <TextView
+                        android:textSize="@dimen/dimen_13sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1"
+                        android:text="Survey"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner_c8e6c9_bg"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/dimen_48"
+                        android:layout_height="@dimen/dimen_48"
+                        android:src="@drawable/ic_collection_summary" />
+                    <TextView
+                        android:textSize="@dimen/dimen_13sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1"
+                        android:text="Collections"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/dimen_48"
+                        android:layout_height="@dimen/dimen_48"
+                        android:src="@drawable/ic_slaes_summary" />
+                    <TextView
+                        android:textSize="@dimen/dimen_13sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1"
+                        android:text="Today Sales"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

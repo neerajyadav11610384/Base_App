@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:id="@id/no_item_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found_msg"
+        android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="22.0dip"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/what_you_need"
+        android:background="@color/gray_inactive"
+        android:padding="5.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/what_you_need"
+        android:fontFamily="@font/sf_pro_display_bold" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/nestlayout"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/what_you_need">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/section_baselayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

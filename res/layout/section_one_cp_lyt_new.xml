@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@id/spinner"
+            android:background="@color/color_2392ff"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:textColor="@android:color/white"
+                android:id="@id/moc_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:spinnerMode="dropdown"
+                android:backgroundTint="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/dummy"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip" />
+        <RelativeLayout
+            android:id="@id/max_earn_lyt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dummy">
+            <View
+                android:background="@color/color_2392ff"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_40" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/layoutSectionOneHeader"
+                android:background="@color/white"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_17"
+                    android:paddingTop="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_17"
+                    android:paddingBottom="@dimen/dimen_15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/max_earn_tgachv_cmoc"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="@dimen/dimen_18sp"
+                                android:textColor="@color/color_1c1839_1"
+                                android:gravity="center_vertical"
+                                android:id="@id/channel_name"
+                                android:visibility="visible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="demo"
+                                android:fontFamily="@font/sf_pro_display_bold" />
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@id/imageViewInfo"
+                                android:padding="@dimen/dimen_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                cardview:srcCompat="@drawable/ic_info" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="16.0sp"
+                                android:textColor="@color/color_1c1839_1"
+                                android:id="@id/tgachv_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="demo"
+                                android:lineSpacingExtra="@dimen/dimen_2sp"
+                                android:fontFamily="@font/sf_pro_display_regular" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@id/max_earn_tgachv_pmoc"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="@dimen/dimen_18sp"
+                            android:textColor="@color/color_1c1839_1"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/earning"
+                            android:lineSpacingExtra="@dimen/dimen_9sp"
+                            android:fontFamily="@font/sf_pro_display_bold" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="16.0sp"
+                                android:textColor="@color/color_1c1839_1"
+                                android:id="@id/tgachv_desc_pmoc"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:text="Earn On Target Achievement Upto"
+                                android:layout_weight="2.0"
+                                android:lineSpacingExtra="@dimen/dimen_8sp"
+                                android:fontFamily="@font/sf_pro_display_regular" />
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="16.0sp"
+                                android:textColor="@color/color_1c1839_1"
+                                android:id="@id/tgachv_value_pmoc"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:text="@string/default_inr"
+                                android:layout_weight="1.0"
+                                android:lineSpacingExtra="@dimen/dimen_8sp"
+                                android:fontFamily="@font/sf_pro_display_medium" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@id/vpacks_lyt"
+                            android:visibility="gone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="16.0sp"
+                                android:textColor="@color/color_1c1839_1"
+                                android:id="@id/vpacks_desc_pmoc"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:text="From Display"
+                                android:layout_weight="2.0"
+                                android:lineSpacingExtra="@dimen/dimen_2sp"
+                                android:fontFamily="@font/sf_pro_display_regular" />
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="16.0sp"
+                                android:textColor="@color/color_1c1839_1"
+                                android:id="@id/vpacks_value_pmoc"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:text="@string/default_inr"
+                                android:layout_weight="1.0"
+                                android:lineSpacingExtra="@dimen/dimen_8sp"
+                                android:fontFamily="@font/sf_pro_display_medium" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

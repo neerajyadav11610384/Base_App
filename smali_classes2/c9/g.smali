@@ -1,0 +1,99 @@
+.class abstract Lc9/g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field static final b:Lc9/g;
+
+
+# instance fields
+.field private final a:Lc9/g;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lc9/e;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2, v2}, Lc9/e;-><init>(Lc9/g;II)V
+
+    sput-object v0, Lc9/g;->b:Lc9/g;
+
+    return-void
+.end method
+
+.method constructor <init>(Lc9/g;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lc9/g;->a:Lc9/g;
+
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+.end method
+
+
+# virtual methods
+.method final a(II)Lc9/g;
+    .locals 1
+
+    new-instance v0, Lc9/e;
+
+    invoke-direct {v0, p0, p1, p2}, Lc9/e;-><init>(Lc9/g;II)V
+
+    return-object v0
+.end method
+
+.method final b(II)Lc9/g;
+    .locals 1
+
+    new-instance v0, Lc9/b;
+
+    invoke-direct {v0, p0, p1, p2}, Lc9/b;-><init>(Lc9/g;II)V
+
+    return-object v0
+.end method
+
+.method abstract c(Lf9/a;[B)V
+.end method
+
+.method final d()Lc9/g;
+    .locals 1
+
+    iget-object v0, p0, Lc9/g;->a:Lc9/g;
+
+    return-object v0
+.end method

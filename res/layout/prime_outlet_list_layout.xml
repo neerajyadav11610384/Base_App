@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10.0dip"
+    cardview:cardBackgroundColor="@color/white"
+    cardview:cardCornerRadius="2.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@id/lyt_prime_store"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_12">
+            <ImageView
+                android:id="@id/img_outlet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                cardview:srcCompat="@drawable/ic_outlet" />
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff1c1839"
+                android:id="@id/tv_outlet_name"
+                android:paddingTop="@dimen/dimen_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sri padamavathi mahila visvavidyalayam located thirupathi store"
+                android:lineSpacingExtra="5.0sp"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_toStartOf="@id/imgCallOutlet"
+                android:layout_toEndOf="@id/img_outlet" />
+            <ImageView
+                android:id="@id/imgCallOutlet"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:layout_toStartOf="@id/imgNavigate"
+                cardview:srcCompat="@drawable/ic_call" />
+            <ImageView
+                android:id="@id/imgNavigate"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_alignParentEnd="true"
+                cardview:srcCompat="@drawable/ic_navigation" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_12"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:layout_marginEnd="@dimen/dimen_12">
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff1c1839"
+                android:id="@id/tv_sales_potentials"
+                android:paddingTop="@dimen/dimen_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sales_potential"
+                android:lineSpacingExtra="5.0sp"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_8" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff091e42"
+                android:gravity="center"
+                android:id="@id/tv_sales_potentials_value"
+                android:background="@drawable/rounded_corner_2392ff"
+                android:paddingLeft="@dimen/dimen_8"
+                android:paddingRight="@dimen/dimen_8"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_25"
+                android:lineSpacingExtra="0.0sp"
+                android:layout_toEndOf="@id/tv_sales_potentials" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="normal"
+                android:textColor="#ff091e42"
+                android:gravity="center"
+                android:id="@id/tv_distance_meters"
+                android:background="@drawable/rounded_corner_2392ff"
+                android:paddingLeft="@dimen/dimen_8"
+                android:paddingRight="@dimen/dimen_8"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_25"
+                android:lineSpacingExtra="0.0sp"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_toEndOf="@id/tv_sales_potentials_value" />
+            <ImageView
+                android:id="@id/img_status_icon"
+                android:visibility="gone"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_0"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

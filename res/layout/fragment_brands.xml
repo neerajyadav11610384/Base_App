@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#ffe6eaf4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/scroll_catalogue"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@id/layoutOffer"
+                android:background="@color/color_a1e24f"
+                android:padding="@dimen/dimen_12"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/channelTargetLayout">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/iconOffers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_0"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    app:layout_constraintBottom_toBottomOf="@id/textViewCouponNameValue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/textViewOffers"
+                    app:srcCompat="@drawable/ic_coupon_big_new" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_1c1839_1"
+                    android:id="@id/textViewOffers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:id="@id/textViewCouponName"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:text="Coupon code:"
+                    app:layout_constraintBottom_toBottomOf="@id/textViewCouponNameValue"
+                    app:layout_constraintStart_toStartOf="@id/textViewOffers"
+                    app:layout_constraintTop_toTopOf="@id/textViewCouponNameValue" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_1c1839_1"
+                    android:id="@id/textViewCouponNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    app:layout_constraintStart_toEndOf="@id/textViewCouponName"
+                    app:layout_constraintTop_toBottomOf="@id/textViewOffers" />
+                <View
+                    android:id="@id/viewDividerOffer"
+                    android:background="@drawable/drawable_72c00f_gap_flat"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="@dimen/dimen_2"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/textViewOffers"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textViewCouponNameValue" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:id="@id/textViewCouponDetails"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:lineSpacingExtra="7.0sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/textViewCouponName"
+                    app:layout_constraintTop_toBottomOf="@id/viewDividerOffer" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/dimen_14sp"
+                    android:textColor="@color/color_1c1839_1"
+                    android:id="@id/textViewRedMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6"
+                    android:text="Learn more"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textViewCouponDetails" />
+                <View
+                    android:background="@color/color_1c1839_1"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="@dimen/dimen_1"
+                    app:layout_constraintEnd_toEndOf="@id/textViewRedMore"
+                    app:layout_constraintStart_toStartOf="@id/textViewRedMore"
+                    app:layout_constraintTop_toBottomOf="@id/textViewRedMore" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/brandsLinear"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dimen_14"
+                android:paddingTop="@dimen/dimen_14"
+                android:paddingRight="@dimen/dimen_14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="16.0sp"
+                    android:textColor="#ff1c1839"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brands" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/brandsRecyclerView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@id/brand_viewall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_30">
+                    <View
+                        android:background="@color/color_e6eaf4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_14sp"
+                        android:textColor="@color/color_2392ff"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dimen_5"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        android:tint="@color/color_2392ff"
+                        android:text="@string/view_all"
+                        app:drawableRightCompat="@drawable/ic_view_more" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@id/brand_viewless"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_30">
+                    <View
+                        android:background="@color/color_e6eaf4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="@dimen/dimen_14sp"
+                        android:textColor="@color/color_2392ff"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dimen_5"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        android:text="@string/view_less"
+                        app:drawableRightCompat="@drawable/ic_view_less" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18.0sp"
+        android:id="@id/no_categories_msg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_items_found"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

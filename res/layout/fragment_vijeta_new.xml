@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#ffe6eaf4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.hul.sambhav.util.CustomizedNestedScrollView
+            android:id="@id/scrollview_base"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/channel_base_layout"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </com.hul.sambhav.util.CustomizedNestedScrollView>
+        <ProgressBar
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="@id/progress_bar"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="@id/no_item_msg"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_items_found"
+            android:layout_centerInParent="true" />
+        <LinearLayout
+            android:id="@id/no_target"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:layout_centerInParent="true">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:layout_width="250.0dip"
+                        android:layout_height="350.0dip"
+                        app:srcCompat="@drawable/ic_channel_partner_empty" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="16.0sp"
+                        android:textStyle="normal"
+                        android:textColor="#ff41586f"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@id/no_target_text"
+                        android:padding="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:text="Your Targets for current period will be updated soon. Please visit this page in some time.Change period from top to see previous Targets  Achievements."
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="20.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:text="@string/title"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center|right"
+                android:id="@id/dismiss_dialog"
+                android:visibility="gone"
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_marginRight="10.0dip"
+                app:srcCompat="@drawable/ic_action_close" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:layout_width="150.0dip"
+            android:layout_height="150.0dip"
+            app:srcCompat="@drawable/icon_delivery_confirmation" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/material_color"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:text="@string/has_your_order_been_delivered"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="15.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/material_color"
+            android:gravity="center"
+            android:id="@id/order_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:text="@string/order_id"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <View
+            android:id="@id/view_lyt"
+            android:background="@color/gray"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginBottom="10.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="16.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/dark_moderate_lime_green"
+            android:layout_gravity="center"
+            android:id="@id/details"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:text="@string/view_ordered_products"
+            android:drawableRight="@drawable/ic_action_arrow_forward"
+            android:drawablePadding="10.0dip"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="10.0dip" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/order_item_list"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginBottom="40.0dip" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/btn_lyt"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@id/btn_no"
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:text="@string/no"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <View
+                android:background="@color/gray"
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@id/btn_yes"
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:text="@string/yes"
+                android:layout_weight="1.0"
+                android:fontFamily="@font/sf_pro_display_regular" />
+        </LinearLayout>
+        <View
+            android:background="@color/gray"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/rs_details_lyt"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20.0dip">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="18.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_rs_details"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:id="@id/txt_rs_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:fontFamily="@font/sf_pro_display_regular" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16.0sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:id="@id/txt_rs_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:fontFamily="@font/sf_pro_display_regular"
+                app:drawableLeftCompat="@drawable/ic_action_phone" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

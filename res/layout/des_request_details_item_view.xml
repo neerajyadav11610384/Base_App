@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_4"
+    android:layout_marginBottom="@dimen/dimen_4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/white_corner"
+        android:paddingBottom="@dimen/dimen_10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_1c1839_1"
+            android:gravity="center"
+            android:id="@id/textViewDseType"
+            android:background="@drawable/drawable_corner_dynamic_5dp"
+            android:padding="@dimen/dimen_5"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="@id/dseDetailsProductImage"
+            app:layout_constraintStart_toStartOf="@id/dseDetailsProductImage"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/dseDetailsProductImage"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_80"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDseType" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_1c1839_1"
+            android:ellipsize="end"
+            android:id="@id/dseDetailsProductName"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:maxLines="2"
+            android:lineSpacingExtra="@dimen/dimen_4"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:layout_marginStart="@dimen/dimen_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/dseDetailsProductImage"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:id="@id/dseDetailsType"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintBottom_toBottomOf="@id/dseDetailsTypeValue"
+            app:layout_constraintEnd_toStartOf="@id/dseDetailsTypeValue"
+            app:layout_constraintStart_toStartOf="@id/dseDetailsProductName"
+            app:layout_constraintTop_toTopOf="@id/dseDetailsTypeValue" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_1c1839_1"
+            android:id="@id/dseDetailsTypeValue"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/dseDetailsType"
+            app:layout_constraintTop_toBottomOf="@id/dseDetailsProductName" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:id="@id/dseDetailsProductQuantity"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="@string/raised_qty"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintBottom_toBottomOf="@id/dseDetailsProductQuantityValue"
+            app:layout_constraintEnd_toStartOf="@id/dseDetailsProductQuantityValue"
+            app:layout_constraintStart_toStartOf="@id/dseDetailsProductName"
+            app:layout_constraintTop_toTopOf="@id/dseDetailsProductQuantityValue" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_1c1839_1"
+            android:id="@id/dseDetailsProductQuantityValue"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/dseDetailsProductQuantity"
+            app:layout_constraintTop_toBottomOf="@id/dseDetailsType" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:id="@id/dseDetailsProductApprovedQty"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:text="@string/approved_qty"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintEnd_toEndOf="@id/dseDetailsProductQuantity"
+            app:layout_constraintStart_toStartOf="@id/dseDetailsProductQuantity"
+            app:layout_constraintTop_toBottomOf="@id/dseDetailsProductQuantity" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_1c1839_1"
+            android:id="@id/dseDetailsProductApprovedQtyValue"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintEnd_toEndOf="@id/dseDetailsProductQuantityValue"
+            app:layout_constraintStart_toStartOf="@id/dseDetailsProductQuantityValue"
+            app:layout_constraintTop_toBottomOf="@id/dseDetailsProductQuantityValue" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/layoutCreditNots"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_0"
+            app:layout_constraintEnd_toEndOf="@id/dseDetailsProductApprovedQtyValue"
+            app:layout_constraintStart_toStartOf="@id/dseDetailsProductApprovedQty"
+            app:layout_constraintTop_toBottomOf="@id/dseDetailsProductApprovedQty">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/color_41586f"
+                android:id="@id/dseDetailsCreditNote"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_note"
+                android:fontFamily="@font/sf_pro_display_regular"
+                app:layout_constraintEnd_toStartOf="@id/dseDetailsCreditNoteValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/color_1c1839_1"
+                android:id="@id/dseDetailsCreditNoteValue"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dseDetailsCreditNote"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

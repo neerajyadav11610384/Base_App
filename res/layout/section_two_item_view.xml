@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/section1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_7"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_7">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:id="@id/channel_plg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_toLeftOf="@id/channel_shopnow"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_2392ff"
+            android:gravity="center"
+            android:id="@id/channel_shopnow"
+            android:background="@drawable/round_deefff"
+            android:paddingLeft="@dimen/dimen_5"
+            android:paddingTop="@dimen/dimen_2"
+            android:paddingRight="@dimen/dimen_5"
+            android:paddingBottom="@dimen/dimen_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_32"
+            android:text="@string/shop_now"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/sf_pro_display_medium" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@id/section2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section1">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:id="@id/seek_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:text="derefser"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_41586f"
+            android:id="@id/seek_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:text="fdfdfasd"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <com.hul.sambhav.ui.vijeta.TextThumbSeekBar
+            android:layout_gravity="center"
+            android:id="@id/customSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:progress="5"
+            android:thumb="@drawable/shape_seek_bar_text_thumb"
+            android:thumbOffset="4.0dip"
+            android:layout_below="@id/seek_start"
+            android:textAlignment="center"
+            android:progressTint="@color/color_00a41a" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@id/section3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_below="@id/section2">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_00a41a"
+            android:id="@id/achieved_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/sf_pro_display_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_758da6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:text="@string/purchased_till_date"
+            android:layout_toRightOf="@id/achieved_percent"
+            android:fontFamily="@font/sf_pro_display_regular" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_758da6"
+            android:id="@id/target_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/target"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/sf_pro_display_regular" />
+    </RelativeLayout>
+</RelativeLayout>

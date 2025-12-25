@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:id="@id/layoutMainPopup"
+    android:background="@drawable/dialog_top_corner_f2f2f2_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bundle Scheme (BTPR)"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:layout_marginStart="@dimen/dimen_5"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewCloseDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageViewCloseDialog" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/imageViewCloseDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginEnd="@dimen/dimen_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close_black" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/layoutTopView"
+        android:paddingBottom="30.0dip"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintTop_toBottomOf="@id/imageViewCloseDialog">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingBottom="@dimen/dimen_10"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:id="@id/guidelineLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_begin="7.0dip" />
+            <androidx.constraintlayout.widget.Guideline
+                android:orientation="horizontal"
+                android:id="@id/guidelineTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.0" />
+            <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:id="@id/guidelineRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.98" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recyclerViewBTPR"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginBottom="15.0dip"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ExpandableListView
+                android:id="@id/expandableListViewBTPR"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="400.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:groupIndicator="@color/transparent"
+                android:childDivider="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="1.0dip"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
