@@ -74,7 +74,7 @@
 
     .line 18
     .line 19
-    new-instance p1, Landroidx/appcompat/app/b$a;
+    new-instance p1, Landroid/app/AlertDialog$Builder;
 
     .line 20
     .line 21
@@ -90,7 +90,7 @@
     move-result-object v0
 
     .line 27
-    invoke-direct {p1, v0}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;)V
+    invoke-direct {p1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 28
     .line 29
@@ -98,54 +98,60 @@
 
     .line 30
     .line 31
-    invoke-virtual {p1, v0}, Landroidx/appcompat/app/b$a;->setTitle(Ljava/lang/CharSequence;)Landroidx/appcompat/app/b$a;
+    invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 32
     .line 33
     .line 34
-    const/4 v0, 0x2
+    move-result-object p1
 
     .line 35
-    new-array v0, v0, [Ljava/lang/String;
+    const/4 v0, 0x2
 
     .line 36
+    new-array v0, v0, [Ljava/lang/String;
+
     .line 37
+    .line 38
     const/4 v1, 0x0
 
-    .line 38
+    .line 39
     const-string v2, "Camera"
 
-    .line 39
     .line 40
+    .line 41
     aput-object v2, v0, v1
 
-    .line 41
     .line 42
+    .line 43
     const/4 v1, 0x1
 
-    .line 43
+    .line 44
     const-string v2, "Gallery"
 
-    .line 44
     .line 45
+    .line 46
     aput-object v2, v0, v1
 
-    .line 46
     .line 47
+    .line 48
     new-instance v1, Lab/t0$b$a;
 
-    .line 48
     .line 49
+    .line 50
     invoke-direct {v1, p0}, Lab/t0$b$a;-><init>(Lab/t0$b;)V
 
-    .line 50
     .line 51
-    invoke-virtual {p1, v0, v1}, Landroidx/appcompat/app/b$a;->setItems([Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
-
     .line 52
+    invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
     .line 53
     .line 54
-    invoke-virtual {p1}, Landroidx/appcompat/app/b$a;->show()Landroidx/appcompat/app/b;
+    .line 55
+    move-result-object p1
+
+    .line 56
+    invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     .line 55
     .line 56
