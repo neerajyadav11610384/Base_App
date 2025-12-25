@@ -98,59 +98,57 @@
     if-ne p2, v0, :cond_1
 
     .line 30
-    .line 30
+    .line 31
     iget-object p1, p0, Lab/t0$b$a;->a:Lab/t0$b;
 
-    .line 31
     .line 32
+    .line 33
     iget-object p1, p1, Lab/t0$b;->a:Lab/t0;
 
-    .line 33
     .line 34
+    .line 35
     iget-object p1, p1, Lab/t0;->L5:Landroidx/activity/result/b;
 
-    .line 35
     .line 36
+    .line 37
     new-instance p2, Landroid/content/Intent;
 
-    .line 37
     .line 38
+    .line 39
     invoke-direct {p2}, Landroid/content/Intent;-><init>()V
 
-    .line 39
     .line 40
+    .line 41
     const-string p3, "android.intent.action.GET_CONTENT"
 
-    .line 41
     .line 42
+    .line 43
     invoke-virtual {p2, p3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 43
     .line 44
-    move-result-object p2
-
     .line 45
-    const-string p3, "image/*"
+    move-result-object p2
 
     .line 46
+    const-string p3, "image/*"
+
     .line 47
+    .line 48
     invoke-virtual {p2, p3}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 48
     .line 49
+    .line 50
     move-result-object p2
 
-    .line 50
+    .line 51
     invoke-virtual {p1, p2}, Landroidx/activity/result/b;->a(Ljava/lang/Object;)V
 
-    .line 51
     .line 52
     .line 53
+    .line 54
     return-void
 
-    .line 53
+    .line 55
     :cond_1
     return-void
-    .line 54
-    .line 55
 .end method
